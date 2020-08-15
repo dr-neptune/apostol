@@ -1,0 +1,11 @@
+* Calculus Vol 1
+
+* Introduction 
+
+** Part 1. Historical Introduction 
+
+Integral calculus deals with the problem of area. Differential calculus deals with the problem of tangents. 
+
+This section is mainly interested in showing the archimedean construction of the integral applied to a parabola. The exercises have you derive more general integrals of functions
+
+** Part 2. Some Basic Concepts of the Theory of Sets
