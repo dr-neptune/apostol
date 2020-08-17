@@ -9,3 +9,15 @@ Integral calculus deals with the problem of area. Differential calculus deals wi
 This section is mainly interested in showing the archimedean construction of the integral applied to a parabola. The exercises have you derive more general integrals of functions
 
 ** Part 2. Some Basic Concepts of the Theory of Sets
+
+*** Definition | Set Equality 
+
+Two sets $A$ and $B$ are said to be equal (or identical) if they consist of exactly the same elements, in which case we write $A = B$. If one of the sets contains an element not in the other, we say the sets are unequal and write $A \neq B$.
+
+
+*** Definition | Subset
+
+A set $A$ is said to be a subset of a set $B$, and we write $A \subset B$ whenever every element of $A$ also belongs to $B$. We say that $A$ is contained in $B$, or that $B$ contains $A$. The relation $\psubset$ is referred to as set inclusion.
+
+To help simplify the language, we call a collection of sets a class. Capital script letters like $\mathcal{A}, \mathcal{B}, \mathcal{C}, ...$ are used to denote classes. 
+
