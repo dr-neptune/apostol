@@ -21,3 +21,9 @@ A set $A$ is said to be a subset of a set $B$, and we write $A \subset B$ whenev
 
 To help simplify the language, we call a collection of sets a class. Capital script letters like $\mathcal{A}, \mathcal{B}, \mathcal{C}, ...$ are used to denote classes. 
 
+** Part 3. A Set of Axioms for the Real-Number System 
+
+The axioms we list here fall in a natural way into three groups which we can refer to as field axioms, order axioms, and the least upper bound axiom. 
+
+**The Field Axioms**
+
