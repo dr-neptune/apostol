@@ -47,3 +47,8 @@ From the above axioms, we can deduce all the usual laws of elementary algebra. T
 *** Theorem 1.9: If $a \neq 0$, then b/a = b * $a^{-1}$
 *** Theorem 1.10: If $a \neq 0$, then $(a^{-1})^{-1} = a$ 
 *** Theorem 1.11: If ab = 0, then a = 0 or b = 0
+*** Theorem 1.12: (-a)b = -(ab) and (-a)(-b) = ab 
+*** Theorem 1.13: (a/b) + (c/d) = (ad + bc)/(bd) if $b, d /neq 0$
+*** Theorem 1.14: (a/b)(c/d) = ac/bd if $b, d \neq 0$ 
+*** Theorem 1.15: (a/b)/(c/d) = ad/bc if $b, c, d \neq 0$
+
