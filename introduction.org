@@ -52,3 +52,21 @@ From the above axioms, we can deduce all the usual laws of elementary algebra. T
 *** Theorem 1.14: (a/b)(c/d) = ac/bd if $b, d \neq 0$ 
 *** Theorem 1.15: (a/b)/(c/d) = ad/bc if $b, c, d \neq 0$
 
+*The Order Axioms*
+
+This group of axioms has to do with a concept which establishes an ordering among the real numbers. We introduce the order properties as a set of axioms about a new undefined concept called positiveness and then define terms like less than and greater than in terms of positiveness. 
+
+We assume there exists a certain subset $R^{+} \psubset R$ called the set of positive real numbers which satisfies the following 3 order axioms: 
+
+*** Axiom 7: If x and y are in $R^+$, so are x + y and xy
+*** Axiom 8: For every real $x \neq 0$, either $x \in R^+$ or $-x \in R^+$, but not both
+*** Axiom 9: $0 \nin R^+$
+
+Now we can define the symbols <, >, leq and geq 
+
+*** x < y means that y - x  is positive 
+*** y > x means that x < y 
+*** x \leq y means that either x < y or x = y 
+*** x \geq y means that y \leq x
+
+
