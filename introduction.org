@@ -80,4 +80,5 @@ From the order axioms, we can derive all the usual rules for calculating with in
 *** Theorem 1.22: If a < b and c < 0, then ac > bc 
 *** Theorem 1.23: If a < b, then -a > -b. In particular, if a < 0, then -a > 0
 *** Theorem 1.24: If ab > 0, then both a and b are positive or both are negative 
+*** Theorem 1.25: If a < b and c < d, then a + c < b + d 
 
