@@ -82,3 +82,17 @@ From the order axioms, we can derive all the usual rules for calculating with in
 *** Theorem 1.24: If ab > 0, then both a and b are positive or both are negative 
 *** Theorem 1.25: If a < b and c < d, then a + c < b + d 
 
+*Integers and Rational Numbers*
+*** Definition: Inductive Set
+
+A set of real numbers is called an inductive set if it has the following two properties: 
+
+1. The number 1 is in the set
+2. For every x in the set, the number x + 1 is also in the set 
+
+*** Definition: Positive Integers 
+
+A real number is called a positive integer if it belongs to every inductive set 
+
+*Geometric Interpretation of Real Numbers as Points on a Line*
+
