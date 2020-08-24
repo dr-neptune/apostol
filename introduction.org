@@ -131,3 +131,17 @@ A number L is called a greatest lower bound (or infimum) of S if
 
 *Fundamental Properties of the Supremum and Infimum*
 
+*** Theorem 1.32: 
+
+Let h be a given positive number and let S be a set of real numbers. 
+
+a. If S has a supremum, then for some x in S we have x > sup S - h 
+b. If S has an infimum, then for some x in S we have x < inf S + h 
+
+*** Theorem 1.33: Additive Property
+
+Given nonempty subsets A and B of R, let C denote the set $C = \{a + b | a \in A, b \in B \}$
+
+a. If each of A and B has a supremum, then C has a supremum, and sup C = sup A + sup B
+b. If each of A and B has an infimum, then C has an infimum, and inf C = inf A + inf B 
+
