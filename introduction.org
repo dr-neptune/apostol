@@ -94,5 +94,40 @@ A set of real numbers is called an inductive set if it has the following two pro
 
 A real number is called a positive integer if it belongs to every inductive set 
 
-*Geometric Interpretation of Real Numbers as Points on a Line*
+*Upper bound of a set, maximum element, least upper bound (supremum)*
+
+*** Definition: Least Upper Bound 
+
+A number B is called a least upper bound of a nonempty set S if B has the following two properties:
+
+1. B is an upper bound for S
+2. No number less than B is an upper bound for S 
+
+*** Theorem 1.26: Two different numbers cannot be least upper bounds for the same set  
+
+It is common practice to refer to the least upper bound of a set by the more concise term supremum and write B = sup S
+
+*** Axiom 10: Every nonempty set S of real numbers which is bounded above has a supremum; that is, there is a real number B such that B = sup S
+
+
+*** Definition: Greatest Lower Bound
+
+A number L is called a greatest lower bound (or infimum) of S if 
+
+1. L is a lower bound for S
+2. No number greater than L is a lower bound for S
+
+*** Theorem 1.27: Every nonempty set S that is bounded below has a greatest lower bound; that is, there is a real number L such that L = inf S
+
+*The Archimedean Property of the Real-Number System*
+
+*** Theorem 1.28: The set P of positive integers 1, 2, 3, ... is unbounded above 
+
+*** Theorem 1.29: For every real x there exists a positive integer n such that n > x 
+
+*** Theorem 1.30: If x > 0 and if y is an arbitrary real number, there exists a positive integer n such that nx > y 
+
+*** Theorem 1.31: If three real numbers a, x, and y satisfy the inequalities $a \leq x \leq a + \frac{y}{n}$ for every integer $n \geq 1$, then $x = a$
+
+*Fundamental Properties of the Supremum and Infimum*
 
