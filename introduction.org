@@ -145,3 +145,5 @@ Given nonempty subsets A and B of R, let C denote the set $C = \{a + b | a \in A
 a. If each of A and B has a supremum, then C has a supremum, and sup C = sup A + sup B
 b. If each of A and B has an infimum, then C has an infimum, and inf C = inf A + inf B 
 
+*** Theorem 1.34: Given two nonempty subsets S and T of R such that $s \leq t$ for every s in S and every t in T. Then S has a supremum, and T has an infimum, and they satisfy the inequality $sup S \leq inf T$
+
