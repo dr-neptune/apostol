@@ -125,7 +125,7 @@ A number L is called a greatest lower bound (or infimum) of S if
 
 *** Theorem 1.29: For every real x there exists a positive integer n such that n > x 
 
-*** Theorem 1.30: If x > 0 and if y is an arbitrary real number, there exists a positive integer n such that nx > y 
+*** Theorem 1.30: If x > 0 and if y is an arbitrary real number, there exists a positive integer n such that nx > y
 
 *** Theorem 1.31: If three real numbers a, x, and y satisfy the inequalities $a \leq x \leq a + \frac{y}{n}$ for every integer $n \geq 1$, then $x = a$
 
@@ -135,8 +135,8 @@ A number L is called a greatest lower bound (or infimum) of S if
 
 Let h be a given positive number and let S be a set of real numbers. 
 
-a. If S has a supremum, then for some x in S we have x > sup S - h 
-b. If S has an infimum, then for some x in S we have x < inf S + h 
+a. If S has a supremum, then for some x in S we have x > sup S - h
+b. If S has an infimum, then for some x in S we have x < inf S + h
 
 *** Theorem 1.33: Additive Property
 
@@ -147,4 +147,4 @@ b. If each of A and B has an infimum, then C has an infimum, and inf C = inf A +
 
 *** Theorem 1.34: Given two nonempty subsets S and T of R such that $s \leq t$ for every s in S and every t in T. Then S has a supremum, and T has an infimum, and they satisfy the inequality $sup S \leq inf T$
 
-On exercise 6
+On exercise 7
