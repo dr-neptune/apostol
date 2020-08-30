@@ -168,4 +168,4 @@ Then every positive integer is in the set S.
 
 Every nonempty set of positive integers contains a smallest member 
 
-On exercise 7 for the induction exercises 
+On exercise 11 for the induction exercises 
