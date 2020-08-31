@@ -167,5 +167,3 @@ Then every positive integer is in the set S.
 *** Theorem 1.37: The Well-Ordering Principle 
 
 Every nonempty set of positive integers contains a smallest member 
-
-On exercise 11 for the induction exercises 
