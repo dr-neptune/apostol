@@ -170,4 +170,4 @@ Every nonempty set of positive integers contains a smallest member
 
 *Summation Notation*
 
-On summation exercises number 5
+On summation exercises number 8
