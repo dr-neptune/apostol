@@ -170,4 +170,26 @@ Every nonempty set of positive integers contains a smallest member
 
 *Summation Notation*
 
-Done summation exercises. Maybe review 13 
+*Absolute Values and the Triangle Inequality*
+
+*** Theorem 1.38: If $a \geq 0$, then $|x| \leq a$ if and only if $-a \leq x \leq a$
+
+*** Theorem 1.39: Triangle Inequality: 
+
+For arbitrary real numbers x and y, we have $|x + y| \leq |x| + |y|$
+
+If we take x = a - c and y = c - b, then x + y = a - b and the triangle inequality becomes $|a - b| \leq |a - c| + |b - c|$
+
+*** Theorem 1.40
+
+For arbitrary real numbers a_1, a_2, ..., a_n we have 
+
+$|\sum_{k = 1}^n a_k| \leq \sum_{k = 1}^n |a_k|$
+
+*** Theorem 1.41: The Cauchy-Schwarz Inequality 
+
+If $a_1, ..., a_n$ and $b_1, ..., b_n$ are arbitrary real numbers, we have 
+
+$(\sum_{k = 1}^n a_k b_k)^2 \leq (\sum_{k = 1}^n a_k^2)(\sum_{k = 1}^n b_k^2)$
+
+
