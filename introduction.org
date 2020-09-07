@@ -194,4 +194,4 @@ $(\sum_{k = 1}^n a_k b_k)^2 \leq (\sum_{k = 1}^n a_k^2)(\sum_{k = 1}^n b_k^2)$
 
 on miscellaneous exercises involving induction 
 
-on problem 15, maybe recheck 13b
+on problem 20, maybe recheck 19
