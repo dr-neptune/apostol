@@ -1,7 +1,6 @@
 * Calculus Vol 1
 
-* Introduction 
-
+* Introduction
 ** Part 1. Historical Introduction 
 
 Integral calculus deals with the problem of area. Differential calculus deals with the problem of tangents. 
@@ -191,3 +190,92 @@ $|\sum_{k = 1}^n a_k| \leq \sum_{k = 1}^n |a_k|$
 If $a_1, ..., a_n$ and $b_1, ..., b_n$ are arbitrary real numbers, we have 
 
 $(\sum_{k = 1}^n a_k b_k)^2 \leq (\sum_{k = 1}^n a_k^2)(\sum_{k = 1}^n b_k^2)$
+
+* 1. The Concepts of Integral Calculus
+:PROPERTIES:
+:header-args: :session R-session :results output value table :colnames yes
+:END:
+
+
+#+NAME: round-tbl
+#+BEGIN_SRC emacs-lisp :var tbl="" fmt="%.1f"
+(mapcar (lambda (row)
+          (mapcar (lambda (cell)
+                    (if (numberp cell)
+                        (format fmt cell)
+                      cell))
+                  row))
+        tbl)
+#+end_src
+
+This chapter presents the Integral and some of its basic properties. In order to do this, we must have some acquaintance with functions. 
+
+** The Basic Ideas of Cartesian Geometry 
+
+The x coordinate of a point is sometimes called its abscissa and the y coordinate its ordinate. 
+
+** Functions. Informal Description and Examples 
+
+Today, the meaning of function is essentially this: Given two sets, X and Y, a function is a correspondence which associates with each element of X one element, and only one element of Y. In this example, X is the domain and Y is the range of the function. 
+
+In calculus, we are primarily interested in functions whose domain and range are real numbers.
+
+#+BEGIN_SRC R :file plot.svg :results graphics file
+library(tidyverse)
+library(pipeR)
+library(patchwork)
+
+identity_f <- function(x) x
+abs_f <- function(x) abs(x)
+factorial_f <- function(x) factorial(x)
+
+plot_function <- function(fun, title = "", domain = reals) {
+    require(latex2exp)
+    domain %>%
+        enframe() %>%
+        ggplot() +
+        geom_hline(yintercept = 0, alpha = 0.5) +
+        geom_vline(xintercept = 0, alpha = 0.5) +
+        geom_line(aes(x = value, y = fun(value)), color = "mediumpurple", lty = 1) +
+        xlab("X") + ylab("Y") +
+        ggdark::dark_theme_gray() +
+        ggtitle(TeX(title))
+}
+
+reals <- seq(from = -1000, 1000, by = 0.01)
+
+# restricted domain factorial
+plot_function(factorial_f, title = "f(x) = x!", domain = seq(from = 0, 10, by = 1)) -> p_fact
+
+list("f(x) = x" = identity_f,
+     "f(x) = |x|" = abs_f) %>%
+    imap(., ~ plot_function(fun = .x, title = .y)) %>%
+    append(list(p_fact)) %>% 
+    reduce(`/`) 
+#+END_SRC
+
+#+RESULTS:
+[[file:plot.svg]]
+
+Here are some properties of the absolute value function: 
+
+1. $f(-x) = f(x)$
+2. $f(x^2) = x^2$
+3. $f(x + y) \leq f(x) + f(y)$
+4. $f(f(x)) = f(x)$
+5. $f(x) = \sqrt(x^2)$
+
+** Functions. Formal Definition as a Set of Ordered Pairs 
+
+*** Definition: Function
+
+A function f is a set of ordered pairs (x, y) no two of which have the same first member 
+
+It is customary to write $y = f(x)$ instead of $(x, y) \in f$ to indicate that the pair $(x, y)$ is in the set $f$
+
+*** Theorem 1.1
+
+Two functions f and g are equal iff
+1. f and g have the same domain
+2. f(x) = g(x) for every x in the domain of f 
+
