@@ -191,7 +191,3 @@ $|\sum_{k = 1}^n a_k| \leq \sum_{k = 1}^n |a_k|$
 If $a_1, ..., a_n$ and $b_1, ..., b_n$ are arbitrary real numbers, we have 
 
 $(\sum_{k = 1}^n a_k b_k)^2 \leq (\sum_{k = 1}^n a_k^2)(\sum_{k = 1}^n b_k^2)$
-
-on miscellaneous exercises involving induction 
-
-on problem 22, maybe recheck 19
