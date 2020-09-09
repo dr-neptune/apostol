@@ -320,7 +320,7 @@ circle_f <- function(x, r) {
         bind_rows()
 }
 
-## example plot
+## circle plot
 seq(-3.5, 3.5, 0.1) %>%
     circle_f(r = 3) %>%
     ggplot(aes(x = value, y = output)) +
@@ -329,15 +329,68 @@ seq(-3.5, 3.5, 0.1) %>%
     ggtitle(TeX("Circle : y = +- \\sqrt{r^2 - x^2}")) +
     ggdark::dark_theme_gray() -> c_plot
 
+## sum of functions plot
+seq(-3.5, 3.5, 0.1) %>%
+    enframe() %>%
+    mutate(output_f = value * value) %>% 
+    mutate(output_g = value * value * value) %>%
+    mutate(output_sum = output_f + output_g) %>% 
+    ggplot() +
+    geom_line(aes(x = value, y = output_f), color = "mediumpurple") +
+    geom_line(aes(x = value, y = output_g), color = "blue") +
+    geom_line(aes(x = value, y = output_sum), color = "forestgreen") +
+    ggtitle(TeX("Sum of Functions: f(x) = x^2 + g(x) = x^3")) +
+    ggdark::dark_theme_gray() -> s_plot
+
+
 list("Constant : f(x) = 3" = constant_3,
      "Linear : f(x) = 2x -1" = linear_2x_1_f,
      "Power : f(x) = x^2" = power_2,
      "Polynomial : f(x) = \\frac{1}{2} x^4 - 2 x^2" = polynomial_ex) %>%
     imap(~ plot_function(.x, .y, domain = small_reals)) %>%
-    append(list(c_plot)) %>% 
+    append(list(c_plot)) %>%
+    append(list(s_plot)) %>% 
     reduce(`+`)
 #+END_SRC
 
 #+RESULTS:
 [[file:plot.svg]]
 
+Exercise 6. 
+
+#+BEGIN_SRC R :file plot.svg :results graphics file
+f_fun <- function(x) {
+    if (between(x, 0, 1)) 1
+    else if (x > 1 & x <= 2) 2
+    else 0
+}
+
+plot_function <- function(fun, title = "", domain = reals) {
+    require(latex2exp)
+    domain %>%
+        enframe() %>%
+        mutate(fun_out = flatten_dbl(map(value, f_fun))) %>% 
+        ggplot(aes(x = value, y = fun_out)) +
+        geom_hline(yintercept = 0, alpha = 0.5) +
+        geom_vline(xintercept = 0, alpha = 0.5) +
+        geom_point(color = "mediumpurple") +
+        geom_step(.data[["fun_out" > 0]], color = "forestgreen", lty = 3) +
+        ## geom_smooth(se = FALSE, color = "blue", span = 0.1) +
+        xlab("X") + ylab("Y") +
+        ggdark::dark_theme_gray() +
+        ggtitle(TeX(title))
+}
+
+small_reals %>%
+    enframe() %>%
+    mutate(fun_out = flatten_dbl(map(value, f_fun)))
+    
+
+## draw the graph of f
+plot_function(f_fun, domain = small_reals)
+#+END_SRC
+
+#+RESULTS:
+[[file:plot.svg]]
+
+On problem 6
