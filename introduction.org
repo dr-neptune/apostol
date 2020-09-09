@@ -230,6 +230,7 @@ abs_f <- function(x) abs(x)
 factorial_f <- function(x) factorial(x)
 
 reals <- seq(from = -10, 10, by = 1)
+small_reals <- seq(-2.5, 2.5, .5)
 
 plot_function <- function(fun, title = "", domain = reals) {
     require(latex2exp)
@@ -294,31 +295,49 @@ power_f <- function(x, power) x^power
 power_2 <- partial(power_f, 2)
 power_f(reals, 3)
 
-## z <- 2
-## y <- 1:5
-## (z ^ y) * c(1, 2, 3, 4, 5)
 polynomial_f <- function(x, degree, coefficients) {
-    sum((x)^(1:degree) * coefficients)
+    raise_f <- function(x) {
+        x^(1:4)
+    }
+    map_dbl(x, ~ sum(rev(raise_f(.x)) * coefficients))
 }
-
-c(1, 2, 3, 4)^(1:4)
-
-4^4
-
-sum((-1)^(1:4) * c(1/2, 0, -2, 0))
-
 polynomial_ex <- partial(polynomial_f, degree = 4, coefficients = c((1/2), 0, -2, 0))
 
-polynomial_ex(1)
+circle_f <- function(x, r) {
+    if (abs(x) < r) sqrt(r^2 - x^2)
+    else 0
+}
 
+circle_f <- function(x, r) {
+    f <- function(x, r) sqrt(r^2 - x^2)
+    g <- function(x, r) (-1) * sqrt(r^2 - x^2)
+    
+    x %>%
+        enframe() %>%
+        list(mutate(., output = f(value, r)),
+             mutate(., output = g(value, r))) %>%
+        rlist::list.skip(1) %>%
+        bind_rows()
+}
 
-list(## "Constant : f(x) = 3" = constant_3,
-     ## "Linear : f(x) = 2x -1" = linear_2x_1_f,
-     ## "Power : f(x) = x^2" = power_2,
+## example plot
+seq(-3.5, 3.5, 0.1) %>%
+    circle_f(r = 3) %>%
+    ggplot(aes(x = value, y = output)) +
+    geom_point(alpha = 0.3) +
+    geom_line(color = "mediumpurple") +
+    ggtitle(TeX("Circle : y = +- \\sqrt{r^2 - x^2}")) +
+    ggdark::dark_theme_gray() -> c_plot
+
+list("Constant : f(x) = 3" = constant_3,
+     "Linear : f(x) = 2x -1" = linear_2x_1_f,
+     "Power : f(x) = x^2" = power_2,
      "Polynomial : f(x) = \\frac{1}{2} x^4 - 2 x^2" = polynomial_ex) %>%
-    imap(~ plot_function(.x, .y)) %>%
-    reduce(`/`)
+    imap(~ plot_function(.x, .y, domain = small_reals)) %>%
+    append(list(c_plot)) %>% 
+    reduce(`+`)
 #+END_SRC
 
 #+RESULTS:
 [[file:plot.svg]]
+
