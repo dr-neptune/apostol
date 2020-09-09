@@ -229,6 +229,8 @@ identity_f <- function(x) x
 abs_f <- function(x) abs(x)
 factorial_f <- function(x) factorial(x)
 
+reals <- seq(from = -10, 10, by = 1)
+
 plot_function <- function(fun, title = "", domain = reals) {
     require(latex2exp)
     domain %>%
@@ -241,8 +243,6 @@ plot_function <- function(fun, title = "", domain = reals) {
         ggdark::dark_theme_gray() +
         ggtitle(TeX(title))
 }
-
-reals <- seq(from = -1000, 1000, by = 0.01)
 
 # restricted domain factorial
 plot_function(factorial_f, title = "f(x) = x!", domain = seq(from = 0, 10, by = 1)) -> p_fact
@@ -279,3 +279,46 @@ Two functions f and g are equal iff
 1. f and g have the same domain
 2. f(x) = g(x) for every x in the domain of f 
 
+** More Examples of Real Functions
+
+#+BEGIN_SRC R :file plot.svg :results graphics file
+constant_f <- function(x, c) c
+constant_3 <- partial(constant_f, c = 3)
+constant_3(1234)
+
+linear_f <- function(x, a, b) a*x + b
+linear_2x_1_f <- partial(linear_f, a = 2, b = -1)
+linear_2x_1_f(2)
+
+power_f <- function(x, power) x^power
+power_2 <- partial(power_f, 2)
+power_f(reals, 3)
+
+## z <- 2
+## y <- 1:5
+## (z ^ y) * c(1, 2, 3, 4, 5)
+polynomial_f <- function(x, degree, coefficients) {
+    sum((x)^(1:degree) * coefficients)
+}
+
+c(1, 2, 3, 4)^(1:4)
+
+4^4
+
+sum((-1)^(1:4) * c(1/2, 0, -2, 0))
+
+polynomial_ex <- partial(polynomial_f, degree = 4, coefficients = c((1/2), 0, -2, 0))
+
+polynomial_ex(1)
+
+
+list(## "Constant : f(x) = 3" = constant_3,
+     ## "Linear : f(x) = 2x -1" = linear_2x_1_f,
+     ## "Power : f(x) = x^2" = power_2,
+     "Polynomial : f(x) = \\frac{1}{2} x^4 - 2 x^2" = polynomial_ex) %>%
+    imap(~ plot_function(.x, .y)) %>%
+    reduce(`/`)
+#+END_SRC
+
+#+RESULTS:
+[[file:plot.svg]]
