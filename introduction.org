@@ -208,6 +208,8 @@ $(\sum_{k = 1}^n a_k b_k)^2 \leq (\sum_{k = 1}^n a_k^2)(\sum_{k = 1}^n b_k^2)$
         tbl)
 #+end_src
 
+#+RESULTS: round-tbl
+
 This chapter presents the Integral and some of its basic properties. In order to do this, we must have some acquaintance with functions. 
 
 ** The Basic Ideas of Cartesian Geometry 
@@ -369,22 +371,18 @@ plot_function <- function(fun, title = "", domain = reals) {
     require(latex2exp)
     domain %>%
         enframe() %>%
-        mutate(fun_out = flatten_dbl(map(value, f_fun))) %>% 
+        mutate(fun_out = flatten_dbl(map(value, f_fun))) %>>%
+        (~ tbl) %>% 
         ggplot(aes(x = value, y = fun_out)) +
         geom_hline(yintercept = 0, alpha = 0.5) +
-        geom_vline(xintercept = 0, alpha = 0.5) +
+        geom_vline(xintercept = 0, alpha = 0.5) %>>%
+        (~ base_plot) +
         geom_point(color = "mediumpurple") +
-        geom_step(.data[["fun_out" > 0]], color = "forestgreen", lty = 3) +
-        ## geom_smooth(se = FALSE, color = "blue", span = 0.1) +
+        geom_step(color = "forestgreen", lty = 3) +
         xlab("X") + ylab("Y") +
         ggdark::dark_theme_gray() +
         ggtitle(TeX(title))
 }
-
-small_reals %>%
-    enframe() %>%
-    mutate(fun_out = flatten_dbl(map(value, f_fun)))
-    
 
 ## draw the graph of f
 plot_function(f_fun, domain = small_reals)
@@ -394,3 +392,45 @@ plot_function(f_fun, domain = small_reals)
 [[file:plot.svg]]
 
 On problem 6
+
+#+BEGIN_SRC R :file plot.svg :results graphics file
+## let g(x) = f(2x)
+p1 <- plot_function(f_fun, domain = small_reals) + ggtitle("x") + xlim(0, 2)
+p2 <- plot_function(f_fun, domain = (2 * small_reals)) + ggtitle("2x") + xlim(0, 2)
+p3 <- plot_function(f_fun, domain = (small_reals - 2)) + ggtitle("x - 2") + xlim(0, 5)
+p4 <- plot_function(f_fun, domain = ((small_reals * 2) + (small_reals - 2))) + ggtitle("f(2x) + f(x - 2)") + xlim(0, 5)
+
+p1 / p2 / p3 / p4
+#+END_SRC
+
+#+RESULTS:
+[[file:plot.svg]]
+
+#+BEGIN_SRC R :file plot.svg :results graphics file
+small_reals %>%
+    enframe() %>% 
+    ggplot() +
+    geom_line(aes(x = value, y = value), color = "forestgreen") +
+    geom_line(aes(x = value, y = value * value * value), color = "mediumpurple") +
+    geom_point(data = tribble(~ value, ~ out, 0, 0, -1, -1, 1, 1), aes(x = value, y = out), color = "white", shape = 1, size = 5) +
+    ggdark::dark_theme_gray() +
+    ggtitle("Intersection of f(x) = x and f(x) = x^3")
+#+END_SRC
+
+#+RESULTS:
+[[file:plot.svg]]
+
+#+BEGIN_SRC R :file plot.svg :results graphics file
+small_reals %>%
+    enframe() %>% 
+    ggplot() +
+    geom_line(aes(x = value, y = (value * value - 2)), color = "forestgreen") +
+    geom_line(aes(x = value, y = (2 * (value * value) + 4 * value + 1)), color = "mediumpurple") +
+    geom_point(data = tribble(~ value, ~ out, -1, -1), aes(x = value, y = out), color = "white", shape = 1, size = 5) +
+    ggdark::dark_theme_gray() +
+    ggtitle("Intersection of f(x) = x^2 - 2 and g(x) = 2x^2 + 4x + 1")
+#+END_SRC
+
+#+RESULTS:
+[[file:plot.svg]]
+
