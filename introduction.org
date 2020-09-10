@@ -434,3 +434,4 @@ small_reals %>%
 #+RESULTS:
 [[file:plot.svg]]
 
+on exercise 9d 
