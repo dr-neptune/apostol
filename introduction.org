@@ -435,3 +435,4 @@ small_reals %>%
 [[file:plot.svg]]
 
 on exercise 9d 
+still on 9d. All of 9 is a good exercise
