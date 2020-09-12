@@ -434,4 +434,15 @@ small_reals %>%
 #+RESULTS:
 [[file:plot.svg]]
 
-Done with exercises for this section!
+** The Concept of Area as a Set Function
+
+When we assign an area to a plane region, we associate a number with a set S in the plane. This means that we have a function a (an area function) which assigns a real number a(S) (the area of S) to each set S in some given collection of sets. A function of this kind, whose domain is a collection of sets and whose function values are real numbers, is called a set function. The basic problem is this: Given a plane set S, what area a(S) shall we assign to S? 
+
+*** Axiomatic Definition of Area: 
+
+We assume that there exists a class $\mathcal{M}$ of measurable sets in the plane and a set function $a$, whose domain is $\mathcal{M}$, with the following properties: 
+
+1. Non-negative Property: For each set $S$ in $\mathcal{M}$, we have $a(S) \geq 0$
+2. Additive Property: If $S$ and $T$ are in $\mathcal{M}$, then $S \cup T$ and $S \cap T$ are in $\mathcal{M}$, and we have $a(S \cup T) = a(S) + a(T) - a(S \cap T)$
+3. Difference Property: If $S$ and $T$ are in $\mathcal{M}$, with $S \subseteq T$, then $T - S$ is in $\mathcal{M}$, and we have $a(T - S) = a(T) - a(S)$ 
+
