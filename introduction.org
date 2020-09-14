@@ -445,4 +445,9 @@ We assume that there exists a class $\mathcal{M}$ of measurable sets in the plan
 1. Non-negative Property: For each set $S$ in $\mathcal{M}$, we have $a(S) \geq 0$
 2. Additive Property: If $S$ and $T$ are in $\mathcal{M}$, then $S \cup T$ and $S \cap T$ are in $\mathcal{M}$, and we have $a(S \cup T) = a(S) + a(T) - a(S \cap T)$
 3. Difference Property: If $S$ and $T$ are in $\mathcal{M}$, with $S \subseteq T$, then $T - S$ is in $\mathcal{M}$, and we have $a(T - S) = a(T) - a(S)$
-4. Invariance Under Congruence: If a set $S$ is in $\mathcal{M}$ and it $T$ is congruent to $S$, then $T$ is also in $\mathcal{M}$ and we have $a(S) = a(T)$ 
+   3.b: Monotone Property: Since $a(T - S) \geq 0$, $a(S) \leq a(T)$ for $S, T \in \mathcal{M}$ with $S \subseteq T$. 
+4. Invariance Under Congruence: If a set $S$ is in $\mathcal{M}$ and it $T$ is congruent to $S$, then $T$ is also in $\mathcal{M}$ and we have $a(S) = a(T)$
+5. Choice of Scale: Every rectangle $R$ is in $\mathcal{M}$. If the edges of $R$ have lengths $h$ and $k$, then $a(R) = hk$.
+6. Exhaustion Property: Let $Q$ be a set that can be enclosed between two step regions $S$ and $T$, so that $S \subseteq Q \subseteq T$. If there is one and only one number $c$ which satisfies the inequalities $a(S) \leq c \leq a(T)$ for all step regions $S$ and $T$, then $Q$ is measurable and $a(Q) = c$. 
+
+
