@@ -450,4 +450,4 @@ We assume that there exists a class $\mathcal{M}$ of measurable sets in the plan
 5. Choice of Scale: Every rectangle $R$ is in $\mathcal{M}$. If the edges of $R$ have lengths $h$ and $k$, then $a(R) = hk$.
 6. Exhaustion Property: Let $Q$ be a set that can be enclosed between two step regions $S$ and $T$, so that $S \subseteq Q \subseteq T$. If there is one and only one number $c$ which satisfies the inequalities $a(S) \leq c \leq a(T)$ for all step regions $S$ and $T$, then $Q$ is measurable and $a(Q) = c$. 
 
-
+on #4, revisit it
