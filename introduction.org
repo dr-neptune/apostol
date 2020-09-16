@@ -468,4 +468,4 @@ For a given partition $P$ of $[a, b]$, we can always form a new partition $P'$ b
 
 New step functions may be formed from given step functions by adding corresponding function values. To show that $u$ is actually a step function, we must exhibit a partition $P$ such that $u$ is constant along the open subintervals of $P$. For the new partition $P$, we take all the points of $P_1$ along with $P_2$. This partition, $P_1 \cup P_2$ is called the common refinement of $P_1$ and $P_2$. 
 
-on exercise 2 
+on exercise 3
