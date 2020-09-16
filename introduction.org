@@ -450,4 +450,22 @@ We assume that there exists a class $\mathcal{M}$ of measurable sets in the plan
 5. Choice of Scale: Every rectangle $R$ is in $\mathcal{M}$. If the edges of $R$ have lengths $h$ and $k$, then $a(R) = hk$.
 6. Exhaustion Property: Let $Q$ be a set that can be enclosed between two step regions $S$ and $T$, so that $S \subseteq Q \subseteq T$. If there is one and only one number $c$ which satisfies the inequalities $a(S) \leq c \leq a(T)$ for all step regions $S$ and $T$, then $Q$ is measurable and $a(Q) = c$. 
 
-on #6
+** Intervals and Ordinate Sets
+
+Let $f$ be a nonnegative function whose domain is a closed interval $[a, b]$. The portion of the plane between the graph of $f$ and the x-axis is called the ordinate set of $f$. Ordinate sets are the geometric object whose areas we want to compute by means of the integral calculus. 
+
+** Partitions and Step Functions 
+
+*** Definition: Step Function
+
+A function $s$, whose domain is a closed interval $[a, b]$, is called a step function if there is a partition $P = \{x_0, x_1, ..., x_n\}$ of $[a, b]$ such that $s$ is constant on each open subinterval of $P$. That is to say, for each $k = 1, 2, ..., n$ there is a real number $s_k$ such that $s(x) = s_k$ if $x_{k - 1} < x < x_k$
+
+Note: At each of the endpoints $x_{k-1}$ and $x_k$ the function must have some well-defined value, but this need not be the same as $s_k$. 
+
+For a given partition $P$ of $[a, b]$, we can always form a new partition $P'$ by adjoining more subdivision points to those already in $P$. Such a partition $P'$ is called a refinement of $P$ and is said to be finer than $P$. If a function is constant on the open subintervals of $P$, then it is also constant on the open subintervals of every refinement $P'$. 
+
+** Sum and Product of Step Functions
+
+New step functions may be formed from given step functions by adding corresponding function values. To show that $u$ is actually a step function, we must exhibit a partition $P$ such that $u$ is constant along the open subintervals of $P$. For the new partition $P$, we take all the points of $P_1$ along with $P_2$. This partition, $P_1 \cup P_2$ is called the common refinement of $P_1$ and $P_2$. 
+
+on exercise 2 
