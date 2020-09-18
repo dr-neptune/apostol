@@ -508,4 +508,13 @@ p1 + p2 + p3 + p4
 #+RESULTS:
 [[file:plot.svg]]
 
-on 8
+** The Definition of the Integral for Step Functions
+
+*** Definition: Integral of a Step Function 
+
+Let $s$ be a step function defined on $[a, b]$ and let $P = \{x_0, x_1, ..., x_n\}$ be a partition of $[a, b]$ such that $s$ is constant on the open subintervals of $P$. Denote $s_k$ by the constant value that $s$ takes in the $k$th open subinterval, so that $s(x) = s_k$ if $x_{k-1} < x < x_k$, $k = 1, 2, ..., n$. 
+
+The integral of $s$, from $a$ to $b$, denoted by the symbol $\int_a^b s(x) dx$, is defined by the following formula: 
+
+$\int_a^b s(x) dx = \sum_{k = 1}^n s_k \cdot (x_k - x_{k-1})$
+
