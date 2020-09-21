@@ -518,3 +518,53 @@ The integral of $s$, from $a$ to $b$, denoted by the symbol $\int_a^b s(x) dx$, 
 
 $\int_a^b s(x) dx = \sum_{k = 1}^n s_k \cdot (x_k - x_{k-1})$
 
+** Properties of the Integral of a Step Function 
+
+*** Theorem 1.2 : Additive Property 
+
+$\int_a^b [s(x) + t(x)]dx = \int_a^b s(x)dx + \int_a^b t(x) dx$ 
+
+*** Theorem 1.3 : Homogenous Property 
+
+For every real number $c$, we have $\int_a^b c \cdot s(x) dx = c \int_a^b t(x) dx$ 
+
+*** Theorem 1.4 : Linearity Property 
+
+For every real $c_1$ and $c_2$, we have 
+
+$\int_a^b [c_1 s(x) + c_2 t(x)] dx = c_1 \int_a^b s(x) dx + c_2 \int_a^b t(x) dx$ 
+
+*** Theorem 1.5 : Comparison Theorem 
+
+If $s(x) < t(x)$ for every $x$ in $[a, b]$, then $\int_a^b s(x) dx < \int_a^b t(x) dx$ 
+
+*** Theorem 1.6 : Additivity with Respect to the Interval of Integration 
+
+$\int_a^c s(x) dx + \int_c^b s(x) dx = \int_a^b s(x) dx$ if $a < c < b$ 
+
+*** Theorem 1.7 : Invariance Under Translation 
+
+$\int_a^b s(x) dx = \int_{a + c}^{b + c} s(x - c) dx$ for every $c \in \mathcal{R}$
+
+*** Theorem 1.8 : Expansion or Contraction of the Interval of Integration
+
+$\int_{ka}^{kb} s(\frac{x}{k}) dx = k \int_a^b s(x) dx$ for every $k > 0$
+
+*** Definition | Lower Limit > Upper Limit 
+
+If $a < b$,, then $\int_b^a s(x) dx = - \int_a^b s(x) dx$ 
+
+and $\int_a^a s(x) dx = 0$
+
+*** Additivity with Respect to the Interval of Integration Rewrite 
+
+$\int_a^c s(x) dx + \int_c^b s(x) dx + \int_b^a s(x) dx = 0$
+
+*** Reflection Property of the Integral 
+
+When considering theorem 1.8 and allowing k to be negative, we can get the reflection property of the integral when $k = -1$
+
+$\int_a^b s(x) dx = \int_{-b}^{-a} s(-x) dx$
+
+on exercise 3
+
