@@ -566,5 +566,5 @@ When considering theorem 1.8 and allowing k to be negative, we can get the refle
 
 $\int_a^b s(x) dx = \int_{-b}^{-a} s(-x) dx$
 
-on exercise 3
+on exercise 5 
 
