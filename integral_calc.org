@@ -372,4 +372,24 @@ When considering theorem 1.8 and allowing k to be negative, we can get the refle
 
 $\int_a^b s(x) dx = \int_{-b}^{-a} s(-x) dx$
 
-on exercise 16
+** The Integral of More General Functions
+ 
+*** Definition: The Integral of a Bounded Function 
+
+Let $f$ be a function defined and bounded on $[a, b]$. Let $s$ and $t$ denote arbitrary step functions defined on $[a, b]$ such that $s(x) \leq f(x) \leq t(x)$ for every $x \in [a, b]$. If there is one and only 1 number $I$ such that $\int_a^b s(x) dx \leq I \leq \int_a^b t(x) dx$ for every pair of step functions satisfying the comparison theorem, then this number $I$ is called the integral of $f$ from $a$ to $b$ and is denoted by the symbol $\int_a^b f(x) dx$ or by $\int_a^b f$. When such an $I$ exists, the function $f$ is said to be integrable on $[a, b]$
+
+** Upper and Lower Integrals 
+
+*** Theorem 1.9
+
+Every function $f$ which is bounded on $[a, b]$ has a lower integral $I(f)$ and an upper integral $I'(f)$ satisfying the inequalities: 
+
+$\int_a^b s(x) dx \leq I(f) \leq I'(f) \leq \int_a^b t(x) dx$ 
+
+for all step functions $s$ and $t$ with $s \leq f \leq t$. The function $f$ is integrable on $[a, b]$ iff its upper and lower bounds are equal, in which case we have 
+
+$\int_a^b f(x) dx = I(f) = I'(f)$
+
+** The Area of an Ordinate Set Expressed as an Integral 
+
+
