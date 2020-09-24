@@ -392,4 +392,8 @@ $\int_a^b f(x) dx = I(f) = I'(f)$
 
 ** The Area of an Ordinate Set Expressed as an Integral 
 
+Recall that the ordinate set of a non-negative function $f$ over the interval $[a, b]$ is the set of all points $(x, y)$ satisfying the inequalities $0 \leq y \leq f(x)$ and $a \leq x \leq b$. 
 
+*** Theorem 1.10 
+
+Let $f$ be a non-negative function, integrable on the interval $[a, b]$, and let $Q$ denote the ordinate set of $f$ over $[a, b]$. Then $Q$ is measurable and its area is equal to the integral $\int_a^b f(x) dx$. 
