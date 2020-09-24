@@ -397,3 +397,30 @@ Recall that the ordinate set of a non-negative function $f$ over the interval $[
 *** Theorem 1.10 
 
 Let $f$ be a non-negative function, integrable on the interval $[a, b]$, and let $Q$ denote the ordinate set of $f$ over $[a, b]$. Then $Q$ is measurable and its area is equal to the integral $\int_a^b f(x) dx$. 
+
+*** Theorem 1.11
+
+Let $f$ be a non-negative function, integrable on an interval $[a, b]$. Then the graph of $f$, that is, the set $\{(x,  y) | a \leq x \leq b, y = f(x)\}$, is measurable and has an area equal to 0. 
+
+** Informal Remarks on the Theory and Technique of Integration 
+
+Two fundamental questions arise at this stage: 
+
+1. Which functions are integrable?
+2. Given that a function $f$ is integrable, how do we compute the integral of $f$?
+
+The first question falls under the heading "Theory of Integration", and the second under "Technique of Integration". 
+
+** Monotonic and Piecewise Monotonic Functions. Definitions and Examples 
+
+A function $f$ is said to be increasing on a set $S$ if $f(x) \leq f(y)$ for every pair of points $x$ and $y$ in $S$ with $x < y$. Similarly, $f$ is decreasing on $S$ if $f(x) \geq f(y)$ for all $x < y$ in $S$. A function is called monotonic on $S$ if it is increasing on $S$ or if it is decreasing on $S$.  
+
+A function $f$ is said to be piecewise monotonic on an interval if its graph consists of a finite number of monotonic pieces. That is to say, $f$ is piecewise monotonic on $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is monotonic on each of the open subintervals of $P$. 
+
+** Integrability of Bounded Monotonic Functions 
+
+The importance of monotonic functions in integration theory is due to the following theorem: 
+
+*** Theorem 1.12 
+
+If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is integrable on $[a, b]$
