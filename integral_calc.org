@@ -431,4 +431,3 @@ If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is integrable on $[a
 
 Assume $f$ is increasing on a closed interval $[a, b]$. Let $x_k = a + \frac{k(b - a)}{n}$ for $k = 0, 1, 2, ..., n$. If $I$ is any number which satisfies the inequalities $\frac{b - a}{n} \sum_{k = 0}^{n - 1} f(x_k) \leq I \leq \frac{b - a}{n} \sum_{k = 1}^n f(x_k)$ for every integer $n \geq 1$, then $I = \int_a^b f(x) dx$. 
 
-
