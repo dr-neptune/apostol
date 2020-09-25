@@ -431,3 +431,17 @@ If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is integrable on $[a
 
 Assume $f$ is increasing on a closed interval $[a, b]$. Let $x_k = a + \frac{k(b - a)}{n}$ for $k = 0, 1, 2, ..., n$. If $I$ is any number which satisfies the inequalities $\frac{b - a}{n} \sum_{k = 0}^{n - 1} f(x_k) \leq I \leq \frac{b - a}{n} \sum_{k = 1}^n f(x_k)$ for every integer $n \geq 1$, then $I = \int_a^b f(x) dx$. 
 
+*** Theorem 1.14
+
+Assume $f$ is decreasing on $[a, b]$. Let $x_k = a + k \frac{b - a}{n}$ for $k = 0, 1, ..., n$. If $I$ is any number which satisfies the inequalities 
+$\frac{b - a}{n} \sum_{k = 0}^{n} f(x_k) \leq I \leq \frac{b - a}{n} \sum_{k = 1}^{n - 1} f(x_k)$ for every integer $n \geq 1$, then $I = \int_a^b f(x) dx$. 
+
+** Calculation of the Integral $\int_0^b x^p dx$ when $p$ is a positive integer
+
+To illustrate the use of theorem 1.13 we shall calculate the integral $\int_0^b x^p dx$ where $b > 0$ and $p$ is any positive integer. The integral exists because the integrand is bounded and increasing on $[0, b]$. 
+
+*** Theorem 1.15 
+
+If $p$ is a positive integer and $b > 0$, we have $\int_0^b x^p dx = \frac{b^{p + 1}}{p + 1}$. 
+
+
