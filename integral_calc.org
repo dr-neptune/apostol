@@ -14,7 +14,22 @@
         tbl)
 #+end_src
 
-#+RESULTS: round-tbl
+#+BEGIN_SRC R :file plot.svg :results graphics file
+## numbers of problems
+
+## Introduction 107
+c(3, 20, 10, 10, 12, 12, 13, 4, 23) %>% reduce(`+`)
+
+## Concepts of Integral Calculus 71
+c(12, 6, 8, 17, 28) %>% reduce(`+`)
+
+## Applications of Integration 142
+c(21, 34, 15, 18, 9, 24, 21) %>% reduce(`+`)
+
+## Continuous Functions 78
+c(33, 23, 6, 8, 8) %>% reduce(`+`)
+#+END_SRC
+
 
 This chapter presents the Integral and some of its basic properties. In order to do this, we must have some acquaintance with functions. 
 
@@ -444,4 +459,18 @@ To illustrate the use of theorem 1.13 we shall calculate the integral $\int_0^b 
 
 If $p$ is a positive integer and $b > 0$, we have $\int_0^b x^p dx = \frac{b^{p + 1}}{p + 1}$. 
 
+** The Basic Properties of the Integral 
+
+*** Theorem 1.16 : Linearity with respect to the Integrand 
+
+If both $f$ and $g$ are integrable on $[a, b]$, so is $c_1 f + c_2 g$ for every pair of constants $c_1$, $c_2$. Furthermore we have 
+
+$\int_a^b [c_1 f(x) + c_2 g(x)] dx = c_1 \int_a^b f(x) dx + c_2 \int_a^b g(x) dx$
+
+ 
+By induction we can generalize the linearity property as follows: 
+
+If $f_1, ..., f_n$ are integrable on $[a, b]$, then so is $c_1 f_1 + .... + c_n f_n$ for all real $c_1, ..., c_n$, and 
+
+$\int_a^b \sum_{k = 1}^n c_k f_k(x) dx = \sum_{k = 1}^n c_k \int_a^b f_k(x) dx$
 
