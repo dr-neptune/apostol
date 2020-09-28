@@ -474,3 +474,4 @@ If $f_1, ..., f_n$ are integrable on $[a, b]$, then so is $c_1 f_1 + .... + c_n 
 
 $\int_a^b \sum_{k = 1}^n c_k f_k(x) dx = \sum_{k = 1}^n c_k \int_a^b f_k(x) dx$
 
+proving the properties of integrals as they are revealed. 
