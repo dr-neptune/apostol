@@ -496,3 +496,6 @@ If both $f$ and $g$ are integrable on $[a, b]$, and if $g(x) \leq f(x)$ for ever
 
 $\int_a^b g(x) dx \leq \int_a^b f(x) dx$
 
+** Integration of Polynomials 
+
+
