@@ -474,4 +474,25 @@ If $f_1, ..., f_n$ are integrable on $[a, b]$, then so is $c_1 f_1 + .... + c_n 
 
 $\int_a^b \sum_{k = 1}^n c_k f_k(x) dx = \sum_{k = 1}^n c_k \int_a^b f_k(x) dx$
 
-proving the properties of integrals as they are revealed. 
+*** Theorem 1.17 : Additivity with respect to the Interval of Integration 
+
+If two of the following three integrals exists, the third also exists, and we have 
+
+$\int_a^b f(x) dx + \int_b^c f(x)dx = \int_a^c f(x) dx$
+
+*** Theorem 1.18 : Invariance Under Translation
+
+If $f$ is integrable on $[a, b]$, then for every real $c$ we have $\int_a^b f(x) dx = \int_{a + c}^{b + c} f(x - c) dx$
+
+*** Theorem 1.19 : Expansion or Contaction of the Interval of Integration 
+
+If $f$ is integrable on $[a, b]$, then for every real $k \neq 0$, we have 
+
+$\int_a^b f(x) dx = \frac{1}{k} \int_{ka}^{kb} f(\frac{x}{k}) dx$ 
+
+*** Theorem 1.20 : Comparison Theorem 
+
+If both $f$ and $g$ are integrable on $[a, b]$, and if $g(x) \leq f(x)$ for every $x \in [a, b]$, then we have 
+
+$\int_a^b g(x) dx \leq \int_a^b f(x) dx$
+
