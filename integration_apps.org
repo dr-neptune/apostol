@@ -1,0 +1,52 @@
+* Some Applications of Integration
+:PROPERTIES:
+:header-args: :session R-session :results output value table :colnames yes
+:END:
+
+#+NAME: round-tbl
+#+BEGIN_SRC emacs-lisp :var tbl="" fmt="%.1f"
+(mapcar (lambda (row)
+          (mapcar (lambda (cell)
+                    (if (numberp cell)
+                        (format fmt cell)
+                      cell))
+                  row))
+        tbl)
+#+end_src
+
+** Introduction 
+
+In this chapter, we will show that the areas of more general regions can also be expressed as integrals. We will also discuss concepts like volume, work, averages. Then we will finish up with a study of properties of functions defined by integrals. 
+
+** The Area of a Region Between Two Graphs Expressed as an Integral 
+
+*** Theorem 2.1
+
+Assume $f$ and $g$ are integrable and satisfy $f \leq g$ on $[a, b]$. Then the region $S$ between their graphs is measurable and its area $a(S)$ is given by the integral $a(S) = \int_a^b [g(x) - f(x)] dx$ 
+
+** Worked Examples
+
+In these, I am just going to write down the things I think will be useful. 
+
+*Example 2:*
+
+In examples where the interval $[a, b]$ can be broken up into a finite number of subintervals such that either $f \leq g$ or $g \leq f$ in each subinterval, our formula above becomes $a(S) = \int_a^b |g(x) - f(x)| dx$ 
+
+*Example 3:*
+
+The area of a disk of radius $r$ is $r^2$ times the area of a unit disk
+
+*** Definition $\pi$
+
+We define the number $\pi$ to be the area of a unit disk
+
+Thus, $A(r) = \pi r^2$
+
+*Example 4:*
+
+Let $f$ be non-negative and integrable on $[a, b]$, and let $S$ be its ordinate set. If we apply a similarity transformation with a positive factor $k$, then $kS$ is the ordinate set of a new function, say $g$, over the interval $[ka, kb]$. A point $(x, y)$ is on the graph of $g$ iff the point $(x/k, y/k)$ is on the graph of $f$. Hence $y/k = f(x/k)$, and so $y = k f(x/k)$. In other words, the new function $g$ is related to $f$ by the formula $g(x) = k f(\frac{x}{k})$ for each $x$ in $[ka, kb]$. Therefore, the area of $kS$ is given by
+
+$a(kS) = \int_{ka}^{kb} g(x) dx = k \int_{ka}^{kb} f(\frac{x}{k}) dx = k^2 \int_a^b f(x) dx = k^2a(S)$
+
+ 
+
