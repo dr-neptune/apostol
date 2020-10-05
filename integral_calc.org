@@ -30,7 +30,6 @@ c(21, 34, 15, 18, 9, 24, 21) %>% reduce(`+`)
 c(33, 23, 6, 8, 8) %>% reduce(`+`)
 #+END_SRC
 
-
 This chapter presents the Integral and some of its basic properties. In order to do this, we must have some acquaintance with functions. 
 
 ** The Basic Ideas of Cartesian Geometry 
@@ -502,4 +501,5 @@ Generally, to compute the integral of any polynomial we integrate term by term:
 
 $\int_a^b \sum_{k = 0}^n c_k x^k dx = \sum_{k = 0}^n c_k \int_a^b x^k dx = \sum_{k = 0}^n c_k \frac{b^{k + 1} - a^{k + 1}}{k + 1}$ 
 
-on 22 part b
+
+on problem 25
