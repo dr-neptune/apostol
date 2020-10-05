@@ -501,5 +501,3 @@ Generally, to compute the integral of any polynomial we integrate term by term:
 
 $\int_a^b \sum_{k = 0}^n c_k x^k dx = \sum_{k = 0}^n c_k \int_a^b x^k dx = \sum_{k = 0}^n c_k \frac{b^{k + 1} - a^{k + 1}}{k + 1}$ 
 
-
-on problem 25
