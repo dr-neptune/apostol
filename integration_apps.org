@@ -48,5 +48,12 @@ Let $f$ be non-negative and integrable on $[a, b]$, and let $S$ be its ordinate 
 
 $a(kS) = \int_{ka}^{kb} g(x) dx = k \int_{ka}^{kb} f(\frac{x}{k}) dx = k^2 \int_a^b f(x) dx = k^2a(S)$
 
- 
+ *Example 5:*
+
+Ordinarily we use the integral to calculate areas, but sometimes we can use our knowledge of area to calculate integrals. 
+
+*** Theorem 2.2
+
+For $a > 0, b > 0$ and $n$ a positive integer, we have $\int_a^b x^{1/n} dx = \frac{b^{1 + \frac{1}{n}} - a^{1 + \frac{1}{n}}}{1 + \frac{1}{n}}$
+
 
