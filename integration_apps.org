@@ -72,7 +72,7 @@ If two functions $sin$ and $cos$ satisfy properties 1 through 4, then they also 
 a. Pythagorean Identity: $sin^2x + cos^2x = 1$ for all $x$ 
 b. Special Values: $sin 0 = cos \frac{\pi}{2} = sin \pi = 0$ 
 c. Even and Odd Properties: The cosine is an even function and the sine is an odd function. That is, for all x we have $cos(-x) = cos(x)$, $sin(-x) = - sin(x)$
-d. Corelations: For all x, we have $sin(\frac{\pi}{2} + x) = cos(x)$, $cos(\frac{\pi}{2} + x) = -sin(x)$ 
+d. Co-relations: For all x, we have $sin(\frac{\pi}{2} + x) = cos(x)$, $cos(\frac{\pi}{2} + x) = -sin(x)$ 
 e. Periodicity: For all x, we have $sin(x + 2\pi) = sin(x)$, $cos(x + 2\pi) = cos(x)$ 
 f. Addition Formulas: For all $x$ and $y$, we have $cos(x + y) = cos(x)cos(y) - sin(x)sin(y)$ and $sin(x + y) = cos(x)sin(y) + sin(x)cos(y)$ 
 g. Difference Formulas: For all $a$ and $b$, we have $sin(a) - sin(b) = 2 sin \frac{a - b}{2} cos \frac{a + b}{2}$ and $cos(a) - cos(b) = -2 sin\frac{a - b}{2} sin \frac{a + b}{2}$
