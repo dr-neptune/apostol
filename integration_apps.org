@@ -58,4 +58,23 @@ For $a > 0, b > 0$ and $n$ a positive integer, we have $\int_a^b x^{1/n} dx = \f
 
 ** The Trigonometric Functions 
 
+*** Definition: Fundamental Properties of the Sine and Cosine 
+
+1. Domain of Definition: The sine and cosine functions are defined everywhere on the real line
+2. Special Values: We have $cos(0) = sin \frac{1}{2}\pi = 1$, $cos(\pi) = -1$
+3. Cosine of a Difference: For all $x$ and $y$, we have $cos(y - x) = cos(y) cos(x) + sin(y) sin(x)$
+4. Fundamental Inequalities: For $0 < x < \frac{1}{2}\pi$, we have $0 < cos(x) < \frac{sin(x)}{x} < \frac{1}{cos(x)}$
+
+*** Theorem 2.3
+
+If two functions $sin$ and $cos$ satisfy properties 1 through 4, then they also satisfy the following properties: 
+
+a. Pythagorean Identity: $sin^2x + cos^2x = 1$ for all $x$ 
+b. Special Values: $sin 0 = cos \frac{\pi}{2} = sin \pi = 0$ 
+c. Even and Odd Properties: The cosine is an even function and the sine is an odd function. That is, for all x we have $cos(-x) = cos(x)$, $sin(-x) = - sin(x)$
+d. Corelations: For all x, we have $sin(\frac{\pi}{2} + x) = cos(x)$, $cos(\frac{\pi}{2} + x) = -sin(x)$ 
+e. Periodicity: For all x, we have $sin(x + 2\pi) = sin(x)$, $cos(x + 2\pi) = cos(x)$ 
+f. Addition Formulas: For all $x$ and $y$, we have $cos(x + y) = cos(x)cos(y) - sin(x)sin(y)$ and $sin(x + y) = cos(x)sin(y) + sin(x)cos(y)$ 
+g. Difference Formulas: For all $a$ and $b$, we have $sin(a) - sin(b) = 2 sin \frac{a - b}{2} cos \frac{a + b}{2}$ and $cos(a) - cos(b) = -2 sin\frac{a - b}{2} sin \frac{a + b}{2}$
+h. Monotonicity: In the interval $[0, \frac{\pi}{2}]$, the sine is strictly increasing an the cosine is strictly decreasing
 
