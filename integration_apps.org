@@ -56,4 +56,6 @@ Ordinarily we use the integral to calculate areas, but sometimes we can use our 
 
 For $a > 0, b > 0$ and $n$ a positive integer, we have $\int_a^b x^{1/n} dx = \frac{b^{1 + \frac{1}{n}} - a^{1 + \frac{1}{n}}}{1 + \frac{1}{n}}$
 
+** The Trigonometric Functions 
+
 
