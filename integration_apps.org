@@ -78,3 +78,19 @@ f. Addition Formulas: For all $x$ and $y$, we have $cos(x + y) = cos(x)cos(y) - 
 g. Difference Formulas: For all $a$ and $b$, we have $sin(a) - sin(b) = 2 sin \frac{a - b}{2} cos \frac{a + b}{2}$ and $cos(a) - cos(b) = -2 sin\frac{a - b}{2} sin \frac{a + b}{2}$
 h. Monotonicity: In the interval $[0, \frac{\pi}{2}]$, the sine is strictly increasing an the cosine is strictly decreasing
 
+Further properties of the sine and cosine function are discussed in the next set of exercises. Two formulas that are particularly useful in calculus are the double-angle or duplication formulas: 
+
+- $sin(2x) = 2 sin(x) cos(x)$
+- $cos(2x) = cos^2(x) - sin^2(x) = 1 - 2 sin^2(x)$
+
+** Integration Formulas for the Sine and Cosine
+
+The monotonicity properties (h), co-relations (d), and periodicity (e) properties show that the sine and cosine functions are piecewise monotonic on every interval. Therefore, by repeated use of theorem 1.12 (If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is integrable on $[a, b]$), we see that the sine and cosine are integrable on every finite interval. Next we shall calculute their integrals by applying theorem 1.14 (Assume $f$ is decreasing on $[a, b]$. Let $x_k = a + k \frac{b - a}{n}$ for $k = 0, 1, ..., n$. If $I$ is any number which satisfies the inequalities 
+$\frac{b - a}{n} \sum_{k = 0}^{n} f(x_k) \leq I \leq \frac{b - a}{n} \sum_{k = 1}^{n - 1} f(x_k)$ for every integer $n \geq 1$, then $I = \int_a^b f(x) dx$.)
+
+This makes use of the following inequalities:
+
+*** Theorem 2.4
+
+If $0 < a < \frac{\pi}{2}$ and $n \geq 1$, we have $\frac{a}{n} \sum_{k = 1}^{n} cos(\frac{ka}{n}) < sin(a) < \frac{a}{n} \sum_{k = 0}^{n - 1} cos(\frac{ka}{n})$
+
