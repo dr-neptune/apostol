@@ -94,3 +94,4 @@ This makes use of the following inequalities:
 
 If $0 < a < \frac{\pi}{2}$ and $n \geq 1$, we have $\frac{a}{n} \sum_{k = 1}^{n} cos(\frac{ka}{n}) < sin(a) < \frac{a}{n} \sum_{k = 0}^{n - 1} cos(\frac{ka}{n})$
 
+still trying to figure out this proof 
