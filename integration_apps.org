@@ -94,4 +94,21 @@ This makes use of the following inequalities:
 
 If $0 < a < \frac{\pi}{2}$ and $n \geq 1$, we have $\frac{a}{n} \sum_{k = 1}^{n} cos(\frac{ka}{n}) < sin(a) < \frac{a}{n} \sum_{k = 0}^{n - 1} cos(\frac{ka}{n})$
 
-still trying to figure out this proof 
+
+*** Theorem 2.5 
+
+If two functions $sin$ and $cos$ satisfy the fundamental properties 1 through 4, then for every real $a$ we have 
+
+$\int_0^a cos(x) dx = sin(a)$, $\int_0^a sin(x) dx = 1 - cos(a)$
+
+
+General Formulas: 
+
+- $\int_a^b cos(x) dx = sin(b) - sin(a)$
+- $\int_a^b sin(x) dx = -(cos(b) - cos(a))$
+- $\int_a^b cos(cx) dx = \frac{1}{c} \int_{ac}^{bc} cos(x) dx = \frac{1}{c} [sin(bc) - sin(ac)]$
+- $\int_a^b sin(cx) dx = \frac{1}{c} \int_{ac}^{bc} sin(x) dx = \frac{1}{c} [cos(ac) - cos(bc)]$
+
+** A Geometric Description of the Sine and Cosine Functions
+
+
