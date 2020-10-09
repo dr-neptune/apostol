@@ -111,4 +111,6 @@ General Formulas:
 
 ** A Geometric Description of the Sine and Cosine Functions
 
++ The measure of an angle $AOP$ is $x$ radians if $\frac{x}{2}$ is the area of the sector $AOP$ cut from a unit circular disk. 
 
+on exercises
