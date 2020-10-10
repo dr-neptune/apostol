@@ -113,4 +113,4 @@ General Formulas:
 
 + The measure of an angle $AOP$ is $x$ radians if $\frac{x}{2}$ is the area of the sector $AOP$ cut from a unit circular disk. 
 
-on exercise 5b
+on exercise 11
