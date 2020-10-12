@@ -109,8 +109,13 @@ General Formulas:
 - $\int_a^b cos(cx) dx = \frac{1}{c} \int_{ac}^{bc} cos(x) dx = \frac{1}{c} [sin(bc) - sin(ac)]$
 - $\int_a^b sin(cx) dx = \frac{1}{c} \int_{ac}^{bc} sin(x) dx = \frac{1}{c} [cos(ac) - cos(bc)]$
 
+Orthogonality Relations: 
+- $\int_0^{2 \pi} sin(nx)cos(mx) dx = \int_0^{2 \pi} sin(nx)sin(mx) dx = \int_0^{2 \pi} cos(nx)cos(mx) dx = 0$
+- $\int_0^{2 \pi} sin^2(nx) dx = \int_0^{2 \pi} cos^2 (nx) dx = \pi$ if $n \neq 0$
+
+
 ** A Geometric Description of the Sine and Cosine Functions
 
 + The measure of an angle $AOP$ is $x$ radians if $\frac{x}{2}$ is the area of the sector $AOP$ cut from a unit circular disk. 
 
-on exercise 31, revisit 30 
+on exercise 33, revisit 30
