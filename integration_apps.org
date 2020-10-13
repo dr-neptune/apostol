@@ -118,4 +118,8 @@ Orthogonality Relations:
 
 + The measure of an angle $AOP$ is $x$ radians if $\frac{x}{2}$ is the area of the sector $AOP$ cut from a unit circular disk. 
 
-on exercise 33, revisit 30
+** Polar Coordinates
+
+We can also locate points in the plane with polar coordinates. The two numbers $r$ and $\theta$ are called the polar coordinates of $P$.
+
+They are related to the rectangular coordinates $x = rcos(\theta)$, $y = rsin(\theta)$
