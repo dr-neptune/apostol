@@ -142,4 +142,4 @@ Let $R$ denote the radial set of a non-negative function $f$ over an interval $[
 
 $a(R) = \frac{1}{2} \int_a^b f^2(\theta) d\theta$
 
-On exercise 11
+On exercise 15
