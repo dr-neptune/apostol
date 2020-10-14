@@ -123,3 +123,22 @@ Orthogonality Relations:
 We can also locate points in the plane with polar coordinates. The two numbers $r$ and $\theta$ are called the polar coordinates of $P$.
 
 They are related to the rectangular coordinates $x = rcos(\theta)$, $y = rsin(\theta)$
+
+The radial distance $r$ is uniquely determined, $r = \sqrt{x^2 + y^2}$, but the polar angle $\theta$ is determined only up to integer multiples of $2 \pi$.
+
+** The Integral for Area in Polar Coordinates
+
+Let $f$ be a non-negative function defined on an interval $[a, b]$, where $0 \leq b - a \leq 2\pi$. The set of all points with polar coordinates $(r, \theta)$ satisfy the inequalities $0 \leq r \leq f(\theta)$, $a \leq \theta \leq b$ is called the *radial set* of $f$ over $[a, b]$. 
+
+If $f$ is constant on $[a, b]$, its radial set is a circular sector subtending an angle of $b - a$ radians. Over each of the $n$ open subintervals $(\theta_{k - 1}, \theta_k)$ of $[a, b]$ in which $s$ is constant, say $s(\theta) = s_k$, the graph of $s$ in polar coordinates is the circular arc of radius $s_k$, and its radial set is a circular sector subtending an angle of $\theta_k - \theta_{k - 1}$ radians. Because of the way we have defined angular measure, the area of this sector is $\frac{1}{2}(\theta_{k} - \theta_{k - 1})s_k^2$. Since $b - a \leq 2\pi$, none of these sectors overlap, so by additivity, the area of the radial set of $s$ over the full interval $[a, b]$ is given by
+
+$a(S) =  \frac{1}{2} \sum_{k = 1}^n s_k^2 (\theta_k - \theta_{k - 1}) = \frac{1}{2} \int_a^b s^2(\theta) d\theta$
+
+Thus for step functions, the area of a radial set has been expressed as an integral. Now we show that this integral formula holds more generally:
+
+*** Theorem 2.6
+
+Let $R$ denote the radial set of a non-negative function $f$ over an interval $[a, b]$, where $0 \leq b - a \leq 2 \pi$, and assume that $R$ is measurable. If $f^2$ is integrable on $[a, b]$ the area of $R$ is given by the integral
+
+$a(R) = \frac{1}{2} \int_a^b f^2(\theta) d\theta$
+
