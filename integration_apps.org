@@ -150,7 +150,19 @@ We assume there exist certain sets $S$ of points in three-dimensional space, whi
 
 We assume there exists a class $\mathcal{A}$ of solids and a set function $v$, whose domain is $\mathcal{A}$, with the following properties: 
 
-1. Non-negative Property: For each set $S$ in $\mathcal{A}$, we have $v(S) \geq 0$
-2. Additive Property:
+1. Non-negative Property: For each set $S$ in $\mathcal{A}$, we have $v(S) \geq 0$ 
+2. Additive Property: If $S$ and $T$ are in $\mathcal{A}$, then $S \cup T$ and $S \cap T$ are in $\mathcal{A}$, and we have $v(S \cup T) = v(S) + v(T) - v(S \cap T)$
+3. Difference Property: If $S$ and $T$ are in $\mathcal{A}$ with $S \subseteq T$, then $T - S$ is in $\mathcal{A}$, and we have $v(T - S) = v(T) - v(S)$.
+   - This also implies the monotone property: $v(S) \leq v(T)$ for sets $S, T \in \mathcal{A}$ with $S \subseteq T$ 
+   - The monotone property shows that every bounded plane set $S \in \mathcal{A}$ has zero volume, where a plane set is bounded if it is a subset of some square in the plane 
+4. Cavalieri's Principle: If $S$ and $T$ are two Cavalieri solids in $\mathcal{A}$ with $a(S \cap F) \leq a(T \cap F)$ for every plane $F$ perpendicular to a given line, then $v(S) \leq v(T)$
+5. Choice of Scale: Every box $B$ is in $\mathcal{A}$. If the edges of $B$ have lengths $a, b, c$, then $v(B) = abc$.
+6. Every convex set is in $\mathcal{A}$
 
-start from the top!
+*** Theorem 2.7
+
+Let $R$ be a Cavalieri solid in $\mathcal{A}$ with a cross-sectional area function $a_R$ which is integrable on an interval $[a, b]$ and zero outside $[a, b]$. Then the volume of $R$ is equal to the integral of the cross-sectional area:
+
+$v(R) = \int_a^b a_R (u) du$
+
+
