@@ -142,4 +142,15 @@ Let $R$ denote the radial set of a non-negative function $f$ over an interval $[
 
 $a(R) = \frac{1}{2} \int_a^b f^2(\theta) d\theta$
 
-On exercise 15
+** Application of Integration to the Calculation of Volume
+
+We assume there exist certain sets $S$ of points in three-dimensional space, which we call measurable sets, and a set function $v$, called the volume of $S$. We use the symbol $\mathcal{A}$ to denote the class of all measurable sets in 3-dimensional space, and we call each set $S$ in $\mathcal{A}$ a solid. 
+
+*** Axiomatic Definition of Volume
+
+We assume there exists a class $\mathcal{A}$ of solids and a set function $v$, whose domain is $\mathcal{A}$, with the following properties: 
+
+1. Non-negative Property: For each set $S$ in $\mathcal{A}$, we have $v(S) \geq 0$
+2. Additive Property:
+
+start from the top!
