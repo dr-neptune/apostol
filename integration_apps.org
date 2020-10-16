@@ -167,8 +167,8 @@ $v(R) = \int_a^b a_R (u) du$
 
 *** Example: Volume of a Solid of Revolution 
 
-Let $f$ be a function which is non-negative and integrable on the interval $[a, b]$. If the ordinate set of this function is revolved about the x-axis, it sweeps out a solid of revolution. Each cross section cut by a plane perpendicular to the x-axis is a circular disk. The area of the circular disk cut at the point $x$ is $\pi f^2 (x)$, where $f^2(x)$. Therefore, by theorem 2.7, the volume of the solid (if the solid is in $\mathcal{A}$) is equal to the integral $\int_a^b \pi f^2(x) dx$, if the integral exists.
+Let $f$ be a function which is non-negative and integrable on the interval $[a, b]$. If the ordinate set of this function is revolved about the x-axis, it sweeps out a solid of revolution. Each cross section cut by a plane perpendicular to the x-axis is a circular disk. The area of the circular disk cut at the point $x$ is $\pi f^2 (x)$. Therefore, by theorem 2.7, the volume of the solid (if the solid is in $\mathcal{A}$) is equal to the integral $\int_a^b \pi f^2(x) dx$, if the integral exists.
 
 More generally, suppose we have two non-negative functions $f$ and $g$ which are integrable on an interval $[a, b]$ and satisfy $f \leq g$ on $[a, b]$. When the region between their graphs is rotated about the x-axis, it sweeps out a solid of revoltion such that each cross section cut by a plane perpendicular to the x-axis at the point x is an annulus (a region bounded by two concentric circles) with area $\pi g^2(x) - \pi f^2(x)$. Therefore if $g^2 - f^2$ is integrable, the volume of such a solid (if the solid is in $\mathcal{A}$) is given by the integral $\int_a^b \pi[g^2(x) - f^2(x)] dx$
 
-on problem 1
+on problem 7
