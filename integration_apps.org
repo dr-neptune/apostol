@@ -171,4 +171,21 @@ Let $f$ be a function which is non-negative and integrable on the interval $[a, 
 
 More generally, suppose we have two non-negative functions $f$ and $g$ which are integrable on an interval $[a, b]$ and satisfy $f \leq g$ on $[a, b]$. When the region between their graphs is rotated about the x-axis, it sweeps out a solid of revoltion such that each cross section cut by a plane perpendicular to the x-axis at the point x is an annulus (a region bounded by two concentric circles) with area $\pi g^2(x) - \pi f^2(x)$. Therefore if $g^2 - f^2$ is integrable, the volume of such a solid (if the solid is in $\mathcal{A}$) is given by the integral $\int_a^b \pi[g^2(x) - f^2(x)] dx$
 
-on problem 18d
+** Application of Integration to the Concept of Work
+
+Work is a measure of the energy expended by a force in moving a particle from one point to another. 
+
+*** Fundamental Properties of Work
+
+Let $W_\alpha (f)$ denote the work done by a force function $f$ in moving a particle from $a$ to $b$. Then work has the following properties: 
+
+1. Additive Property: If $a < c < b$, then $W_a^b (f) = W_a^c (f) + W_c^b (f)$
+   We can extend it by induction s.t. if $a = x_0 < x_1 < ... < x_n = b$, then $W_a^b = \sum_{k = 1}^b W_k$
+2. Monotone Property: If $f \leq g$ on $[a, b]$, then $W_a^b(f) \leq W_a^b(g)$. That is, a greater force does greater work.
+3. Elementary Formula: If $f$ is constant, say $f(x) = x$ for all $x$ in the open interval $(a, b)$, then $W_a^b(f) = c \cdot (b - a)$
+
+*** Theorem 2.8
+
+Suppose work has been defined for a class of force functions $f$ in such a way that it satisfies properties $1, 2, 3$. Then the work done by an integrable force function $f$ in moving a particle from $a$ to $b$ is equal to the integral of $f$, $W_a^b(f) = \int_a^b f(x) dx$
+
+on exercise 5 
