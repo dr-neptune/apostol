@@ -171,4 +171,4 @@ Let $f$ be a function which is non-negative and integrable on the interval $[a, 
 
 More generally, suppose we have two non-negative functions $f$ and $g$ which are integrable on an interval $[a, b]$ and satisfy $f \leq g$ on $[a, b]$. When the region between their graphs is rotated about the x-axis, it sweeps out a solid of revoltion such that each cross section cut by a plane perpendicular to the x-axis at the point x is an annulus (a region bounded by two concentric circles) with area $\pi g^2(x) - \pi f^2(x)$. Therefore if $g^2 - f^2$ is integrable, the volume of such a solid (if the solid is in $\mathcal{A}$) is given by the integral $\int_a^b \pi[g^2(x) - f^2(x)] dx$
 
-on problem 15
+on problem 18d
