@@ -188,4 +188,37 @@ Let $W_\alpha (f)$ denote the work done by a force function $f$ in moving a part
 
 Suppose work has been defined for a class of force functions $f$ in such a way that it satisfies properties $1, 2, 3$. Then the work done by an integrable force function $f$ in moving a particle from $a$ to $b$ is equal to the integral of $f$, $W_a^b(f) = \int_a^b f(x) dx$
 
-on exercise 5 
+** Average Value of a Function
+
+*** Definition: Arithmetic Mean
+
+If $a_1, ..., a_n$ are $n$ real numbers, their arithmetic mean $\bar{a}$ is defined by $\frac{1}{n}\sum_{k = 1}^n a_k$ and if the numbers $a_k$ are the values of a function $f$ at $n$ distinct points, say $a_k = f(x_k)$, then the number $\frac{1}{n}\sum_{k = 1}^n f(x_k)$ is the arithmetic mean of the function values $f(x_1), ..., f(x_n)$. 
+
+ 
+*** Definition of Average Value of a Function on an Interval
+
+If $f$ is integrable on an interval $[a, b]$, we define $A(f)$, the average value of $f$ on $[a, b]$, by the formula: 
+
+$A(f) = \frac{1}{b - a}\int_a^b f(x) dx$ 
+
+*** Definition for Weighted Means
+
+If $w_1, ..., w_n$ are $n$ non-negative numbers (called weights), not all zero, the weighted arithmetic mean $\bar{a}$ of $a_1, .., a_n$ is defined by the formula $\frac{\sum_{k = 1}^n w_k a_k}{\sum_{k = 1}^n w_k}$
+
+When the weights are equal, this reduces to the ordinary arithmetic mean. The extension of this concept to integral functions is given by the formula $A(f) = \frac{\int_a^b w(x)f(x) dx}{\int_a^b w(x) dx}$
+
+*** Definition: Center of Mass
+
+$\bar{x} = \frac{\int_0^a x \rho(x) dx}{\int_0^a \rho (x) dx}$, where the numerator is the first moment
+
+*** Definition: Radius of Gyration
+
+$r^2 = \frac{\int_0^a x^2 \rho(x) dx}{\int_0^a \rho(x) dx}$, where the numerator is the second moment or the moment of inertia 
+
+Weighted averagese like these two above also play a role in probability, where the concepts of expectation and variance play the same role as center of mass and moment of inertia. 
+
+
+
+
+
+
