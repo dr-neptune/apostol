@@ -218,4 +218,4 @@ $r^2 = \frac{\int_0^a x^2 \rho(x) dx}{\int_0^a \rho(x) dx}$, where the numerator
 Weighted averagese like these two above also play a role in probability, where the concepts of expectation and variance play the same role as center of mass and moment of inertia. 
 
 
-on exercise 15b!
+on exercise 18
