@@ -215,7 +215,47 @@ $\bar{x} = \frac{\int_0^a x \rho(x) dx}{\int_0^a \rho (x) dx}$, where the numera
 
 $r^2 = \frac{\int_0^a x^2 \rho(x) dx}{\int_0^a \rho(x) dx}$, where the numerator is the second moment or the moment of inertia 
 
-Weighted averagese like these two above also play a role in probability, where the concepts of expectation and variance play the same role as center of mass and moment of inertia. 
+Weighted averages like these two above also play a role in probability, where the concepts of expectation and variance play the same role as center of mass and moment of inertia. 
+
+** The Integral as a function of the Upper Limit. Indefinite Integrals
+
+In this section we assume that $f$ is a function such that the integral $\int_a^x f(t) dt$ exists for each $x \in [a, b]$. We keep $a$ and $f$ fixed and study this integral as a function of $x$. We denote the value of the integral by $A(x) = \int_a^x f(t) dt$ if $a \leq x \leq b$.
+
+The function $A$ is sometimes referred to as an indefinite integral of $f$, and it is said to be obtained from $f$ by integration.
+
+Different values of $a$ lead to different functions $A$. 
+
+If we define a different lower limit
+
+$F(x) = \int_c^x f(t) dt$
+
+then the additive property tells us that $A(x) - F(x) = \int_a^x f(t) dt - \int_c^x f(t) dt = \int_a^c f(t) dt$, and hence the difference $A(x) - F(x)$ is independent of $x$. Therefore, any two indefinite integrals of the same function differ only by a constant (the constant depends on the choice of $a$ and $c$).
+
+In general, if $F(x) = \int_c^x f(t) dt$, then we have
+
+$\int_a^b f(t) dt = \int_c^b f(t) dt - \int_c^a f(t) dt = F(b) - F(a)$
+
+Sometimes knowledge of a special property of $f$ implies a corresponding special property of the indefinite integral. For example, if $f$ is non-negative on $[a, b]$, then the indefinite integral $A$ is increasing, since we have 
+
+$A(y) - A(x) = \int_a^y f(t) dt - \int_a^x f(t) dt = \int_x^y f(t) dt \geq 0$ whenever $a \leq x \leq y \leq b$
+
+*** Convexity
+
+Suppose $f$ is increasing on $[a, b]$. We can prove that the indefinite integral $A$ has a property known as convexity. Its graph bends upwards, that is, the chord joining any two points on the graph always lies above the graph.
+
+*** Definition of a Convex Function
+
+A function $g$ is said to be convex on an interval $[a, b]$ if, for all $x, y \in [a, b]$ and for every $\alpha \in (0, 1)$, we have 
+
+$g(z) \leq \alpha g(y) + (1 - \alpha)g(x)$ where $z = \alpha y + (1 - \alpha)x$
+
+We say $g$ is concave on $[a, b]$ if the reverse inequality holds,
+
+$g(z) \geq \alpha g(y) + (1 - \alpha) g(x)$, where $z = \alpha y + (1 - \alpha) x$
 
 
-on exercise 22
+*** Theorem 2.9
+
+Let $A(x) = \int_a^x f(t) dt$. Then $A$ is convex on every interval where $f$ is increasing, and concave on every interval where $f$ is decreasing. 
+
+on exercise 1
