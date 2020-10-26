@@ -258,4 +258,4 @@ $g(z) \geq \alpha g(y) + (1 - \alpha) g(x)$, where $z = \alpha y + (1 - \alpha) 
 
 Let $A(x) = \int_a^x f(t) dt$. Then $A$ is convex on every interval where $f$ is increasing, and concave on every interval where $f$ is decreasing. 
 
-on exercise 17
+on exercise 19
