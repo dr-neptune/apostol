@@ -16,4 +16,61 @@
 
 ** Informal Description of Continuity
 
+Roughly:
+
+Suppose a function $f$ has the value $f(p)$ at a certain point $p$. Then $f$ is said to be continuous at $p$ if at every nearby point $x$ the function value $f(x)$ is close to $f(p)$.
+
+** The Definition of the Limit of a Function
+
+Let $f$ be a function defined in some open interval containing a point $p$, although we do not insist that $f$ be defined at the point $p$ itself. Let $A$ be a real number. The equation
+
+$\lim\limits_{x \to p} f(x) = A$ 
+
+It is also written without the limit symbol as such $f(x) \to A$ as $x \to p$
+
+*** Definition of Neighborhood of a Point
+
+Any open interval containing a point $p$ as its midpoint is called a neighborhood of $p$
+
+*Notation*: Since a neighborhood $N(p)$ is an open interval symmetric about $p$, it consists of all real $x$ satisfying $p - r < x < p + r$ for some $r > 0$. $N(p;r)$ consists of all points $x$ whose distance from $p$ is less than $r$.
+
+*** Definition of Limit of a Function
+
+The symbolism $\lim\limits_{x \to p} f(x) = A$ means that for every neighborhood $N_1(A)$, there is some neighborhood $N_2(p)$ such that $f(x) \in N_1(A)$ whenever $x \in N_2(p)$ and $x \neq p$.
+
+[[file:Continuous Functions/screenshot_2020-10-26_13-16-33.png]]
+
+This definition involves two neighborhoods, $N_1(A)$ and $N_2(p)$. 
+The neighborhood $N_1(A)$ is specified first; it tells us how close we wish $f(x)$ to be to the limit $A$.
+The second neighborhood $N_2(p)$ tells us how close $x$ should be to $p$ so that $f(x)$ will be within the first neighborhood $N_1(A)$. 
+The essential part is that, for *every* $N_1(A)$, no matter how small, there is some neighborhood $N_2(p)$ to satisfy our definition.
+
+The definition of limit can also be formulated in terms of the radii of the neighborhoods $N_1(A)$ and $N_2(p)$. It is customary to denote the radius of $N_1(A)$ by $\epsilon$ and the radius of $N_2(p)$ by $\delta$. The statement $f(x) \in N_1(A)$ is equivalent to the inequality $|f(x) - A| < \epsilon$, and the statement $x \in N_2(p)$, $x \neq p$, is equivalent to the inequalities $0 < |x - p| < \delta$.
+
+Therefore, we can express the definition of the limit as follows: 
+
+*** $\epsilon - \delta$ definition of a limit
+
+The symbol $\lim\limits_{x \to p} f(x) = A$ means that for every $\epsilon > 0$, there is a $\delta > 0$ such that $|f(x) - A| < \epsilon$ whenever $0 < |x - p| < \delta$.
+
+We note that the three statements:
+
+- $\lim\limits_{x \to p} f(x) = A$
+- $\lim\limits_{x \to p} (f(x) - A) = 0$
+- $\lim\limits_{x \to p} |f(x) - A| = 0$
+
+are all equivalent.
+
+*** One Sided Limits
+
+If $f(x) \to A$ as $x \to p$ through values greater than $p$, we say that $A$ is the right-hand limit of $f$ at $p$, and we indicate this by writing
+
+$\lim\limits_{x \to p+} f(x) = A$
+
+In neighborhood terminology, this means that for every neighborhood $N_1(A)$, there is some neighborhood $N_2(p)$ such that $f(x) \in N_1(A)$ whenever $x \in N_2(p)$ and $x > p$
+
+Left-hand limits are similarly defined by restricting $x$ to values less than $p$.
+
+** The Definition of Continuity of a Function
+
 
