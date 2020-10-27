@@ -73,4 +73,48 @@ Left-hand limits are similarly defined by restricting $x$ to values less than $p
 
 ** The Definition of Continuity of a Function
 
+*** Definition of Continuity of a Function at a Point
+
+A function $f$ is said to be continuous at a point $p$ if 
+
+a. $f$ is defined at $p$
+b. $\lim\limits_{x \to p} f(x) = f(p)$
+
+This can also be formulated in terms of neighborhoods. 
+
+A function $f$ is continuous at $p$ if for every neighborhood $N_1(f(p))$ there is a neighborhood $N_2(p)$ such that 
+
+$f(x) \in N_1[f(p)]$ whenever $x \in N_2(p)$
+
+In the $\epsilon , \delta$ terminology, where we specify the radii of the neighborhoods, the definition of continuity can be restated as follows: 
+
+A function $f$ is continuous at $p$ if for every $\epsilon > 0$ there is a $\delta > 0$ such that $|f(x) - f(p)| < \epsilon$ whenever $|x - p| < \delta$
+
+** The Basic Limit Theorems. More examples of Continuous Functions 
+
+*** Theorem 3.1
+
+Let $f$ and $g$ be functions such that 
+
+$\lim\limits_{x \to p} f(x) = A$, $\lim\limits_{x \to p} g(x) = B$
+
+Then we have
+
+1. $\lim\limits_{x \to p} [f(x) + g(x)] = A + B$
+
+2. $\lim\limits_{x \to p} [f(x) - g(x)] = A - B$
+
+3. $\lim\limits_{x \to p} [f(x) \cdot g(x)] = A \cdot B$
+
+4. $\lim\limits_{x \to p} [f(x) / g(x)] = A / B$ if $B \neq 0$
+
+*** Theorem 3.2
+
+Let $f$ and $g$ be continuous at a point $p$. Then the sum $f + g$, the difference $f - g$, and the product $f \cdot g$ are also continuous at $p$. The same is true of the quotient $f/g$ if $g(p) \neq 0$
+
+*** Theorem 3.3 : Squeezing Principle
+
+Suppose that $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose also that $\lim\limits_{x \to p} f(x) = \lim\limits_{x \to p} h(x) = a$. Then we also have $\lim\limits_{x \to p} g(x) = a$.
+
+
 
