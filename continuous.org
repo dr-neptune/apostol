@@ -116,5 +116,9 @@ Let $f$ and $g$ be continuous at a point $p$. Then the sum $f + g$, the differen
 
 Suppose that $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose also that $\lim\limits_{x \to p} f(x) = \lim\limits_{x \to p} h(x) = a$. Then we also have $\lim\limits_{x \to p} g(x) = a$.
 
+The squeezing principle is useful in practice because it is often possible to find squeezing functions $f$ and $h$ which are easier to deal with than $g$.
 
+*** Theorem 3.4 : Continuity of Indefinite Integrals
+
+Assume $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, and let $A(x) = \int_a^x f(t) dt$. Then the indefinite integral $A$ is continuous at each point of $[a, b]$. (At each endpoint we have one-sided continuity.)
 
