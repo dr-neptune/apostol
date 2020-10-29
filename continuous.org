@@ -123,3 +123,9 @@ The squeezing principle is useful in practice because it is often possible to fi
 Assume $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, and let $A(x) = \int_a^x f(t) dt$. Then the indefinite integral $A$ is continuous at each point of $[a, b]$. (At each endpoint we have one-sided continuity.)
 
 on exercise 18
+
+Reference for 19:
+
+$sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
+
+on exercise 22
