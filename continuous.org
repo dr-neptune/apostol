@@ -122,4 +122,4 @@ The squeezing principle is useful in practice because it is often possible to fi
 
 Assume $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, and let $A(x) = \int_a^x f(t) dt$. Then the indefinite integral $A$ is continuous at each point of $[a, b]$. (At each endpoint we have one-sided continuity.)
 
-on proof of 3.1.4
+on exercise 18
