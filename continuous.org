@@ -128,4 +128,5 @@ Reference for 19:
 
 $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
-on exercise 22
+on exercise 27
+
