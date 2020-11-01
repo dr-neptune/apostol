@@ -130,3 +130,4 @@ $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
 on exercise 27
 
+Still on exercise 27, but I wanted to add an update even though I spent the day changing my emacs config
