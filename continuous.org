@@ -128,4 +128,17 @@ Reference for 19:
 
 $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
-on exercise 31
+** Composite Functions and Continuity
+
+   In this section we learn a way to construct functions by an operation known as composition.
+
+   Let $u, v$ be any two given functions. The composite, or composition of $u$ and $v$ is defined to be the function $f$ for which $f(x) = u[v(x)]$ (read as "u of v of x"). Another notation we will use is $f = u \circ v$.
+
+   The associative law always holds for function composition, but the commutative law doesn't.
+
+
+*** 3.5 : Continuity Preserved Under Composition
+
+    Assume $v$ is continuous at $p$ and that $u$ is continuous at $q$, where $q = v(p)$. Then the composite function $f = u \circ v$ is continuous at $p$.
+
+    On proof of 3.5
