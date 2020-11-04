@@ -141,4 +141,4 @@ $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
     Assume $v$ is continuous at $p$ and that $u$ is continuous at $q$, where $q = v(p)$. Then the composite function $f = u \circ v$ is continuous at $p$.
 
-    On exercise 3
+    On exercise 18
