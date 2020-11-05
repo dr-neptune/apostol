@@ -152,4 +152,14 @@ $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
     Let $f$ be continuous at $c$ and suppose that $f(c) \neq 0$. Then there is an interval $(c - \delta, c + \delta)$ about $c$ in which $f$ has the same sign as $f(c)$.
 
-    On proof of Bolzano's Thm
+** The Intermediate Value Theorem for Continuous Functions
+
+*** Theorem 3.8 : Intermediate Value Thorem for Continuous Functions
+
+    Let $f$ be continuous at each point of a closed interval $[a, b]$. Choose two arbitrary points $x_1 < x_2$ in $[a, b]$ such that $f(x_1) \neq f(x_2)$. Then $f$ takes on every value between $f(x_1)$ and $f(x_2)$ somewhere in the interval $(x_1, x_2)$.
+
+*** Theorem 3.9
+
+    If $n$ is a positive integer and if $a > 0$, then there is exactly one positive $b$ such that $b^n = a$
+
+    On exercise 1
