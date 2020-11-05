@@ -162,4 +162,5 @@ $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
     If $n$ is a positive integer and if $a > 0$, then there is exactly one positive $b$ such that $b^n = a$
 
-    On exercise 1
+    revisit exercise 1
+    on exercise 3
