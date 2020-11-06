@@ -162,5 +162,11 @@ $sin(a) - sin(b)  = 2 sin(\frac{a + b}{2})cos(\frac{a - b}{2})$
 
     If $n$ is a positive integer and if $a > 0$, then there is exactly one positive $b$ such that $b^n = a$
 
-    revisit exercise 1
-    on exercise 6
+
+** The Process of Inversion
+
+   This method is often used to construct new functions from given ones.
+
+   Consider a general function $f$ with domain $A$ and range $B$. For each $x \in A$, there is exactly one $y \in B$ such that $y = f(x)$. For each $y \in B$, there is at least one $x \in A$ such that $f(x) = y$. Suppose that there is exactly one such $x$. Then we can define a function $g$ on $B$ as follows: $g(y) = x$ means $y = f(x)$.
+
+   The process of inversion can be applied to any function $f$ having the property that for each $y$ in the range of $f$, there is exactly one $x$ in the domain of $f$ such that $f(x) = y$ for all $y \in B$.
