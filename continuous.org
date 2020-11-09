@@ -188,4 +188,12 @@ Every continuous strictly monotonic function has an inverse. We can also describ
 
 This illustrates how the process of inversion can be applied to piecewise monotonic functions. We simply consider such a function as a union of monotonic functions and invert each monotonic piece.
 
-On exercise 6
+** The Extreme Value Theorem for Continuous Functions
+
+Let $f$ be a real-valued function defined on a set $S$ of real numbers. The function $f$ is said to have an absolute maximum on the set $S$ if there is at least one point $c \in S$ such that $f(x) \leq f(c)$ for all $x \in S$.
+
+We say that $f$ has an absolute minimum on $S$ if there is a point $d \in S$ such that $f(d) \leq f(x)$ for all $x \in S$.
+
+*** Theorem 3.11 : Boundedness Theorem for Continuous Functions
+
+Let $f$ be continuous on a closed interval $[a, b]$. Then $f$ is bounded on $[a, b]$. That is, there is a number $C \geq 0$ such that $|f(x)| \leq C$ for all $x \in [a, b]$.
