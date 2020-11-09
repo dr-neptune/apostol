@@ -209,3 +209,12 @@ Let $f$ be continuous on a closed interval $[a, b]$. Then $f$ is bounded on $[a,
 *** Theorem 3.13 : Uniform Continuity
 
     Let $f$ be continuous on a closed interval $[a, b]$. Then, for every $\epsilon > 0$ there is a partition of $[a, b]$ into a finite number of subintervals such that the span of $f$ in every subinterval is less than $\epsilon$.
+
+
+** The Integrability Theorem for Continuous Functions
+
+The small-span theorem (uniform continuity) can be used to prove that a function which is continuous on $[a, b]$ is also integrable on $[a, b]$.
+
+*** Theorem 3.14 : Integrabilitity of Continuous Functions
+
+    If a function $f$ is continuous at each point of a closed interval $[a, b]$, then $f$ is integrable on $[a, b]$.
