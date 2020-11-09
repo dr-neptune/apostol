@@ -197,3 +197,15 @@ We say that $f$ has an absolute minimum on $S$ if there is a point $d \in S$ suc
 *** Theorem 3.11 : Boundedness Theorem for Continuous Functions
 
 Let $f$ be continuous on a closed interval $[a, b]$. Then $f$ is bounded on $[a, b]$. That is, there is a number $C \geq 0$ such that $|f(x)| \leq C$ for all $x \in [a, b]$.
+
+*** Theorem 3.12 : Extreme Value Theorem for Continuous Functions
+
+    Assume $f$ is continuous on a closed interval $[a, b]$. Then there exist points $c, d \in [a, b]$ such that $f(x) = \sup f$ and $f(d) = \inf f$.
+
+    This theorem shows that if $f$ is continuous on $[a, b]$ then $\sup f$ is its absolute maximum, and $\inf f$ is its absolute minimum. Hence, by the intermediate value theorem, the range of $f$ is the closed interval $[\inf f, \sup f]$.
+
+** The Small-Span Theorem for Continuous Functions (Uniform Continuity)
+
+*** Theorem 3.13 : Uniform Continuity
+
+    Let $f$ be continuous on a closed interval $[a, b]$. Then, for every $\epsilon > 0$ there is a partition of $[a, b]$ into a finite number of subintervals such that the span of $f$ in every subinterval is less than $\epsilon$.
