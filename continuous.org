@@ -233,4 +233,4 @@ If $f$ is continous on $[a, b]$, then for some $c \in [a, b]$ we have $\int_a^b 
 
 Assume $f$ and $g$ are continuous on $[a, b]$. If $g$ never changes sign in $[a, b]$ then, for some $c \in [a, b]$, we have $\int_a^b f(x)g(x) dx = f(c) \int_a^b g(x) dx$
 
-On proof of WMVT
+on exercise 6
