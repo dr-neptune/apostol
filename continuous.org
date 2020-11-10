@@ -218,3 +218,19 @@ The small-span theorem (uniform continuity) can be used to prove that a function
 *** Theorem 3.14 : Integrabilitity of Continuous Functions
 
     If a function $f$ is continuous at each point of a closed interval $[a, b]$, then $f$ is integrable on $[a, b]$.
+
+
+** Mean-Value Theorems for Integrals of Continuous Functions
+
+
+In 2.16, we defined the average value $A(f)$ of a function $f$ over an interval $[a, b]$ to be the quotient $\int_a^b f(x) dx / (b - a)$. When $f$ is continuous, we can prove that this average value is equal to the value of $f$ at some point
+
+*** Theorem 3.15 : Mean-Value Theorem for Integrals
+
+If $f$ is continous on $[a, b]$, then for some $c \in [a, b]$ we have $\int_a^b f(x) dx = f(c)(b - a)$
+
+*** Theorem 3.16 : Weighted Mean-Value Theorem for Integrals
+
+Assume $f$ and $g$ are continuous on $[a, b]$. If $g$ never changes sign in $[a, b]$ then, for some $c \in [a, b]$, we have $\int_a^b f(x)g(x) dx = f(c) \int_a^b g(x) dx$
+
+On proof of WMVT
