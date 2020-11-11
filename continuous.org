@@ -232,5 +232,3 @@ If $f$ is continous on $[a, b]$, then for some $c \in [a, b]$ we have $\int_a^b 
 *** Theorem 3.16 : Weighted Mean-Value Theorem for Integrals
 
 Assume $f$ and $g$ are continuous on $[a, b]$. If $g$ never changes sign in $[a, b]$ then, for some $c \in [a, b]$, we have $\int_a^b f(x)g(x) dx = f(c) \int_a^b g(x) dx$
-
-on exercise 6
