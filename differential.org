@@ -1,1 +1,9 @@
 #+TITLE: Chapter 4: Differential Calculus
+
+* The Derivative of a Function
+
+** Definition of a Derivative
+
+The derivative $f'(x)$ is defined by the equation $f'(x) = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}$ provided the limit exists. The number $f'(x)$ is also called the rate of change of $f$ at $x$
+
+* The Algebra of Derivatives
