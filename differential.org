@@ -7,3 +7,18 @@
 The derivative $f'(x)$ is defined by the equation $f'(x) = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}$ provided the limit exists. The number $f'(x)$ is also called the rate of change of $f$ at $x$
 
 * The Algebra of Derivatives
+
+** Theorem 4.1
+
+Let $f$ and $g$ be two functions defined on a common interval. At each point where $f$ and $g$ have a derivative, the same is true of the sum $f + g$, the difference $f - g$, the product $f \cdot g$, and the quotient $f/g$ provided $g \neq 0$.
+
+The derivatives of these functions are given by the following formulas:
+
+- $(f + g)' = f' + g'$
+- $(f - g)' = f' - g'$
+- $(f \cdot g)' = f \cdot g' + g \cdot f'$
+- $(\frac{f}{g})' = \frac{g \cdot f' - f \cdot g'}{g^2}$ where $g(x) \neq 0$
+
+Derivatives are linear: $(c_1 f + c_2 g)' = c_1 f' + c_2 g'$, which in turn can be extended to arbitrary finite sums:  $(\sum_{i = 1}^n c_i \cdot f_i)' = \sum_{i = 1}^n c_i \cdot f_i'$
+
+On exercise 2
