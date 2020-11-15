@@ -80,7 +80,7 @@ h. Monotonicity: In the interval $[0, \frac{\pi}{2}]$, the sine is strictly incr
 
 Further properties of the sine and cosine function are discussed in the next set of exercises. Two formulas that are particularly useful in calculus are the double-angle or duplication formulas: 
 
-- $sin(2x) = 2 sin(x) cos(x)$
+- $sin(2x) = 2 sin(x) cos(x)$ 
 - $cos(2x) = cos^2(x) - sin^2(x) = 1 - 2 sin^2(x)$
 
 ** Integration Formulas for the Sine and Cosine
