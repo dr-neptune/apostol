@@ -21,4 +21,5 @@ The derivatives of these functions are given by the following formulas:
 
 Derivatives are linear: $(c_1 f + c_2 g)' = c_1 f' + c_2 g'$, which in turn can be extended to arbitrary finite sums:  $(\sum_{i = 1}^n c_i \cdot f_i)' = \sum_{i = 1}^n c_i \cdot f_i'$
 
-On exercise 36
+* Geometric Interpretation of the Derivative as a Slope
+
