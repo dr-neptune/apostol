@@ -23,4 +23,5 @@ Derivatives are linear: $(c_1 f + c_2 g)' = c_1 f' + c_2 g'$, which in turn can 
 
 * Geometric Interpretation of the Derivative as a Slope
 
-On exercise 3
+On exercise 10
+
