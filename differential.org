@@ -21,7 +21,12 @@ The derivatives of these functions are given by the following formulas:
 
 Derivatives are linear: $(c_1 f + c_2 g)' = c_1 f' + c_2 g'$, which in turn can be extended to arbitrary finite sums:  $(\sum_{i = 1}^n c_i \cdot f_i)' = \sum_{i = 1}^n c_i \cdot f_i'$
 
-* Geometric Interpretation of the Derivative as a Slope
+* The Chain Rule for Differentiating Composite Functions
 
-On exercise 16
+** Theorem 4.1 : Chain Rule
 
+Let $f$ be the composition of two functions, $u$ and $v$, say $f = u \circ v$. Suppose that both derivatives $v'(x)$ and $u'(y)$ exist, where $y = v(x)$. Then the derivative  $f'(x)$ also exists and is given by the formula $f'(x) = u'(y) \cdot v'(x)$
+
+Expressed as an equation involving functions rather than numbers, the chain rule assumes the following form: $(u \circ v)' = (u' \circ v) \cdot v'$, or $u(v)' = u'(v) \cdot v'$.  
+
+on proof of chain rule
