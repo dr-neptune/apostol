@@ -29,4 +29,7 @@ Let $f$ be the composition of two functions, $u$ and $v$, say $f = u \circ v$. S
 
 Expressed as an equation involving functions rather than numbers, the chain rule assumes the following form: $(u \circ v)' = (u' \circ v) \cdot v'$, or $u(v)' = u'(v) \cdot v'$.  
 
-on proof of chain rule
+* Applications of the Chain Rule. Related Rates and Implicit Differentiation
+
+
+
