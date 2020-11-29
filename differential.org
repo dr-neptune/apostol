@@ -31,6 +31,4 @@ Expressed as an equation involving functions rather than numbers, the chain rule
 
 * Applications of the Chain Rule. Related Rates and Implicit Differentiation
 
-on exercise 9
-
-just updating to keep the graph up. I spent all day installing nix
+on exercise 20
