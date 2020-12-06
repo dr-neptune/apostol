@@ -31,4 +31,7 @@ Expressed as an equation involving functions rather than numbers, the chain rule
 
 * Applications of the Chain Rule. Related Rates and Implicit Differentiation
 
-exercise 27!
+exercise 28!
+
+did problem 30
+
