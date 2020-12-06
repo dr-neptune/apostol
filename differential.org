@@ -31,7 +31,37 @@ Expressed as an equation involving functions rather than numbers, the chain rule
 
 * Applications of the Chain Rule. Related Rates and Implicit Differentiation
 
-exercise 28!
+  I thought these exercises would never end. Related rates are tough when they rely on implicit assumptions (physics, shapes, etc)
 
-did problem 30
+* Applications of Differentiation to Extreme Values of Functions
+
+** Definition of Relative Maximum
+
+A function $f$, defined on a set $S$, is said to have a relative maximum at a point $c \in S$ if there is some open interval $I$ containing $c$ such that $f(x) \leq f(c)$ for all $x$ which lie in $I \cap  S$. 
+
+The concept of relative minimum is similarly defined by reversing the inequality. 
+
+** Definition of Extremum 
+
+A number which is either a relative maximum or a relative minimum of a function $f$ is called an extreme value, or an extremum of $f$. 
+
+** Theorem 4.3 : Vanishing of the Derivative at an Interior Extremum
+
+Let $f$ be defined on an open interval $I$, and assume that $f$ has a relative maximum or a relative minumum at an interior point $c$ of $I$. If the derivative $f'(c)$ exists, then $f'(c) = 0$.
+
+* The Mean-Value Theorem for Derivatives
+
+The mean-value theorem for derivatives holds a position of importance in calculus because many properties of functions can easily be deduced from it. 
+
+** Theorem 4.4 : Rolle's Theorem 
+
+Let $f$ be a function which is continuous everywhere on a closed interval $[a, b]$ and has a derivative at each point of the open interval $(a, b)$. Also, assume that $f(a) = f(b)$. Then there is at least one point $c$ in the open interval $(a, b)$ such that $f'(c) = 0$.
+
+** Theorem 4.5 : Mean-Value Theorem for Derivatives 
+
+Assume that $f$ is continuous everywhere on a closed interval $[a, b]$ and has a derivative at each point of the open interval $(a, b)$. Then there is at least one interior point $c$ of $(a, b)$ for which $f(b) - f(a) = f'(c)(b - a)$
+
+** Theorem 4.6 : Cauchy's Mean-Value Formula
+
+Let $f$ and $g$ be two functions continuous on a closed interval $[a, b]$  and having derivatives in the open interval $(a, b)$. Then, for some $c$ in $(a, b)$, we have $f'(c)[g(b) - g(a)] = g'(c)[f(b) - f(a)]$
 
