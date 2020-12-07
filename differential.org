@@ -65,3 +65,6 @@ Assume that $f$ is continuous everywhere on a closed interval $[a, b]$ and has a
 
 Let $f$ and $g$ be two functions continuous on a closed interval $[a, b]$  and having derivatives in the open interval $(a, b)$. Then, for some $c$ in $(a, b)$, we have $f'(c)[g(b) - g(a)] = g'(c)[f(b) - f(a)]$
 
+* Exercises
+
+On exercise 7
