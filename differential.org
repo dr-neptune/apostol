@@ -67,4 +67,4 @@ Let $f$ and $g$ be two functions continuous on a closed interval $[a, b]$  and h
 
 * Exercises
 
-On exercise 7
+On exercise 9
