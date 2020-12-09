@@ -73,3 +73,33 @@ Assume $f$ has a derivative everywhere on the open interval $I$. Choose $a < b \
 
 * Applications of the Mean-Value Theorem to Geometric Properties of Functions
 
+The mean-value theorem may be used to deduce properties of a function from a knowledge of the algebraic sign of its derivative
+
+** Theorem 4.7
+
+Let $f$ be a function which is continuous on a closed interval $[a, b]$ and assume $f$ has a derivative at each point of the open interval $(a, b)$. Then we have
+a. If $f'(x) > 0$ for every $x \in (a, b)$, then $f$ is strictly increasing on $[a, b]$
+b. If $f'(x) < 0$ for every $x \in (a, b)$, then $f$ is strictly decreasing on $[a, b]$
+a. If $f'(x) = 0$ for every $x \in (a, b)$, then $f$ is constant throughout $[a, b]$
+
+** Theorem 4.8
+
+Assume $f$ is continuous on a closed interval $[a, b]$ and assume that the derivative $f'$ exists everywhere in the open interval $(a, b)$, except possibly at a point $c$. 
+a. If $f'(x)$ is positive for all $x < c$ and negative for all $x > c$, then $f$ has a relative maximum at $c$
+b. If $f'(x)$ is negative for all $x < c$ and positive for all $x > c$, then $f$ has a relative minimum at $c$
+
+* Second-Derivative Test for Extrema 
+
+If a function is continuous on a closed interval $[a, b]$, the extreme-value theorem tells us that it has an absolute maximum and and absolute minimum somewhere in $[a, b]$. If $f$ has a derivative at each interior point, then the only places where extrema can occur are: 
+1. At the endpoints $a, b$
+2. At those interior points $x$ where $f'(x) = 0$
+
+Points of type 2 are called *critical points* of $f$. 
+Usually the behavior of $f$ at a critical point can be determined from the algebraic sign of the derivative near $c$.
+
+** Theorem 4.9 : Second Derivative Test for an Extremum at a Critical Point
+
+Let $c$ be a critical point of $f$ in an open interval $(a, b)$; that is, assume $a < c < b$ and $f'(c) = 0$. Assume also that the second derivative $f''$ exists in $(a, b)$. Then we have the following: 
+a. If $f''$ is negative in $(a, b)$, then $f$ has a relative maximum at $c$
+b. If $f''$ is positive in $(a, b)$, then $f$ has a relative minimum at $c$
+
