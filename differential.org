@@ -67,4 +67,9 @@ Let $f$ and $g$ be two functions continuous on a closed interval $[a, b]$  and h
 
 * Exercises
 
-On exercise 9
+** Theorem : Intermediate Value Theorem for Derivatives
+
+Assume $f$ has a derivative everywhere on the open interval $I$. Choose $a < b \in I$. Then $f'$ takes on every value between $f'(a)$ and $f'(b)$ somewhere in $(a, b)$
+
+* Applications of the Mean-Value Theorem to Geometric Properties of Functions
+
