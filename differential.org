@@ -111,3 +111,51 @@ Assume $f$ is continuous on $[a, b]$ and has a derivative in the open interval $
 
 * Curve Sketching
 
+#+BEGIN_SRC R
+library(tidyverse)
+
+f <- expression(x^2 - 3*x + 2)
+f_p <- D(f, "x")
+f_dp <- D(f_p, "x")
+
+eval_exp <- function(expr, x) {
+    expr %>% deparse %>% parse_expr %>% eval
+}
+
+simple_plot <- function(expr) {
+    seq(-10, 10, by = .5) %>%
+        map(~ eval_exp(expr, .x)) %>%
+        enframe(name = "x", value = "y") %>%
+        unnest() %>%
+        ggplot(aes(x = x, y = y)) +
+        geom_line() +
+        ggtitle(expr)
+}
+
+simple_plot(f)
+
+eval_exp(f_p, 4)
+
+library(rlang)
+
+x <- 5
+(parse_expr(x = f_p))
+
+f_p %>% deparse %>% parse_expr %>% eval
+
+f %>% parse(text = .)
+f_p
+f_dp
+
+seq(-10, 10, by = .5) %>%
+    map(~ eval_exp(f, .x)) %>%
+    enframe(name = "x", value = "y") %>%
+    unnest() %>%
+    ggplot(aes(x = x, y = y)) +
+    geom_line() +
+    ggtitle(f)
+
+
+
+
+#+END_SRC
