@@ -103,3 +103,11 @@ Let $c$ be a critical point of $f$ in an open interval $(a, b)$; that is, assume
 a. If $f''$ is negative in $(a, b)$, then $f$ has a relative maximum at $c$
 b. If $f''$ is positive in $(a, b)$, then $f$ has a relative minimum at $c$
 
+If $f''$ is continuous at $c$, and if $f''(c) \neq 0$, there will be a neighborhood of $c$ in which $f''$ has the same sign as $f''(c)$. Therefore, if $f'(c) = 0$, the function $f$ has a relative maximum at $c$ if $f''(c)$ is negative, or a relative minimum if $f''(c)$ is positive.
+
+** Theorem 4.10 : Derivative Test for Convexity
+
+Assume $f$ is continuous on $[a, b]$ and has a derivative in the open interval $(a, b)$. If $f'$ is increasing on $(a, b)$, then $f$ is convex on $[a, b]$. In particular, $f$ is convex if $f''$ exists and is non-negative in $(a, b)$.
+
+* Curve Sketching
+
