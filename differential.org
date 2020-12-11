@@ -113,14 +113,14 @@ Assume $f$ is continuous on $[a, b]$ and has a derivative in the open interval $
 
 #+BEGIN_SRC R
 library(tidyverse)
+library(patchwork)
 
-f <- expression(x^2 - 3*x + 2)
+f <- expr(x^2 - 3*x + 2)
 f_p <- D(f, "x")
 f_dp <- D(f_p, "x")
 
-eval_exp <- function(expr, x) {
-    expr %>% deparse %>% parse_expr %>% eval
-}
+eval_exp <- function(expr, x) expr %>% deparse %>% parse_expr %>% eval
+
 
 simple_plot <- function(expr) {
     seq(-10, 10, by = .5) %>%
@@ -132,30 +132,31 @@ simple_plot <- function(expr) {
         ggtitle(expr)
 }
 
-simple_plot(f)
+simple_plot_overlap <- function(ls) {
+    ls %>% map(~ seq(-10, 10, by = .5) %>%
+                 map(function(.y) eval_exp(.x, .y)) %>%
+                 enframe(name = "x", value = "y") %>%
+                 unnest()) %>%
+        set_names(ls) %>% 
+        imap(~ add_column(.data = .x, "grp" = .y)) %>%
+        bind_rows() %>%
+        ggplot(aes(x = x, y = y, group = grp, color = grp)) +
+        geom_line() +
+        scale_color_viridis_d() +
+        ggtitle("f, f', f''")
+}
 
-eval_exp(f_p, 4)
-
-library(rlang)
-
-x <- 5
-(parse_expr(x = f_p))
-
-f_p %>% deparse %>% parse_expr %>% eval
-
-f %>% parse(text = .)
-f_p
-f_dp
-
-seq(-10, 10, by = .5) %>%
-    map(~ eval_exp(f, .x)) %>%
-    enframe(name = "x", value = "y") %>%
-    unnest() %>%
-    ggplot(aes(x = x, y = y)) +
-    geom_line() +
-    ggtitle(f)
-
-
-
-
+list(f, f_p, f_dp) %>%
+    list(simple_plot_overlap(.),
+         map(., ~ simple_plot(.x))) %>%
+    flatten() %>%
+    .[4:7] %>%
+    reduce(`+`)
 #+END_SRC
+
+Plotting done
+
+Now we need to develop the rest of the question
+1. find all points x such that f'(x) = 0
+2. determine those intervals in which f is monotonic
+3. determine those intervals in which f' is monotonic
