@@ -114,26 +114,86 @@ Assume $f$ is continuous on $[a, b]$ and has a derivative in the open interval $
 #+BEGIN_SRC R
 library(tidyverse)
 library(patchwork)
+library(paletteer)
+library(rlang)
 
 f <- expr(x^2 - 3*x + 2)
 f_p <- D(f, "x")
 f_dp <- D(f_p, "x")
 
+h <- expr((1 / 6) * x^2 + (1 / 12) * cos(2 * x))
+
+get_derivatives <- function(funk, iter = 0) {
+    if (funk == 0) return(0)
+    ## max out iterations for periodic functions
+    if (iter == 5) return(0)
+    else list(funk,
+              get_derivatives(D(funk, "x"),
+                              iter = iter + 1)) %>% flatten
+}
+
 eval_exp <- function(expr, x) expr %>% deparse %>% parse_expr %>% eval
 
+get_derivatives(f)
+get_derivatives(h)
+#+END_SRC
 
-simple_plot <- function(expr) {
-    seq(-10, 10, by = .5) %>%
+1. find all points x such that f'(x) = 0
+
+#+BEGIN_SRC R
+get_roots <- function(exp) {
+    if (is.numeric(exp)) return(exp)
+    f_exp <- function(x) eval(exp)
+    seq(-100, 100, by = .1) %>%
+        enframe(value = "x", name = NULL) %>%
+        mutate(y = f_exp(x),
+               root = ifelse(between(y, -.00001, .00001), TRUE, FALSE)) %>%
+        filter(root)
+}
+
+f %>% get_roots()
+f %>% get_derivatives() %>% map(get_roots)
+
+#+END_SRC
+
+2, 3. determine those intervals in which f, f' is monotonic
+
+#+BEGIN_SRC R
+get_monotonic_intervals <- function(funk) {
+    seq(-100, 100, by = .1) %>%
+        enframe(value = "x", name = NULL) %>%
+        mutate(y = eval_exp(funk, x),
+               sgn = ifelse(lead(y) > y, "up", "down"),
+               change = ifelse(sgn != lag(sgn), "change", "same") %>% ifelse(is.na(.), "same", .),
+               interval = case_when(is.na(lag(change)) ~ "begin",
+                                    lag(change) == "change" ~ "begin",
+                                    is.na(lead(change)) ~ "end",
+                                    lead(change) == "change" ~ "end",
+                                    change == "change" ~ "inflection",
+                                    TRUE ~ "interior")) %>%
+        filter(interval %in% c("begin", "end") | change == "change")
+}
+
+get_monotonic_intervals(f)
+#+END_SRC
+
+4. make a sketch of the graph of f
+
+#+BEGIN_SRC R
+## plots one function
+simple_plot <- function(expr, expr_name) {
+    seq(-100, 100, by = .5) %>%
         map(~ eval_exp(expr, .x)) %>%
         enframe(name = "x", value = "y") %>%
         unnest() %>%
         ggplot(aes(x = x, y = y)) +
-        geom_line() +
-        ggtitle(expr)
+        geom_line(color = "orange") +
+        ggtitle(expr_name)
 }
 
+## plots all the derivatives overlaying
 simple_plot_overlap <- function(ls) {
-    ls %>% map(~ seq(-10, 10, by = .5) %>%
+    ls %>% map(~ seq(-100, 100, by = .5) %>%
                  map(function(.y) eval_exp(.x, .y)) %>%
                  enframe(name = "x", value = "y") %>%
                  unnest()) %>%
@@ -142,21 +202,84 @@ simple_plot_overlap <- function(ls) {
         bind_rows() %>%
         ggplot(aes(x = x, y = y, group = grp, color = grp)) +
         geom_line() +
-        scale_color_viridis_d() +
-        ggtitle("f, f', f''")
+        scale_color_paletteer_d("nord::victory_bonds") +
+        ggtitle("f and its derivatives")
 }
 
-list(f, f_p, f_dp) %>%
-    list(simple_plot_overlap(.),
-         map(., ~ simple_plot(.x))) %>%
-    flatten() %>%
-    .[4:7] %>%
-    reduce(`+`)
+all_together <- function(deriv_list) {
+    deriv_list %>%
+        list(simple_plot_overlap(.),
+             imap(., ~ simple_plot(.x, .y))) %>%
+        flatten() %>%
+        .[(length(deriv_list) + 1):length(.)] %>%
+        reduce(`+`)
+}
+
+f %>% get_derivatives() %>% all_together()
 #+END_SRC
 
-Plotting done
+5. Do it for all the expressions
 
-Now we need to develop the rest of the question
-1. find all points x such that f'(x) = 0
-2. determine those intervals in which f is monotonic
-3. determine those intervals in which f' is monotonic
+#+BEGIN_SRC R
+list("p1" = expr(x^2 - 3 * x + 2),
+     "p2" = expr(x^3 - 4 * x),
+     "p3" = expr((x - 1)^2 * (x + 2)),
+     "p4" = expr(x^3 - 6 * x^2 + 9*x + 5),
+     "p5" = expr(2 + (x - 1)^4),
+     "p6" = expr(1 / x^2),
+     "p7" = expr(x + (1 / x^2)),
+     "p8" = expr(1 / ((x - 1) * (x - 3))),
+     "p9" = expr(x / (1 + x^2)),
+     "p10" = expr((x^2 - 4) / (x^2 - 9)),
+     "p11" = expr(sin(x)^2),
+     "p12" = expr(x - sin(x)),
+     "p13" = expr(x + cos(x)),
+     "p14" = expr((1/6) * x^2 + (1/12) * cos(2 * x))) -> pset
+
+pset %>%
+    map(get_roots)
+
+pset %>%
+    map(get_derivatives)
+#+END_SRC
+
+1. Find all points for which f'(x) = 0
+
+#+BEGIN_SRC R
+pset %>%
+    map(~ get_derivatives(.x) %>% map(get_roots))
+#+END_SRC
+
+2. Determine those intervals for which f, f' are monotonic
+
+#+BEGIN_SRC R
+## f
+pset %>%
+    map(get_monotonic_intervals)
+
+## f'
+pset %>%
+    map(get_derivatives) %>%
+    flatten() %>%
+    map(safely(get_monotonic_intervals))
+#+END_SRC
+
+4. Plot them!
+
+#+BEGIN_SRC R
+pset$p1 %>% get_derivatives() %>% all_together()
+pset$p2 %>% get_derivatives() %>% all_together()
+pset$p3 %>% get_derivatives() %>% all_together()
+pset$p4 %>% get_derivatives() %>% all_together()
+pset$p5 %>% get_derivatives() %>% all_together()
+pset$p6 %>% get_derivatives() %>% all_together()
+pset$p7 %>% get_derivatives() %>% all_together()
+pset$p8 %>% get_derivatives() %>% all_together()
+pset$p9 %>% get_derivatives() %>% all_together()
+pset$p10 %>% get_derivatives() %>% all_together()
+pset$p11 %>% get_derivatives() %>% all_together()
+pset$p12 %>% get_derivatives() %>% all_together()
+pset$p13 %>% get_derivatives() %>% all_together()
+pset$p14 %>% get_derivatives() %>% all_together()
+#+END_SRC
+
