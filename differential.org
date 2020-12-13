@@ -283,3 +283,18 @@ pset$p13 %>% get_derivatives() %>% all_together()
 pset$p14 %>% get_derivatives() %>% all_together()
 #+END_SRC
 
+* Worked Examples of Extremum Problems
+
+There are 2 simple principles which can be used to solve many extremum problems: 
+
+** Example 1: Constant Sum, Maximum Product Principle
+
+Given a positive number $S$, Prove that among the choices of positive numbers $x$ and $y$ with $x + y = S$, the product $xy$ is largest when $x = y = \frac{1}{2}S$
+
+** Example 2: Constant Product, Minimum Sum Principle
+
+Given a positive number $P$, Prove that among all choices of positive numbers $x, y$ with $xy = P$, the sum $x + y$ is smallest when $x = y = \sqrt P$
+
+* Exercises
+
+on exercise 3
