@@ -297,4 +297,4 @@ Given a positive number $P$, Prove that among all choices of positive numbers $x
 
 * Exercises
 
-on exercise 12
+on exercise 14
