@@ -297,5 +297,5 @@ Given a positive number $P$, Prove that among all choices of positive numbers $x
 
 * Exercises
 
-on exercise 17
+on exercise 18 
 
