@@ -295,6 +295,6 @@ Given a positive number $S$, Prove that among the choices of positive numbers $x
 
 Given a positive number $P$, Prove that among all choices of positive numbers $x, y$ with $xy = P$, the sum $x + y$ is smallest when $x = y = \sqrt P$
 
-* Exercises
+* Partial Derivatives
 
-on exercise 22
+  
