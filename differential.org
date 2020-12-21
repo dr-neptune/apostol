@@ -297,4 +297,16 @@ Given a positive number $P$, Prove that among all choices of positive numbers $x
 
 * Partial Derivatives
 
-  
+** Partial Derivative of $f$ with respect to $x$ at $x_0, y_0$
+
+wrt $x$: 
+
+$\frac{\partial f (x_0, y_0)}{\partial x} = \lim\limits_{h \to 0}\frac{f(x_0 + h, y_0) - f(x_0, y_0)}{h}$ 
+
+wrt $y$:
+
+$\frac{\partial f (x_0, y_0)}{\partial y} = \lim\limits_{k \to 0}\frac{f(x_0, y_0 + k) - f(x_0, y_0)}{k}$
+
+* Exercises
+
+on #7
