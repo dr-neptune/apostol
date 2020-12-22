@@ -1,2 +1,58 @@
 #+TITLE: Chapter 5: The Relation Between Integration and Differentiation
 
+* The Derivative of an Indefinite Integral. The First Fundamental Theorem of Calculus
+
+** Theorem : First Fundamental Theorem of Calculus
+
+Let $f$ be a function that is integrable on $[a, x]$ for each $x \in [a, b]$. Let $c$ be such that $a \leq c \leq b$ and define a new function $A$ as follows:
+
+$A(x) = \int_c^x f(t) dt$ if $a \leq x \leq b$
+
+Then the derivative $A'(x)$ exists at each point $x$ in the open interval $(a, b)$ where $f$ is continuous, and for such $x$ we have $A'(x) = f(x)$
+
+* The Zero-Derivative Theorem
+
+** Theorem : Zero-Derivative Theorem
+
+If $f'(x) = 0$ for each $x$ in an open interval $I$, then $f$ is constant on $I$
+
+This theorem, used in combination with the first fundamental theorem of calculus, leads to the second fundamental theorem of calculus.
+
+* Primitive Functions and the Second Fundamental Theorem of Calculus
+
+** Definition : Primitive Function
+
+A function $P$ is called a primitive (or an antiderivative) of a function $f$ on an open interval $I$ if the derivative of $P$ is $f$, that is, if $P'(x) = f(x)$ for all $x \in I$.
+
+We speak of /a/ primitive, rather than /the/ primitive, because if $P$ is a primitive of $f$, then so it $P + k$ for every constant $k$. Conversely, any two primitives $P$ and $Q$ of the same function $f$ can differ only by a constant because their difference $P - Q$ has the derivative $P'(x) - Q'(x) = f(x) - f(x) = 0$ for every $x \in I$, and hence, by the zero-derivative theorem $P - Q$ is constant on $I$. 
+
+The first fundamental theorem of calculus tells us that we can always construct a primitive of a continuous function by integration. When we combine this with the fact that two primitives of the same function can differ only by a constant, we obtain the second fundamental theorem of calculus.
+
+** Theorem : Second Fundamental Theorem of Calculus
+
+Assume $f$ is continuous on an open interval $I$, and let $P$ be any primitive of $f$ on $I$. Then for each $c$ and each $x \in I$, we have $P(x) = P(c) + \int_c^x f(t) dt$
+
+The real power of the equation above comes when we write it as $\int_c^x f(t) dt = P(x) - P(c)$
+In this form, it tells us that we can compute the value of an integral by a mere subtraction if we know a primitive P. Then the problem of evaluating an integral is transferred to another problem -- that of finding a primitive $P$ of $f$. 
+In practice, this problem is a lot easier. Every differentiation formula, when read in reverse, gives us an example of a primitive of some function $f$ and this, in turn, leads to an integration formula for this function.
+
+* Properties of a Function Deduced from Properties of its Derivative
+
+If we take the derivative on the 2nd fundamental theorem, we get
+
+$f(x) = f(c) + \int_c^x f'(t) dt$
+
+for every choice of points $x, c \in I$
+
+This formula, which expresses $f$ in terms of its derivative $f'$, enables us to deduce properties of a function from properties of its derivative. 
+
+For example: 
+
+Suppose $f'$ is continuous and non-negative on $I$. If $x > c$, then $\int_c^x f'(t) dt \geq 0$, and hence $f(x) \geq f(c)$. In other words, if the derivative is continuous and non-negative on $I$, then the function $f$ is increasing on $I$.
+
+Furthermore, by theorem 2.9 (Let $A(x) = \int_a^x f(t) dt$. Then $A$ is convex on every interval where $f$ is increasing, and concave on every interval where $f$ is decreasing) we know that if $f'$ is continuous and increasing on $I$,
+$f$ is convex on $I$. Similarly, $f$ is concave on intervals where $f'$ is continuous and decreasing. 
+
+* Exercises
+
+On exercise 16
