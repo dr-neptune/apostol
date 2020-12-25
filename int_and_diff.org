@@ -53,6 +53,26 @@ Suppose $f'$ is continuous and non-negative on $I$. If $x > c$, then $\int_c^x f
 Furthermore, by theorem 2.9 (Let $A(x) = \int_a^x f(t) dt$. Then $A$ is convex on every interval where $f$ is increasing, and concave on every interval where $f$ is decreasing) we know that if $f'$ is continuous and increasing on $I$,
 $f$ is convex on $I$. Similarly, $f$ is concave on intervals where $f'$ is continuous and decreasing. 
 
+* The Leibniz Notation for Primitives
+
+  Leibniz used the symbol $\int f(x) dx$ to denote a general primitive of $f$. In this notation, an equation like $\int f(x) dx = P(x) + C$ is considered to be an alternative way of writing $P'(x) = f(x)$
+  
+  There are 3 principal techniques that are used to construct tables of indefinite integrals:
+
+  - Integration by Substitution (based on the chain rule)
+  - Integration by Parts (based on the formula for differentiating a product)
+  - Integration by Partial Fractions (Algebraic Technique)
+
+* Integration by Substitution
+
+** Theorem : Substitution Theorem for Integrals
+
+   Assume $g$ has a continuous derivative $g'$ on an open interval $I$. Let $J$ be the set of values taken by $g$ on $I$ and assume that $f$ is continuous on $J$. Then for each $x$ and $c$ in $I$, we have
+
+   $\int_c^x f[g(t)]g'(t) dt = \int_{g(x)}^{g(x)} f(u) du$
+
+   
 * Exercises
 
-On exercise 23 
+  On exercise 22
+  
