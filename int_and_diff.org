@@ -71,8 +71,7 @@ $f$ is convex on $I$. Similarly, $f$ is concave on intervals where $f'$ is conti
 
    $\int_c^x f[g(t)]g'(t) dt = \int_{g(x)}^{g(x)} f(u) du$
 
-   
-* Exercises
+* Integration by Parts
 
-  On exercise 22
-  
+
+
