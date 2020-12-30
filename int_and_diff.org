@@ -77,7 +77,6 @@ $f$ is convex on $I$. Similarly, $f$ is concave on intervals where $f'$ is conti
 
    Assume $g$ is continuous on $[a, b]$ and assume $f$ has a derivative which is continuous and never changes sign in $[a, b]$. Then for some $c \in [a, b]$, we have $\int_a^b f(x) g(x) = f(a) \int_a^c g(x) dx + f(b) \int_c^b g(x) dx$
 
-* Exercises
+* Miscellaneous Review Exercises
 
-  On exercise 19
-
+on exercise 3
