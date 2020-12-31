@@ -79,5 +79,4 @@ $f$ is convex on $I$. Similarly, $f$ is concave on intervals where $f'$ is conti
 
 * Miscellaneous Review Exercises
 
-  on exercise 7 
-
+  on exercise 23 
