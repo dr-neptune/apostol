@@ -1,3 +1,54 @@
 #+TITLE: The Logarithm, The Exponential, and the Inverse Trigonometric Functions
 
 * Introduction
+
+$u = \log_b x$ means $x = b^u$
+
+$\log_b xy = \log_b x + \log_b y$
+
+* Motivation for the Definition of the Natural Logarithm as an Integral
+
+When a mathematician tries to formulate a definition of a concept, such as the logarithm, they usually have in mind a number of properties they want the concept to posess. 
+By examining these properties, they are often led to a simple formula or process that might serve as a definition from which all the desired properties spring forth as logical deductions
+
+If we think of the logarithm as a function $f$, then we want this function to have the property expressed by the formula: 
+
+$f(xy) = f(x) + f(y)$
+
+whenever $x, y, xy$ are in the domain of $f$. An equation like above, which expresses a relationship between the values of a function at 2 or more points, is called a *functional equation*. 
+Many mathematical problems can be reduced to solving a functional equation, a solution being any function which satisfies the equation. 
+
+* The Definition of the Logarithm. Basic Properties
+
+** Definition : Logarithm
+
+If $x$ is a positive real number, we define the natural logarithm of $x$, denoted temporarily by $L(x)$, to be the integral
+
+$L(x) = \int_1^x \frac{1}{t} dt$
+
+when $x > 1$
+
+** Theorem 6.1
+
+The logarithm has the following properties:
+
+a. $L(1) = 0$
+b. $L'(x) = \frac{1}{x}$ for every $x > 0$
+c. $L(ab) = L(a) + L(b)$ for every $a, b > 0$
+
+* The Graph of the Natural Logarithm
+
+Some more properties deduced from 6.1: 
+
+- L has a positive derivative everywhere, so it is strictly increasing on every interval
+- Since L(1) = 0, the graph lies above the x axis if x > 1, and below is 0 < x < 1
+- For x > 1, the slope gradually decreases toward 0 as x increases indefinitely
+- For small values of x, the slope is large, and it increases without bound as x decreases towards 0
+- The second derivative is $L''(x) = -\frac{1}{x^2}$, which is negative for all x, so $L$ is a concave function
+
+* Consequences of the Functional Equation $L(ab) = L(a) + L(b)$
+
+The logarithm is unbounded above. For every positive number $M$, there exists values of $x$ such that $L(x) > M$
+
+This leads us to the more general formula $L(a^n) = n L(a)$ for every $n \geq 1$. 
+
