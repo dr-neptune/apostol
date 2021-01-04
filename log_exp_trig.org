@@ -1,0 +1,3 @@
+#+TITLE: The Logarithm, The Exponential, and the Inverse Trigonometric Functions
+
+* Introduction
