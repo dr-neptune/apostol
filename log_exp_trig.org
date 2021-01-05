@@ -52,3 +52,54 @@ The logarithm is unbounded above. For every positive number $M$, there exists va
 
 This leads us to the more general formula $L(a^n) = n L(a)$ for every $n \geq 1$. 
 
+** Theorem 6.2
+
+For every real number $b$ there is exactly one positive real number $a$ whose logarithm $L(a) = b$
+
+** Definition
+
+We denote by $e$ that number for which $L(e) = 1$
+
+Natural logarithms are also called *Napierian Logarithms*, in honor of their inventor John Napier. It is common practice to use the symbols $\ln x$ or $\log x$ instead of $L(x)$ to denote the logarithm of $x$
+
+* Logarithms Referred to Any Positive Base $b \neq 1$
+
+** Definition 
+
+If $b > 0$, $b \neq 1$, and if $x > 0$, the logarithm of $x$ to the base $b$ is the number $\log_b (x) = \frac{\ln x}{\ln b}$
+
+* Differentiation and Integration Formulas involving Logarithms
+
+If $u = f(x)$ where $f$ has a continuous derivative, we have
+
+$\int \frac{du}{u} = \log u + C$ or $\int \frac{f'(x)}{f(x)} dx = \log f(x) + C$
+
+These are only valid if $u$ or $f(x)$ is positive since the logarithm is not defined for negative numbers
+
+We can extend the range of validity of these formulas to accomodate functions that are negative or positive (but nonzero) by introducing a new function:
+
+$L_0(x) = \log |x| = \int_1^{|x|} \frac{1}{t} dt$
+
+$L_0(xy) = L_0(x) + L_0(y)$ for all real $x \neq 0$
+
+$L_0'(x) = \frac{1}{x}$
+
+If we use $L_0$ instead of $L$ in the foregoing integration formulas, we can extend their scope to include functions which assign negative values as well as positive values.
+
+We can generalize the above as:
+
+$\int \frac{du}{u} = \log |u| + C$ or $\int \frac{f'(x)}{f(x)} dx = \log |f(x)| + C$
+
+* Logarithmic Differentiation
+
+Suppose we form a composition of $L_0$ with any differentiable function $f$; say
+
+$g(x) = L_0[f(x)] = \log |f(x)|$
+
+for those $x \neq 0$. The chain rule yields:
+
+$g'(x) = L_0'[f(x)]f'(x) = \frac{f'(x)}{f(x)}$
+
+* Exercises
+
+on 2c 
