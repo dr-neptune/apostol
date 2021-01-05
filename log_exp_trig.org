@@ -102,4 +102,4 @@ $g'(x) = L_0'[f(x)]f'(x) = \frac{f'(x)}{f(x)}$
 
 * Exercises
 
-on 2c 
+on 12
