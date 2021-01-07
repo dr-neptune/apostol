@@ -102,5 +102,13 @@ $g'(x) = L_0'[f(x)]f'(x) = \frac{f'(x)}{f(x)}$
 
 * Polynomial Approximations to the Logarithm
 
-In this section, we should that the logarithm function can be approximated by certain polynomials which can be used to compute logarithms to any desired degree of accuracy.
+In this section, we show that the logarithm function can be approximated by certain polynomials which can be used to compute logarithms to any desired degree of accuracy.
+
+** Theorem 6.3 
+
+Let $P_n$ denote the polynomial of degree $n$ given by $P_n(x) = x + \frac{x^2}{2} + \frac{x^3}{3} + ... + \frac{x^n}{n} = \sum_{k=1}^n \frac{x^k}{k}$
+
+Then, for every $x < 1$ and every $n \geq 1$, we have
+
+$-\log(1-x) = P_n(x) + \int_0^x \frac{u_n}{1 - u} du$
 
