@@ -100,6 +100,7 @@ for those $x \neq 0$. The chain rule yields:
 
 $g'(x) = L_0'[f(x)]f'(x) = \frac{f'(x)}{f(x)}$
 
-* Exercises
+* Polynomial Approximations to the Logarithm
 
-on 29
+In this section, we should that the logarithm function can be approximated by certain polynomials which can be used to compute logarithms to any desired degree of accuracy.
+
