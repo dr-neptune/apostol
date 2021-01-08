@@ -142,7 +142,7 @@ $\frac{x^{2m + 1}}{2m + 1} < R_m(x) \leq \frac{2 - x}{1 - x} \frac{x^{2m + 1}}{2
 
 
 #+BEGIN_SRC R
-library(magrittr)
+library(tidyverse)
 
 get_log_approx <- function(x, m) {
     get_rm_interval <- function() {
@@ -160,10 +160,69 @@ get_log_approx <- function(x, m) {
         set_names(c(log_name, "Error Bound"))
 }
 
+## exercise 1: log 2
 get_log_approx(1/3, 5)
 
-get_log_form <- function(x) {
-    
+## exercise 2: log 3 - log 2
+get_log_approx(1/3, 5)[[1]]
+
+## exercise 2: log 3
+get_log_approx(1/5, 5)[[1]] + get_log_approx(1/3, 5)[[1]]
+
+## 2 < e < 3
+
+## exercise 3:
+## log 5 - log(4) = log(5) - 2log(2)
+## log 5
+get_log_approx(1/9, 5)[[1]] + 2 * get_log_approx(1/3, 5)[[1]]
+
+## exercise 4:
+## log 7 - log 5
+## log 7
+get_log_approx(1/6, 5)[[1]] +
+    get_log_approx(1/9, 5)[[1]] + 2 * get_log_approx(1/3, 5)[[1]]
+
+## calculate a short table listing log n for n = 2, 3, ..., 10
+
+## first make a function to invert
+get_desired_x <- function(x) {
+    (x - 1) / (x + 1)
 }
 
+## log 2
+get_log_approx(get_desired_x(2), 5)
+
+map(1:100, ~ {.x %>%
+                 get_desired_x() %>%
+                 get_log_approx(m = 5) %>%
+                 purrr::pluck(1)}) %>%
+    set_names(1:100 %>% paste0("log(", ., ")")) %>%
+    enframe(name = "symbol",
+            value = "value") %>%
+    unnest(cols = "value") %>%
+    ggplot(aes(x = reorder(symbol, value), y = value, group = NA)) +
+    geom_line(color = "mediumpurple") +
+    geom_point() +
+    theme(axis.text.x = element_text(angle = 90)) +
+    xlab("natural log values approximated")
 #+END_SRC
+
+* The Exponential Function
+
+Theorem 6.2 shows that for every real $x$ there is 1 and only 1 $y$ such that $L(y) = x$. Therefore, we can use the process of inversion to define $y$ as a function of $x$. 
+
+The resulting inverse function is called the exponential function, or the antilogarithm, and is denoted by $e$.
+
+** Definition
+
+For any real $x$, we define $E(x)$ to be that number $y$ whose logarithm is $x$. That is, $y = E(x)$ means that $L(y) = x$.
+
+** Theorem 6.6
+
+The exponential function has the following properties: 
+
+a. $E(0) = 1$
+b. $E'(x) = E(x)$ for every $x$
+c. $E(a + b) = E(a)E(b)$ for all $a, b$
+
+go over proofs of b, c again
