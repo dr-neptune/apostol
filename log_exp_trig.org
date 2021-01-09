@@ -226,3 +226,30 @@ b. $E'(x) = E(x)$ for every $x$
 c. $E(a + b) = E(a)E(b)$ for all $a, b$
 
 go over proofs of b, c again
+
+* Exponentials Expressed as Powers of $e$
+
+$E(r) = e^r$ for $r \in \mathcal{Q}$ 
+
+* The Definition of $e^x$ for arbitrary real $x$
+
+$E(r) = e^r$ for $r \in \mathcal{R}$
+
+One justification for this is to prove the law of exponents: $e^a e^b = e^{a + b}$
+
+* The Definition of $a^x$ for $a > 0$ and $x \in \mathcal{R}$ 
+
+A way we can define $a^x$ is by the formula $a^x = e^{x \log a}$.
+
+This allows us to prove the following properties of exponentials:
+
+- $\log a^x = x \log a$
+- $(ab)^x = a^x b^x$
+- $a^x a^y = a^{x + y}$
+- $(a^x)^y = (a^y)^x = a^{xy}$
+- If $a \neq 1$, then $y = a^x$ iff $x = \log_a y$
+
+* Differentiation and Integration Formulas Involving Exponentials
+
+
+
