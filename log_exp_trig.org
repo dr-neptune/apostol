@@ -251,5 +251,12 @@ This allows us to prove the following properties of exponentials:
 
 * Differentiation and Integration Formulas Involving Exponentials
 
+$E'(x) = E(x)$
 
+$\int e^x dx = e^x + C$
 
+$\int a^x = \frac{a^x}{\log(a)} + C$
+
+* Exercises
+
+On exercise 22
