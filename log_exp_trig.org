@@ -256,7 +256,7 @@ $E'(x) = E(x)$
 $\int e^x dx = e^x + C$
 
 $\int a^x = \frac{a^x}{\log(a)} + C$
-
+   
 * Exercises
 
-On exercise 22
+On exercise 27
