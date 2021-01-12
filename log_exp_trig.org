@@ -259,4 +259,5 @@ $\int a^x = \frac{a^x}{\log(a)} + C$
    
 * Exercises
 
-On exercise 33 
+On exercise 41
+
