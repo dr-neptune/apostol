@@ -285,7 +285,13 @@ $D \arcsin x = \frac{1}{\sqrt{1 - x^2}}$ if $-1 < x < 1$
 
 $\int_0^x \frac{1}{\sqrt{1 - t^2}} dt = \arcsin x$ if $-1 < x < 1$
 
-$\int \archsin x dx = x \arcsin x + \sqrt{1 - x^2} + C$
+$\int \frac{dx}{\sqrt{1 - x^2}} = \arcsin x + C$
+
+$\int \arcsin x dx = x \arcsin x + \sqrt{1 - x^2} + C$
+
+---
+
+$u = \arccos v$ means $v = \cos u$ and $0 \leq u \leq \pi$
 
 $D \arccos x = \frac{-1}{\sqrt{1 - x^2}}$
 
@@ -293,13 +299,28 @@ $\int_0^x \frac{1}{\sqrt{1 - t^2}} dt = \frac{\pi}{2} - \arccos x$ if $-1 < x < 
 
 $\int \frac{1}{\sqrt{1 - x^2}} dx = - \arccos x + C$
 
+$\int \arccos x dx = x \arccos x - \sqrt{1 - x^2} + C$
+
+---
+
+$u = \arctan v$ means $v = \tan u$ and $- \frac{\pi}{2} < u < \frac{\pi}{2}$
+
 $D \arctan x = \frac{1}{1 + x^2}$
 
 $\int_0^x \frac{1}{1 + t^2} dt = \arctan x$
 
 $\int \frac{1}{1 + x^2} dx = \arctan x + C$
 
-Still need to derive everything for arccos and arctan by hand.
+$\int \arctan x dx = x \arctan x - \frac{1}{2} \log (1 + x^2) + C$
 
+--- 
 
+Inverses:
 
+$\mathrm{arccot} x = \frac{\pi}{2} - \arctan x$ for all $x \in \mathcal{R}$
+$\mathrm{arcsec} x = \arccos \frac{1}{x}$ when $|x| \geq 1$
+$\mathrm{arccsc} x = \arcsin \frac{1}{x}$ when $|x| \geq 1$
+
+* Exercises
+
+On exercise 8 
