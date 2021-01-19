@@ -323,4 +323,4 @@ $\mathrm{arccsc} x = \arcsin \frac{1}{x}$ when $|x| \geq 1$
 
 * Exercises
 
-On exercise 24 
+On exercise 35 
