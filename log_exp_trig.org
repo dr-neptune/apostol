@@ -321,6 +321,13 @@ $\mathrm{arccot} x = \frac{\pi}{2} - \arctan x$ for all $x \in \mathcal{R}$
 $\mathrm{arcsec} x = \arccos \frac{1}{x}$ when $|x| \geq 1$
 $\mathrm{arccsc} x = \arcsin \frac{1}{x}$ when $|x| \geq 1$
 
-* Exercises
+* Integration by Partial Fractions
 
-On exercise 45
+We shall describe a method for computing the integral of any rational function, and we shall find that the result can always be expressed in terms of polynomials, rational functions, inverse tangents, and logarithms.
+
+The basic idea of the method is to decompose a given rational function into a sum of simpler fractions (called partial fractions) that can be integrated by the techniques discussed earlier. 
+
+We shall describe the general procedure by means of a number of simple examples that illustrate all the essential features of the method:
+
+**Example 1**
+
