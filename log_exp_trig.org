@@ -347,3 +347,50 @@ Alternatively, we could set $x = 1$, making the $B$ term vanish and solve for $A
 The method above also applies to integrals of the form $\int \frac{f(x)}{g(x)} dx$ in which $f$ is a linear polynomial and $g$ is a quadratic polynomial that can be factored into distinct linear factors with real coefficients, say $g(x) = (x - x^1)(x - x^2)$.
 In this case, the quotient can be expressed as a linear combination of $\frac{1}{x - x_1}$ and $\frac{1}{x - x_2}$, and integration leads to a corresponding combination of the logarithmic terms $\log|x - x_1|$ and $\log|x - x_2|$. 
 
+The foregoing examples involve rational functions $f/g$ in which the degree of the numerator is less than that of the denominator. A rational function with this property is said to be a proper rational function.
+If $f/g$ is improper, that is, the degree of $f$ > deg $g$, then we can express $f/g$ as the sum of a polynomial and a proper rational function. In fact, we simple divide $f$ by $g$ to obtain
+
+$\frac{f(x)}{g(x)} = Q(x) + \frac{R(x)}{g(x)}$
+
+Therefore, there is no loss in generality if we restrict ourselves to proper rational functions.
+
+A general theorem in algebra stats that every proper rational function can be expressed as a finite sum of fractions of the forms $\frac{A}{(x + a)^k}$ and $\frac{Bx + C}{(x^2 + bx + c)^m}$ where $k, m \in \mathcal{N}^+$ and $A,B,C,a,b,c$ are constants s.t. $b^2 - 4c < 0$
+The condition $b^2 - 4c < 0$ means that the quadratic polynomial $x^2 + bx + c$ cannot be factored into linear factors with real coefficients, or the quadratic equation $x^2 + bx + c = 0$ has no real roots. Such a quadratic factor is said to be irreducible. When a rational function has been so expressed, we say that it has been decomposed into partial functions. 
+
+We shall not bother to prove that partial fraction decompositions always exist. Instead, we shall show by means of examples how to obtain the partial fractions in specific problems.
+
+**Case 1** The denominator is a product of distinct linear factors
+
+Suppose that $g(x)$ splits into $n$ distinct linear factors, say $g(x) = (x - x^1)(x-x^2)...(x-x^n)$
+
+Notice that a linear combination of the form $\frac{A_1}{x - x_n} + ... + \frac{A_n}{x - x_n}$ may be expressed as a single fraction with common denominator $g(x)$, and the numerator of this fraction will be a polynomial of degree $< n$ involving the A's.
+Therefore, if we can find A's to make this numerator equal to $f(x)$, we shall have the decomposition
+
+$\frac{f(x)}{g(x)} = \frac{A_1}{x - x_n} + ... + \frac{A_n}{x - x_n}$
+
+and $\int \frac{f(x)}{g(x)} = \sum_{i = 1}^n \log |x - x_i|$
+
+**Case 2** The denominator is a product of linear factors, some of which are repeated.
+
+If we have terms that are repeated, i.e. $g(x) = (x - 1)(x + 1)^2$, then we add all the primitive terms:
+
+$\frac{f}{g} = \frac{A_1}{x - 1} + \frac{A_2}{x + 1} + \frac{A_3}{(x + 1)^2}$
+
+Then after clearing the fractions, we get something like
+
+$f(x) = A_1(x + 1)^2 + A_2(x-1)(x+1) + A_3(x - 1)$
+
+In order to figure out $A_2$, we could use a convenient $x$ and get another equation, or we could differentiate to get a relation between a known (like $A_3$) and the unknown $A_2$
+
+If a linear factor $x + a$ appears $p$ times in the denominator, then for this factor we must allow for a sum of $p$ terms, namely $\sum_{k = 1}^p \frac{A_k}{(x + a)^k}$ where the A's are constants. A sum of this type is to be used for each repeated linear factor.
+
+**Case 3** The denominator contains irreducible quadratic factors, none of which are repeated
+
+Suppose $g = (x^3 - 1) = (x-1)(x^2 + x + 1)$, where $x^2 + x + 1$ is irreducible.
+
+Then we try a decomposition of the form $\frac{f}{g} = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + x + 1}$
+
+Then we solve for A, B, C as usual, and evaluate the integral like
+
+$\int \frac{f}{g} = \int \frac{A}{x - 1} + \int \frac{Bx + C}{x^2 + x + 1}$
+
