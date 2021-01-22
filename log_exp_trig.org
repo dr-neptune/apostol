@@ -394,3 +394,31 @@ Then we solve for A, B, C as usual, and evaluate the integral like
 
 $\int \frac{f}{g} = \int \frac{A}{x - 1} + \int \frac{Bx + C}{x^2 + x + 1}$
 
+**Case 4** The denominator contains irreducible quadratic factors, some of which are repeated
+
+This is similar to the cases above, except that for our repeated irreducible factors we expand them out into a sum of $m$ terms $\sum_{k = 1}^m \frac{B_k x + C_k}{(x^2 + bx + c)^k}$ where each numerator is linear.
+
+**In General**
+
+The problem of integrating a proper rational function reduces to that of calculating integrals of the forms
+
+$\int \frac{dx}{(x + a)^n}$
+$\int \frac{x dx}{(x^2 + bx + c)^m}$
+$\int \frac{dx}{(x^2 + bx + c)^m}$
+
+where the first integral is $\log |x + a|$ if $n = 1$ and $\frac{(x + a)^{1 - n}}{1 - n}$ if $n > 1$.
+
+To treat the other two, we express the quadratic as a sum of two squares by writing
+
+$x^2 + bx + c = (x + \frac{b}{2})^2 + (c - \frac{b^2}{4}) = u^2 + \alpha^2$ where $u = x + \frac{b}{2}$ and $\alpha = \frac{1}{2}\sqrt{4c - b^2}$ (this is possible because $4c - b^2 > 0$.
+
+The substitution $u = x + b/2$ reduces the problem to that of computing
+
+$\int \frac{u}{(u^2 + \alpha^2)^m}$ where if $m = 1$ is $\frac{1}{2}\log(u^2 + \alpha^2)$ and $\frac{\frac{1}{2}(u^2 + \alpha^2)^{1 - m}}{1 - m}$ if $m > 1$
+
+$\int \frac{du}{(u^2 + \alpha^2)^m}$ where if $m = 1$ is $\frac{1}{\alpha} \arctan \frac{u}{\alpha} + C$, and if $m > 1$ can be reduced to the case $m = 1$ by repeated application of the recursion formula:
+
+$\int \frac{du}{(u^2 + \alpha^2)^m} = \frac{1}{2 \alpha^2 (m - 1)} \frac{u}{(u^2 + \alpha^2)^{m - 1}} + \frac{2m - 3}{2 \alpha^2 (m - 1)} \int \frac{du}{(u^2 + \alpha^2)^{m - 1}}$
+
+* Integrals which can be transformed into integrals of rational functions
+
