@@ -422,3 +422,24 @@ $\int \frac{du}{(u^2 + \alpha^2)^m} = \frac{1}{2 \alpha^2 (m - 1)} \frac{u}{(u^2
 
 * Integrals which can be transformed into integrals of rational functions
 
+$\int \frac{dx}{sinx + cosx} = \frac{\sqrt{2}}{2} \log |\frac{\tan \frac{x}{2} - 1 + \sqrt{2}}{\tan \frac{x}{2} - 1 - \sqrt{2}}| + C$
+
+The trigonometric substitution $t = \arcsin x$ is good to try when an integral involves $\sqrt{1 - x^2}$.
+
+More generally, any integral of the form $\int R(x, \sqrt{a^2 - x^2}) dx$, where $R$ is a rational function of 2 variables, can be transformed by the substitution
+
+$x = a \sin t$ and $dx = a \cos t dt$
+
+into an integral of the form $\int R(a \sin t, a \cos t) a \cos t dt$
+
+The same method works for integrals of the form $\int R(x, \sqrt{a^2 - (cx + d)^2}) dx$ where we use the trigonometric substitution $cx + d = a \sin t$
+
+We can deal similarly with integrals of the form $\int R(x, \sqrt{a^2 + (cx + d)^2}) dx$ by substituting $cx + d = a \tan t$, $c dx = a \sec^2 t dt$
+
+For integrals of the form $\int R(x, \sqrt{(cx + d)^2 - a^2}) dx$, we use $cx + d = a \sec t$, $c dx = a \sec t \tan t dt$
+
+In either case, the new integrand becomes a rational function of $\sin t$ and $\cos t$
+
+* Exercises
+
+On exercise 3 
