@@ -442,4 +442,7 @@ In either case, the new integrand becomes a rational function of $\sin t$ and $\
 
 * Exercises
    
-On exercise 10
+  On exercise 14
+  
+
+  
