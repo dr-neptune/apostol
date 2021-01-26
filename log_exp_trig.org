@@ -441,5 +441,5 @@ For integrals of the form $\int R(x, \sqrt{(cx + d)^2 - a^2}) dx$, we use $cx + 
 In either case, the new integrand becomes a rational function of $\sin t$ and $\cos t$
 
 * Exercises
-
-On exercise 5 
+   
+On exercise 10
