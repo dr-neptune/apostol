@@ -442,5 +442,7 @@ In either case, the new integrand becomes a rational function of $\sin t$ and $\
 
 * Exercises
    
-On exercise 22 
+On exercise 26
  
+$\arctan(x) + \arctan(y) = \arctan(\frac{x + y}{1 - xy})$
+
