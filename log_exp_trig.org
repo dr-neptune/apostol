@@ -446,4 +446,5 @@ $\arctan(x) + \arctan(y) = \arctan(\frac{x + y}{1 - xy})$
 
 * Miscellaneous Review Exercises
 
-  On Problem 9
+  On Problem 13
+     
