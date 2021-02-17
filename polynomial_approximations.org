@@ -58,4 +58,35 @@
 
 ** Exercises
    
+#+BEGIN_SRC R
+tibble("x" = seq(from = -5, 5, .01)) %>%
+    mutate(y = funk(x),
+           sin = sin(x),
+           cos = cos(x),
+           zero_pt = ifelse(between(y, -0.1, 0.1), TRUE, FALSE)) -> datum
 
+datum %>%
+    ggplot() +
+    geom_hline(yintercept = 0, color = "gray") +
+    geom_point(data = filter(datum, zero_pt), aes(x = x, y = 0), shape = 1) +
+    geom_line(aes(x = x, y = (x - (x^3 / factorial(3)))), color = "lightblue") +
+    geom_line(aes(x = x, y = (x - (x^3 / factorial(3)) + (x^5 / factorial(5)))), color = "forestgreen") +
+    geom_line(aes(x = x, y = (x - (x^3 / factorial(3)) + (x^5 / factorial(5)) - (x^7 / factorial(7)))), color = "red") +
+    geom_line(aes(x = x, y = (x - (x^3 / factorial(3)) + (x^5 / factorial(5)) - (x^7 / factorial(7)) + (x^9 / factorial(9)))), color = "orange") +
+    geom_line(aes(x = x, y = sin), color = "mediumpurple") +
+    ylab("Polynomial Approximations to sin(x)") +
+    xlab("x")
+
+datum %>%
+    ggplot() +
+    geom_hline(yintercept = 0, color = "gray") +
+    geom_line(aes(x = x, y = (1 - (x^2 / factorial(2)))), color = "lightblue") +
+    geom_line(aes(x = x, y = (1 - (x^2 / factorial(2)) + (x^4 / factorial(4)))), color = "forestgreen") +
+    geom_line(aes(x = x, y = (1 - (x^2 / factorial(2)) + (x^4 / factorial(4)) - (x^6 / factorial(6)))), color = "red") +
+    geom_line(aes(x = x, y = (1 - (x^2 / factorial(2)) + (x^4 / factorial(4)) - (x^6 / factorial(6)) + (x^8 / factorial(8)))), color = "orange") +
+    geom_line(aes(x = x, y = cos), color = "mediumpurple") +
+    ylab("Polynomial Approximations to cos(x)") +
+    xlab("x")
+#+END_SRC
+
+On exercise 8
