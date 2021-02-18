@@ -91,4 +91,26 @@ datum %>%
 
 * Taylor's Formula with Remainder
 
-  
+** Theorem 7.5 | Error Arising from Linear Approximation
+
+   Assume $f$ has a continuous second derivative $f''$ in some neighborhood of $a$. Then, for every $x$ in this neighborhood, we have
+   
+   $f(x) = f(a) + f'(a)(x - a) + E_1(x)$
+
+   where
+
+   $E_1(x) = \int_a^x (x - t) f''(t) dt$
+
+** Theorem 7.6 | Error Arising from a Polynomial Approximation of Degree n
+
+   Assume $f$ has a continuous derivative of order $n + 1$ in some interval containing a. Then, for every $x$ in this interval, we have the Taylor formula
+
+   $f(x) = \sum_{k = 0}^n \frac{f^{(k)}(a)}{k!}(x - a)^k + E_n(x)$
+
+   where
+
+   $E_n(x) = \frac{1}{n!} \int_a^x (x - t)^n f^{(n + 1)}(t) dt$
+
+* Estimates for the Error in Taylor's Formula
+
+
