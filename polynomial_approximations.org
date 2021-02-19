@@ -113,4 +113,25 @@ datum %>%
 
 * Estimates for the Error in Taylor's Formula
 
+** Theorem 7.7 | Bounds on $E_n(x)$
+
+   If the $(n + 1)$ st derivative of $f$ satisfies the inequalities
+
+   $m \leq f^{(n + 1)}(t) \leq M$
+
+   for all $t$ in some interval containing $a$, then for every $x$ in this interval we have the following estimates:
+
+   $m \frac{(x - a)^{n + 1}}{(n + 1)!} \leq E_n(x) \leq M \frac{(x - a)^{n + 1}}{(n + 1)!}$ if $x < a$
+
+   and
+
+   $m \frac{{(a - x)}^{n + 1}}{(n + 1)!} \leq (-1)^{n + 1} E_n (x) \leq M \frac{(a - x)^{n + 1}}{(n + 1)!}$ if $a > x$
+
+   
+   Polynomial approximations often enable us to obtain approximate numerical values for integrals that cannot be evaluated directly in terms of elementary functions.
+   That is to say, $f$ cannot be obtained from polynomials, exponentials, logarithms, trigonometric or inverse trigonometric functions in a finite number of steps by using the operations of addition, subtraction, multiplication, division, or composition.
+
+* Other Forms of the Remainder in Taylor's Formula
+
+  
 
