@@ -132,6 +132,47 @@ datum %>%
    That is to say, $f$ cannot be obtained from polynomials, exponentials, logarithms, trigonometric or inverse trigonometric functions in a finite number of steps by using the operations of addition, subtraction, multiplication, division, or composition.
 
 * Other Forms of the Remainder in Taylor's Formula
-
   
+** Lagrange's Form
 
+   Since $(x - t)^n$ never changes sign in the interval of integration, and since $f^{(n + 1)}$ is continuous on this interval, the weighted mean value theorem for integrals allows us to express the error remainder as
+
+   $E_n(x) = \frac{f^{(n + 1)}(c)}{(n + 1)!} (x - a)^{(n + 1)}$
+
+** Weaker Generalization
+   
+   We can drop the continuity requirement on $f^{(n + 1)}$ and derive Lagrange's form and other forms under a weaker hypothesis.
+
+   Suppose $f^{(n + 1)}$ exists in some open interval $(h, k)$ containing the point $a$, and assume that $f^{(n)}$ is continuous in the closed interval $[h, k]$. Choose any $x \neq a \in [h, k]$. For simplicity, we can say $x > a$. Fix $x$ and define a new function as follows:
+
+   $F(t) = f(t) + \sum\limits_{k = 1}^n \frac{f^{(k)}(t)}{k!}(x - t)^k$
+
+   Taking the derivative
+
+   $F'(t) = \frac{(x - t)^n}{n!} f^{(n + 1)}(t)$
+
+   Let $G$ be any function that is continuous on $[a, x]$ and differentiable on $(a, x)$. Then we can apply Cauchy's mean value formula to write
+
+   $G'(c)[F(x) - F(a)] = F'(c)[G(x) - G(a)]$
+
+   for some $c \in (a, x)$. If $G' \neq 0$, this gives the following formula for the error
+
+   $E_n(x) = \frac{F'(c)}{G'(c)}[G(x) - G(a)]$
+
+   We can express the error in various forms for different choices of $G$.
+
+   If we let $G(t) = (x - t)^{n + 1}$, we obtain Lagrange's form.
+
+** Cauchy's Form
+
+   If we let $G(t) = x - t$, we obtain Cauchy's form for the remainder:
+
+   $E_n(x) = \frac{f^{(n + 1)}(c)}{n!}(x - c)^n (x - a)$ where $a < c < x$
+   
+** Another Form
+
+   If we let $G(t) = (x - t)^p$, where $p \geq 1$, we obtain:
+
+   $E_n(x) = \frac{f^{(n + 1)}(c)}{n! p} (x - c)^{n + 1 - p}(x - a)^p$ where $a < c < x$
+
+* Exercises
