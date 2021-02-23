@@ -146,7 +146,6 @@ datum %>%
    Suppose $f^{(n + 1)}$ exists in some open interval $(h, k)$ containing the point $a$, and assume that $f^{(n)}$ is continuous in the closed interval $[h, k]$. Choose any $x \neq a \in [h, k]$. For simplicity, we can say $x > a$. Fix $x$ and define a new function as follows:
 
    $F(t) = f(t) + \sum\limits_{k = 1}^n \frac{f^{(k)}(t)}{k!}(x - t)^k$
-
    Taking the derivative
 
    $F'(t) = \frac{(x - t)^n}{n!} f^{(n + 1)}(t)$
@@ -176,3 +175,7 @@ datum %>%
    $E_n(x) = \frac{f^{(n + 1)}(c)}{n! p} (x - c)^{n + 1 - p}(x - a)^p$ where $a < c < x$
 
 * Exercises
+
+  On exercise 6
+
+  
