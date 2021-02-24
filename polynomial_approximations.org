@@ -174,8 +174,6 @@ datum %>%
 
    $E_n(x) = \frac{f^{(n + 1)}(c)}{n! p} (x - c)^{n + 1 - p}(x - a)^p$ where $a < c < x$
 
-* Exercises
-
-  On exercise 6
+* Further Remarks on the Error in Taylor's Formula. The $o$ - notation
 
   
