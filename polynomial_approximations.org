@@ -176,4 +176,27 @@ datum %>%
 
 * Further Remarks on the Error in Taylor's Formula. The $o$ - notation
 
-  
+** Definition | Little o notation
+
+   Assume $g(x) \neq 0$ for all $x \neq a$ in some interval containing $a$.
+   The notation $f(x) = o(g(x))$ as $x \to a$ means that
+   $\lim\limits_{x \to a} \frac{f(x)}{g(x)} = 0$
+
+
+   The symbol $f(x) = o(g(x))$ is read "$f(x)$ is little oh of $g(x)$", or $f(x)$ is of smaller order than $g(x)$, and is intended to convey the idea that for $x$ near $a$, $f(x)$ is small compared with $g(x)$.
+
+** Taylor's Formula with $o$ notation
+
+   $f(x) = \sum_{k = 0}^n \frac{f^{(k)}(a)}{k!} (x - a)^k + o((x - a)^n)$ as $x \to a$
+
+** Theorem 7.8 | Algebra of $o$ symbols
+
+   As $x \to a$, we have the following:
+
+   a. $o(g(x)) \pm o(g(x)) = o(g(x))$
+   b. $o(cg(x)) = o(g(x))$ if $c \neq 0$
+   c. $f(x) \cdot o(g(x)) = o(f(x)g(x))$
+   d. $o(o(g(x))) = o(g(x))$
+   e. $\frac{1}{1 + g(x)} = 1 - g(x) + o(g(x))$ if $g(x) \to 0$ as $x \to a$
+
+   
