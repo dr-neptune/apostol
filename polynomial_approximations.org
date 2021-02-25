@@ -199,4 +199,7 @@ datum %>%
    d. $o(o(g(x))) = o(g(x))$
    e. $\frac{1}{1 + g(x)} = 1 - g(x) + o(g(x))$ if $g(x) \to 0$ as $x \to a$
 
-   
+* Applications to Indeterminate Forms
+
+  
+
