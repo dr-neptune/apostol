@@ -201,5 +201,9 @@ datum %>%
 
 * Applications to Indeterminate Forms
 
-  
+  If we have a limit such that $\lim\limits_{x \to 0} \frac{a}{b} \to \frac{0}{0}$, we have an indeterminate form. Taylor's formula and the $o$ - notation enable us to calculate the limit of an indeterminate form simply by approximating the numerator as a polynomial.
 
+* Exercises
+
+  On exercise 4
+  
