@@ -205,4 +205,4 @@ datum %>%
 
 * Exercises
 
-  On exercise 12
+  On exercise 18
