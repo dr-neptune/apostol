@@ -205,7 +205,6 @@ datum %>%
 
 * Exercises
 
-  On exercise 25
-  
+  On exercise 30
 
   
