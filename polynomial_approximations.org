@@ -205,5 +205,23 @@ datum %>%
 
 * L'Hopital's Rule for the Indeterminate Form 0/0
 
-  
-  
+  Sometimes we can shorten the work of obtaining polynomial approximations to $f$ and $g$ by using a differentiation technique called L'Hopital's Rule.
+  The basic idea of the method is to study the quotient of derivatives $\frac{f'(x)}{g'(x)}$ and thereby try to deduce information about $\frac{f(x)}{g(x)}$.
+
+** Theorem 7.9 : L'Hopital's Rule for 0/0
+
+   Assume $f$ and $g$ have derivatives $f'(x)$ and $g'(x)$ at each point $x$ of an open interval $(a, b)$, and suppose that
+
+   $\lim\limits_{x \to a^+} f(x) = 0$ and $\lim\limits_{x \to a^+} g(x) = 0$
+
+   Assume also that $g'(x) \neq 0$ for each $x \in (a, b)$. If the limit
+
+   $\lim\limits_{x \to a^+} \frac{f'(x)}{g'(x)}$
+
+   exists and has the value $L$, say, then the limit
+
+   $\lim\limits_{x \to a^+} \frac{f(x)}{g(x)}$
+
+   also exists and has the value $L$.
+
+   On proof of L'Hopital's Rule
