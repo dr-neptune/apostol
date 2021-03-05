@@ -224,4 +224,6 @@ datum %>%
 
    also exists and has the value $L$.
 
-   On proof of L'Hopital's Rule
+* Exercises
+
+On exercise 8
