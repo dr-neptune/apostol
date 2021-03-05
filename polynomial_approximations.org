@@ -226,4 +226,6 @@ datum %>%
 
 * Exercises
 
-On exercise 8
+  On exercise 8
+
+ 
