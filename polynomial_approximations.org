@@ -245,4 +245,32 @@ In other words,
 $\lim\limits_{x \to + \infty} \frac{f'(x)}{g'(x)} = L$ implies $\lim\limits_{x \to + \infty} \frac{f(x)}{g(x)} = L$
 
 
-On proof 
+* Infinite Limits
+
+** Definition: $\lim\limits_{x \to a} f(x) = + \infty$
+
+The symbolism in ($\lim\limits_{x \to a} f(x) = + \infty$, $f(x) \to + \infty$ as $x \to a$) means that to every positive number $M$ (no matter how large), there corresponds another positive number $\delta$ (which may depend on $M$) such that
+
+$f(x) > M$ whenever $0 < |x - a| < \delta$
+
+if $f(x) > M$ whenever $0 < x - a < \delta$, we write $\lim\limits_{x \to a+} f(x) = + \infty$
+
+and we say that $f(x)$ tends to plus infinity as x approaches a from the right. 
+
+if $f(x) > M$ whenever $0 < a - x < \delta$, we write $\lim\limits_{x \to a-} f(x) = - \infty$
+
+and we say that $f(x)$ tends to minus infinity as x approaches a from the left. 
+
+* The Behavior of $\log x$ and $e^x$ for large $x$
+
+** Theorem 7.11
+
+if $a > 0$ and $b > 0$, we have
+
+$\lim\limits_{x \to + \infty} \frac{(log x)^b}{x^a} = 0$
+
+and 
+
+$\lim\limits_{x \to + \infty} \frac{x^b}{e^{ax}} = 0$
+
+
