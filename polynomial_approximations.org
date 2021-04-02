@@ -274,3 +274,26 @@ and
 $\lim\limits_{x \to + \infty} \frac{x^b}{e^{ax}} = 0$
 
 
+Each of the limit relations
+
+$\lim\limits_{x \to 0} (1 + ax)^{1 / x} = e^a$
+
+$\lim\limits_{x \to 0}(1 + x)^{a / x} = e^a$
+
+is an indeterminate form of the type $1^{\infty}$. We may replace x by $1/x$ in these formulas and obtain
+
+$\lim\limits_{x \to + \infty} (1 + \frac{a}{x})^x = e^a$
+
+$\lim\limits_{x \to + \infty} (1 + \frac{1}{x})^{ax} = e^a$
+
+both of which are valid for real a.
+
+Relations of the type $f(x)^{g(x)}$ are usually dealt with by writing
+
+$f(x)^{g(x)} = e^{g(x) \log f(x)}$ 
+
+and then treating the exponent $g(x) \log f(x)$ by one of the methods discussed earlier.
+
+* Exercises
+
+On exercise 4
