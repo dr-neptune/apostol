@@ -294,11 +294,3 @@ $f(x)^{g(x)} = e^{g(x) \log f(x)}$
 
 and then treating the exponent $g(x) \log f(x)$ by one of the methods discussed earlier.
 
-* Exercises
-
-started on exercise 4
-
-On exercise 32
-
-
-
