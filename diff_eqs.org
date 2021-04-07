@@ -90,4 +90,5 @@ where $A(x) = \int_a^x P(t) dt$
 
 * Exercises
 
-On exercise 6
+On exercise 9
+
