@@ -101,4 +101,4 @@ A differential equation of the form $y' + P(x)y = Q(x)y^n$ where $n \neq 0, 1$ i
 Starting the chapter over after a long break (~ 4 months)
 
 
-On 8.5 exercises, exercise 5
+On 8.5 exercises, exercise 8
