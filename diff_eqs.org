@@ -30,7 +30,7 @@ The simplest case occurs when $f(x, y)$ is independent of $y$. In this case, our
 
 $y' = Q(x)$
 
-where $Q$ is assumed to be a given function defined on some interval $I$. To solve the differential equation above means to find a primitive of $Q$. 
+where $Q$ is assumed to be a given function defined on some interval $I$. To solve the differential equation above means to find a primitive of $Q$.
 If $Q$ is continuous and on the open interval $I$, then we can use the second fundamental theorem of calculus:
 
 $y = \int Q(x) dx + C$
@@ -60,7 +60,7 @@ First we consider the special case in which the right member, $Q(x)$ is identica
 
 $y' + P(x)y = 0$
 
-is called the *homogenous* or *reduced* equation corresponding to the above. 
+is called the *homogenous* or *reduced* equation corresponding to the above.
 
 If y is nonzero on $I$, our homogenous equation is equivalent to
 
@@ -90,5 +90,15 @@ where $A(x) = \int_a^x P(t) dt$
 
 * Exercises
 
-On exercise 9
+On exercise 13
 
+*The Bernoulli Equation*:
+A differential equation of the form $y' + P(x)y = Q(x)y^n$ where $n \neq 0, 1$ is called a Bernoulli equation. This equation is nonlinear because of the presence of $y^n$.
+
+
+* Introduction to Differential Equations
+
+Starting the chapter over after a long break (~ 4 months)
+
+
+On 8.5 exercises, exercise 5
