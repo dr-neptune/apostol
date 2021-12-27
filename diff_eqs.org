@@ -90,7 +90,7 @@ where $A(x) = \int_a^x P(t) dt$
 
 * Exercises
 
-On exercise 13
+** Bernoulli Equation for Transforming a nonlinear ODE into a linear one
 
 *The Bernoulli Equation*:
 A differential equation of the form $y' + P(x)y = Q(x)y^n$ where $n \neq 0, 1$ is called a Bernoulli equation. This equation is nonlinear because of the presence of $y^n$.
@@ -100,13 +100,12 @@ A differential equation of the form $y' + P(x)y = Q(x)y^n$ where $n \neq 0, 1$ i
 
 Starting the chapter over after a long break (~ 4 months)
 
-
-On 8.5 exercises, exercise 8
-
 * Introduction to Differential Equations
 
 Starting the chapter over after another long break :/
 
-Currently on section 8.5 exercises
+*** Ricatti Equation
 
-Currently on number 10/20
+An equation of the form $y' + P(x)y + Q(x)y^2 = R(x)$ is called a *Ricatti Equation*
+
+* Some physical problems leading to first-order linear differential equations
