@@ -109,3 +109,8 @@ Starting the chapter over after another long break :/
 An equation of the form $y' + P(x)y + Q(x)y^2 = R(x)$ is called a *Ricatti Equation*
 
 * Some physical problems leading to first-order linear differential equations
+A handful of interesting examples: radioactive decay, falling body in resisting medium, a cooling problem, a dilution problem, electric circuits
+
+* Exercises
+
+On problem 1
