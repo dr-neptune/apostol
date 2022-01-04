@@ -109,8 +109,86 @@ Starting the chapter over after another long break :/
 An equation of the form $y' + P(x)y + Q(x)y^2 = R(x)$ is called a *Ricatti Equation*
 
 * Some physical problems leading to first-order linear differential equations
+
 A handful of interesting examples: radioactive decay, falling body in resisting medium, a cooling problem, a dilution problem, electric circuits
 
-* Exercises
+* Linear Equations of Second Order with Constant Coefficients
 
-On problem 1
+** Form
+
+$y'' + P_1(x)y' + P_2(x)y = R(x)$
+
+is said to be a linear equation of second order, where $P_1, P_2$ are the coefficients of the equation
+
+Here we only focus on situations where $P_1, P_2$ are constants. The general case is looked at in volume 2.
+
+When $R(x) = 0$, we say the equation is homogenous
+
+* Existence of Solutions of the Equation $y'' + by = 0$
+
+** Theorem 8.4
+
+Let y and u be two functions such that $y = u e^{-ax/2}$. Then, on the interval $(\pm \infty)$, y satisfies the differential equation $y'' + ay' + by = 0$ iff u satisfies the differential equation
+
+$u'' + \frac{4b - a^2}{4} u = 0$
+
+This theorem reduces the study of the equation $y'' + ay' + by = 0$ to the special case $y'' + by = 0$.
+
+* Uniqueness Theorem for the Equation $y'' + by = 0$
+
+** Theorem 8.5
+
+Assume two functions f and g satisfy the differential equation $y'' + by = 0$ on $(\pm \infty)$. Assume also that f and g satisfy the initial conditions $f(0) = g(0)$ and $f'(0) = g'(0)$.
+
+Then $f(x) = g(x)$ for all x
+
+* Complete Solution of the Equation $y'' + by = 0$
+
+** Theorem 8.6
+
+Given a real number b, define two functions $u_1$ and $u_2$ on $(\pm \infty)$ as follows:
+
+a. If b = 0, let $u_1(x) = 1$, $u_2(x) = x$
+b. If b < 0, write $b = -k^2$, and define $u_1(x) = e^{kx}$, $u_2(x) = e^{-kx}$
+c. if b > 0, write $b = k^2$ and define $u_1(x) = \cos kx$, $u_2(x) = \sin kx$
+
+Then, every solution of the differential equation $y'' + by = 0$ on $(\pm \infty)$ has the form
+
+$y = c_1 u_1(x) + c_2 u_2(x)$
+
+where $c_1$ and $c_2$ are constants
+
+* Complete Solution of the Equation $y'' + ay + by = 0$
+
+The solution combines theorems 8.4 and 8.6 to obtain the following:
+
+** Theorem 8.7
+Let $d = a^2 - 4b$ be the discriminant of the linear differential equation $y'' + ay' + by = 0$. Then every solution of this equation on $(\pm \infty)$ has the form
+
+$y = e^{-ax/2}[c_1 u_1(x) + c^2 u_2(x)]$
+
+where $c_1$, $c^2$ are constants, and the functions $u_1$ and $u_2$ are determined according to the algebraic sign of the discriminant as follows:
+
+a. If d = 0, then $u_1(x) = 1$ and $u_2(x) = x$
+b. If d > 0, then $u_1(x) = e^{kx}$ and $u_2(x) = e^{-kx}$, where $k = \frac{1}{2}\sqrt{d}$
+c. If d < 0, then $u_1(x) = \cos kx$ and $u_2(x) = \sin kx$ where $k = \frac{1}{2}\sqrt{-d}$
+
+Note: In case b, where the discriminant d is positive, the solution y is a linear combination of two exponential functions:
+
+$y = e^{-ax/2}(c_1 e^{kx} + c_2 e^{-kx}) = c_1 e^{r_1 x} + c_2 e^{r_2 x}$
+
+where
+
+$r_1 = - \frac{a}{2} + k = \frac{-a + \sqrt{d}}{2}$ , $r_2 = - \frac{a}{2} - k = \frac{-a - \sqrt{d}}{2}$
+
+These two numbers $r_1, r_2$ has the sum $r_1 + r_2 = -a$ and product $r_1 r_2 = \frac{1}{4}(a^2 - d) = b$
+
+Therefore, they are roots of the quadratic equation $r^2 + ar + b = 0$
+
+This is called the characteristic equation associated with the differential equation
+
+$y'' + ay' + by = 0$
+
+* 8.14 Exercises
+
+On problem 11
