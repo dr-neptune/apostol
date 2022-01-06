@@ -191,4 +191,4 @@ $y'' + ay' + by = 0$
 
 * 8.14 Exercises
 
-On problem 11
+On problem 14
