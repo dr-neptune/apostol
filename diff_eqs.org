@@ -189,6 +189,9 @@ This is called the characteristic equation associated with the differential equa
 
 $y'' + ay' + by = 0$
 
-* 8.14 Exercises
 
-On problem 14
+** The Wronskian
+
+Given two functions $u_1, u_2$, the function $W$ defined by $W(x) = u_1(x) u_2'(x) - u_2(x) u_1'(x)$ is called their *Wronskian*, after J.M.H. Wronski.
+
+* Nonhomogenous Linear Equations of Second Order with Constant Coefficients
