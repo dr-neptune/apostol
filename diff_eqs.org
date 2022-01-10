@@ -195,3 +195,31 @@ $y'' + ay' + by = 0$
 Given two functions $u_1, u_2$, the function $W$ defined by $W(x) = u_1(x) u_2'(x) - u_2(x) u_1'(x)$ is called their *Wronskian*, after J.M.H. Wronski.
 
 * Nonhomogenous Linear Equations of Second Order with Constant Coefficients
+
+** Nonhomogenous Linear Equation of Second Order
+
+$y'' + ay' + by = R$
+
+** General Solution
+
+$y = c_1 v_1 + c_2 v_2 + y_1$
+
+where $c_1, c_2$ are arbitrary constants and $y_1$ is one particular solution of the nonhomogenous equation
+
+** Theorem 8.8
+
+If $y_1$ is a particular solution of the nonhomogenous equation $L(y) = R$, the general solution is obtained by adding to $y_1$ the general solution of the corresponding homogenous equation $L(y) = 0$
+
+** General Solution to the Homogenous Equation $L(y) = 0$
+
+$y = c_1 v_1 + c_2 v_2$ where $v_1(x) = e^{-ax/2}u_1(x)$ and $v_2(x) = e^{-ax/2}u_2(x)$
+
+** Theorem 8.9
+
+Let $v_1, v_2$ be the solutions of the equation $L(y) = 0$ given by above, where $L(y) = y'' + ay' + by$. Let $W$ denote the Wronskian of $v_1$ and $v_2$. Then the nonhomogenous equation $L(y) = R$ has a particular solution $y_1$ given by the formula
+
+$y_1(x) = t_1(x)v_1(x) + t_2(x)v_2(x)$
+
+where
+
+$t_1(x) = - \int v_2(x) \frac{R(x)}{W(x)} dx$ and $t_2(x) = \int v_1(x) \frac{R(x)}{W(x)} dx$
