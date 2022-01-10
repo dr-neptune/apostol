@@ -223,3 +223,34 @@ $y_1(x) = t_1(x)v_1(x) + t_2(x)v_2(x)$
 where
 
 $t_1(x) = - \int v_2(x) \frac{R(x)}{W(x)} dx$ and $t_2(x) = \int v_1(x) \frac{R(x)}{W(x)} dx$
+
+* Special Methods for Determining a Particular Solution of the Nonhomogenous Equation $y'' + ay' + by = R$
+
+** Case 1: RHS is a Polynomial of degree n
+
+The right hand member R is a polynomial of degree n. If $b \neq 0$, we can alwasy find a polynomial of degree n that satisfies the equation.
+We try a polynomial of the form $y_1(x) = \Sigma_{k = 0}^n a_k x^k$ with undetermined coefficients. Substituting in the differential equation $L(y) = R$
+and equating coefficients of like powers of x, we may determine $a_n, a_{n - 1}, ..., a_1, a_0$ in succession.
+
+If the coefficient b is 0, the equation $y'' + ay' = R$ cannot be satisfied by a polynomial of degree n, but it can be satisfied by a polynomial of degree n + 1 if $a \neq 0$. If both a and b are 0, the equation becomes $y'' = R$; its general solution is a polynomial of degree n + 2 obtained by 2 successive integrations.
+
+** Case 2: RHS has the form $R(x) = p(x)e^{mx}$ where p is a polynomial of degree n and m is constant
+
+In this case the change of variable $y = ue^{mx}$ transforms the differential equation $y'' + ay' + by = R$ into a new equation:
+
+$u'' + (2m + a)u' + (m^2 + am + b)u = p$
+
+This is the type discussed in case 1, so it always has a polynomial solution $u_1$. Hence the original equation has a particular solution of the form $y_1 = u_1(x)e^{mx}$, where $u_1$ is a polynomial.
+
+If
+- $m^2 + am + b \neq 0$, the degree of $u_1$ is the same as the degree of p
+- $m^2 + am + b = 0$ but $2m + a \neq 0$, the degree of $u_1$ is one greater than that of p
+- $m^2 + am + b = 0$ and $2m + a = 0$, the degree of $u_1$ is two greater than that of p
+
+The method of undetermined coefficients can also be used if $ has the form $R(x) = p(x)e^{mx}\cos{\alpha x}$ or $R(x) = p(x)e^{mx} \sin{\alpha x}$ where p is a polynomial and m and $\alpha$ are constants.
+
+In either case, there is always a particular solution of the form $y_1(x) = e^{mx}[q(x) \cos \alpha x + r(x) \sin \alpha x]$ where q and r are polynomials
+
+** 8.17 Exercises
+
+On exercise 1
