@@ -253,4 +253,4 @@ In either case, there is always a particular solution of the form $y_1(x) = e^{m
 
 ** 8.17 Exercises
 
-On exercise 7
+On exercise 11
