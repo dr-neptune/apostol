@@ -251,7 +251,8 @@ The method of undetermined coefficients can also be used if $ has the form $R(x)
 
 In either case, there is always a particular solution of the form $y_1(x) = e^{mx}[q(x) \cos \alpha x + r(x) \sin \alpha x]$ where q and r are polynomials
 
-* Examples of Physical Problems Leading to Linear Second-Order Equations with Constant Coefficients
+* Integral Curves and Direction Fields
 
-* Exercises
-On exercise 3
+very cool. Mostly a few examples and some nice plots
+
+* 8.22 exercises
