@@ -255,4 +255,18 @@ In either case, there is always a particular solution of the form $y_1(x) = e^{m
 
 very cool. Mostly a few examples and some nice plots
 
-* 8.22 exercises
+* First Order Seperable Equations
+
+** Definition: Seperable Equation
+
+A first order differential equation of the form $y' = f(x, y)$ in which the right member $f(x, y)$ splits into a product of two factors, one depending on $x$ alone and the other depending on $y$ alone, is said to be a seperable equation. Each seperable equation can be expressed in the form $y' = Q(x) R(y)$ where $Q$ and $R$ are given functions.
+
+When $R(y) \neq 0$, we can divide by $R(y)$ and rewrite the differential equation in the form $A(y)y' = Q(x)$, where $A(y) = 1/R(y)$.
+
+** Theorem 8.10
+
+Let $y = Y(x)$ be any solution of the seperable differential equation $A(y)y' = Q(x)$ such that $Y'$ is continuous on an open interval $I$. Assume that both $Q$ and the composite function $A \of Y$ are continuous on $I$. Let $G$ be any primitive of $A$ ($G' = A$). Then the solution $Y$ satisfies the implicit formula
+
+$G(Y) = \int Q(x) dx + C$
+
+for some constant $C$. Conversely, if $y$ satisfies $G(Y) = \int Q(x) dx + C$, then $y$ is a solution of $A(y)y' = Q(x)$
