@@ -270,3 +270,7 @@ Let $y = Y(x)$ be any solution of the seperable differential equation $A(y)y' = 
 $G(Y) = \int Q(x) dx + C$
 
 for some constant $C$. Conversely, if $y$ satisfies $G(Y) = \int Q(x) dx + C$, then $y$ is a solution of $A(y)y' = Q(x)$
+
+* 8.24 exercises
+
+On exercise 11
