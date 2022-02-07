@@ -18,6 +18,9 @@ def another_one(x, y):
     x, y = abs(x), abs(y)
     return (1/2) * (sqrt(x**2 + 4*y) - x)
 
+def homogenous(x, y):
+    return -2 * (y / x)
+
 def plot_diff_eq(fn: Callable,
                  xlims: List[int] = [-5, 5],
                  ylims: List[int] = [-5, 5]):
@@ -37,3 +40,4 @@ def plot_diff_eq(fn: Callable,
 
 plot_diff_eq(translate_it, [-2,2], [-2,2])
 plot_diff_eq(another_one, [-2,2], [-2,2])
+plot_diff_eq(homogenous, [-0.3,.3], [-0.3,.3])

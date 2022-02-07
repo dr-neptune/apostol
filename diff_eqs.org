@@ -271,6 +271,32 @@ $G(Y) = \int Q(x) dx + C$
 
 for some constant $C$. Conversely, if $y$ satisfies $G(Y) = \int Q(x) dx + C$, then $y$ is a solution of $A(y)y' = Q(x)$
 
-* 8.24 exercises
+* Homogenous First-Order Equations
 
-On exercise 11
+** Definition: Homogeneity
+
+Homogeneity means that for the first-order equation $y' = f(x, y)$, the right hand side has the property $f(tx, ty) = f(x, y)$ for all $x,t,y \neq 0$.
+
+In other words, replacing x with tx and y with ty has no effect on the value of f(x, y).
+
+There are some interesting geometric properties possessed by the solutions of a homogenous equation $y' = f(x, y)$.
+
+1. Straight lines through the origin are isoclines of the equation
+
+This property of isoclines suggests a property of integral curves known as invarianve under similarity transformations. We recall that a similarity transformation carries a set S  into a new set kS obtained by multiplying the coordinates of each point of S by a constant factor $k > 0$.
+
+* Some geometrical and physical problems leading to first-order equations
+
+** Orthogonal Trajectories
+
+A curve which intersects every member of a family of curves orthogonally is called an orthogonal trajectory for the family
+
+** Pursuit Problems
+
+A point $Q$ is constrained to move along a prescribed plane curve $C_1$. Another point $P$ in the same plane "pursues" the point $Q$. That is, $P$ moves in such a manner that its direction of motion is always toward $Q$. The point $P$ traces out another curve $C_2$ called a curve of pursuit.
+
+In a typical problem of pursuit, we seek to determine the curve $C_2$ when the curve $C_1$ is known and some additional piece of information is given concerning $P$ and $Q$, for example, a relation between their positions or their velocities.
+
+* Exercises
+
+On exercise 1
