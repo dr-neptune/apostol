@@ -1,0 +1,102 @@
+#+TITLE: Complex Numbers
+
+* Definition and Field Properties
+
+If $a$ and $b$ are real numbers, the pair $(a, b)$ is called a complex number, provided that equality, addition, and multiplication of pairs is defined as follows:
+
+Equality: $(a,b) = (c, d)$ means $a = c, b = d$
+Sum:      $(a, b) + (c, d) = (a + c, b + d)$
+Product:  $(a, b)(c, d) = (ac - bd, ad + bc)$
+
+** Theorem 9.1 (Laws)
+ The operations of addition and multiplicatoin of complex numbers satisfy the commutative, associative, and distributive laws. That is, if $x, y, z$ are arbitrary complex numbers, we have the following:
+
+ Commutativity:      $x + y = y + x$
+ Associtivity:       $x + (y + z) = (x + y) + z$
+ Distibutive:        $x(y + z) = xy + xz$
+ Additive Identity:       $(0, 0)$
+ Multiplicative Identity: $(1, 0)$
+ Additive Inverse:        $(-a, -b) + (a, b) = (0, 0)$, we write $-(a, b)$ for $(-a, -b)$
+ Reciprocal Relative to Identity $(1, 0)$:
+
+ $\frac{1}{(a, b)} = (c, d)$
+
+ where
+
+ $c = \frac{a}{a^2 + b^2}$
+ $d = \frac{-b}{a^2 + b^2}$
+
+* The Complex Numbers as an Extension of the Real Numbers
+
+Let $\mathbb{C}_0$ denote the subset of $\mathbb{C}$ consisting of all complex numbers of the form $(a, 0)$. That is, all complex numbers with zero imaginary sum. These are the real numbers.
+
+The two fields $\mathbb{R}$ and $\mathbb{C}_0$ are said to be isomorphic. The function $f(x) = (x, 0)$ is called an isomorphism.
+
+The complex number system $\mathbb{C}$ is called an extension of the real-number system $\mathbb{R}$ because it contains a subset $\mathbb{C}_0$ which is isomorphic to $\mathbb{R}$.
+
+* The Imaginary Unit $i$
+
+The complex number $(0, 1)$ is denoted by $i$ and is called the imaginary unit. It has the property that its square is -1, $i^2 = -1$.
+
+** Theorem 9.2
+
+Every complex number $(a, b)$ can be expressed in the form $(a, b) = a + bi$
+
+** Quadratic Formula
+
+Consider the quadratic equation. If the discriminant $b^2 - 4ac < 0$, then there are 2 complex roots, given by the formulas:
+
+$r_1 = - \frac{b}{2a} + i \frac{\sqrt{4ac - b^2}}{2a}$
+
+$r_2 = - \frac{b}{2a} - i \frac{\sqrt{4ac - b^2}}{2a}$
+
+** Fundamental Theorem of Algebra
+
+Every polynomial equation of the form $a_0 + a_1x + a_2x^2 + ... + a_nx^n = 0$ where $a_0, a_1, ..., a_n$ are arbitrary real numbers,
+with $a_n \neq 0$ has a solution among the complex numbers if $n \geq 1$.
+
+Moreover, even if the coefficients are complex, a solution exists in the complex-number system. This shows there is no need to construct
+numbers more general than complex numbers to solve polynomial equations with complex coefficients.
+
+* Geometric Interpretation. Modulus and Argument
+
+** Polar Notation
+
+If $(x, y) \neq (0, 0)$, we can express x and y in polar coordinates:
+
+$x = r \cos \theta$
+$y = r \sin \theta$
+$x + iy = r(\cos \theta + i \sin \theta)$
+
+The positive number $r$, which represents the distance of $(x, y)$ from the origin, is called the modulus or absolute value of $x + iy$ and is denoted by $|x + iy|$.
+Thus we have $|x + iy| = \sqrt{x^2 + y^2}$
+
+** Absolute Values of Complex Numbers
+
+$|z| > 0$ if $z \neq 0$
+
+$|z_1 - z_2| = |z_2 - z_1|$
+
+$|z_1 + z_2| \leq |z_1| + |z_2|$
+
+$|z_1 z_2| = |z_1||z_2|$
+
+$|\frac{z_1}{z_2}| = \frac{|z_1|}{|z_2|}$
+
+** Complex Conjugate
+
+If $z = x + iy$, the complex conjugate of $z$ is the complex number $\bar{z} = x - iy$
+
+Geometrically, $\bar{z}$ represents the reflection of $z$ through the real axis.
+
+$\overline{z_1 + z_2} = \bar{z_1} + \bar{z_2}$
+
+$\overline{z_1 z_2} = \bar{z_1} \bar{z_2}$
+
+$\overline{z_1 / z_2} = \bar{z_1} \bar{z_2}$
+
+$z \bar{z} = |z|^2$
+
+** Quadratic Roots
+
+If a quadratic equation with real coefficients has no real roots, its complex roots are conjugates.

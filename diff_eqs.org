@@ -300,3 +300,6 @@ In a typical problem of pursuit, we seek to determine the curve $C_2$ when the c
 * Exercises
 
 On exercise 1
+175 exercises in chapter 8
+202 exercises in chapter 10
+227 exercises in chapter 6
