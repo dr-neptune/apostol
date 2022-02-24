@@ -100,3 +100,36 @@ $z \bar{z} = |z|^2$
 ** Quadratic Roots
 
 If a quadratic equation with real coefficients has no real roots, its complex roots are conjugates.
+
+* Complex Exponentials
+
+** Definition : Complex Exponential
+
+If $z = x + iy$, we define $e^z$ to be the complex number given by the equation $e^z = e^x(\cos y + i \sin y)$
+
+Note that $e^z = e^x$ when $y = 0$
+
+** Theorem 9.3 : Complex Exponential Identity
+
+If $a, b \in \mathbb{C}$, we have $e^a e^b = e^{a + b}$
+
+** Theorem 9.4 : Polar Form
+
+Every complex number $z \neq 0$ can be expressed in the form $z = re^{i \theta}$
+where $r = |z|$ and $\theta = \arg (z) + 2n\pi$ where $n \in \mathbb{Z}$
+
+This representation is called the polar form of $z$.
+
+** Multiplication of Complex Numbers in Polar Form
+
+$z_1 z_2 = r_1 e^{i\theta} r_2 e^{i\phi} = r_1 r_2 e^{i (\theta + \phi)}$
+
+$z^n = r^n e^{in\theta} = r^n (\cos n \theta + i \sin n \theta)$
+
+** Division of Complex Numbers in Polar Form
+
+$\frac{z^1}{z_2} = \frac{r^1 e^{i \theta}}{r_2 e^{i \phi}} = \frac{r_1}{r_2} e^{i(\theta - \phi)}$
+
+* Complex-Valued Functions
+
+A function $f$ whose values are complex numbers is called a complex-valued function. If the domain of $f$ is the set of real numbers, $f$ is called a complex-valued function of a real variable. If the domain of $f$ is the set of complex numbers, $f$ is called a complex-valued function of a complex variable, or more simply, a function of a complex variable.
