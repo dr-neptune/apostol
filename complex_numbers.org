@@ -133,3 +133,45 @@ $\frac{z^1}{z_2} = \frac{r^1 e^{i \theta}}{r_2 e^{i \phi}} = \frac{r_1}{r_2} e^{
 * Complex-Valued Functions
 
 A function $f$ whose values are complex numbers is called a complex-valued function. If the domain of $f$ is the set of real numbers, $f$ is called a complex-valued function of a real variable. If the domain of $f$ is the set of complex numbers, $f$ is called a complex-valued function of a complex variable, or more simply, a function of a complex variable.
+
+** Definition: Continuity of a Complex-Valued Function
+
+If $f = u + iv$, we say $f$ is continuous at a point if both $u$ and $v$ are continuous at that point.
+The derivative of $f$ is defined by the equation
+
+$f'(x) = u'(x) + iv'(x)$
+
+whenever both derivates $u'(x), v'(x)$ exist.
+
+Similarly, we define the integral of $f$ by the equation
+
+$\int_a^b f(x) dx = \int_a^b u(x) dx + i \int_a^b v(x) dx$
+
+whenever both integrals on the right exist
+
+* Examples of Differentiation and Integration Formulas
+
+** Theorem 9.5: Derivative of $e^{tx}$
+
+If $f(x) = e^{tx}$ for all real $x$ and a fixed complex $t$, then $f'(x) = te^{tx}$
+
+If we adopt the Liebniz notation for integrals, we can also restate this theorem in the form:
+
+$\int e^{tx} dx = \frac{e^{tx}}{t}$
+
+when $t \neq 0$
+
+If we let $t = \alpha + i \beta$ and equate the real and imaginary parts of the integral above, we obtain the integration formulas:
+
+$\int e^{\alpha x} \cos \beta x dx = \frac{e^{\alpha x}(\alpha \cos \beta x + \beta \sin \beta x)}{\alpha ^ 2 + \beta ^ 2}$
+
+$\int e^{\alpha x} \sin \beta x dx = \frac{e^{\alpha x}(\alpha \sin \beta x - \beta \cos \beta x)}{\alpha ^ 2 + \beta ^ 2}$
+
+** Theorem 9.6 : Connection between complex exponentials and 2nd order linear differential equations with constant coefficients
+
+Consider the differential equation $y'' + ay' + by = 0$, where $a, b \in \mathbb{R}$.
+
+The real and imaginary parts of the function $f$ defined on $(\pm \infty)$ by the equation $f(x) = e^{tx}$ are solutions of the differential equation above iff $t$ is a root of the characteristic equation $t^2 + at + b = 0$
+
+* Exercises
+On exercise 4
