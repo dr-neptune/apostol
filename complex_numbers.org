@@ -174,4 +174,4 @@ Consider the differential equation $y'' + ay' + by = 0$, where $a, b \in \mathbb
 The real and imaginary parts of the function $f$ defined on $(\pm \infty)$ by the equation $f(x) = e^{tx}$ are solutions of the differential equation above iff $t$ is a root of the characteristic equation $t^2 + at + b = 0$
 
 * Exercises
-On exercise 4
+On exercise 8
