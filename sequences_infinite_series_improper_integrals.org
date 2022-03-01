@@ -1,0 +1,19 @@
+#+TITLE: Sequences, Infinite Series, Improper Integrals
+
+* 10.1 : Zeno's Paradox
+
+This section introduces the ideas of convergence and divergence by illustrating Zeno's paradox with the convergent sum $\Sigma_k \frac{1}{2^k}$ and the divergent sum $\Sigma_k \frac{1}{k}$
+
+* 10.2 : Sequences
+
+In mathematics, sequence and series mean different things
+
+** Relaxed Definition : Sequence
+
+If for every positive integer $n$ there is associated a real or complex number $a_n$ then the ordered set $a_1, a_2, a_3, ..., a_n$, ... is said to define an infinite sequence.
+
+The important thing here is that each member of the set has been labeled with an integer so that we may speak of the first, second, nth term. Each term $a_n$ has a successor $a_{n + 1}$ and hence there is no "last" term.
+
+** Technical Definition : Sequence
+
+A function $f$ whose domain is the set of all positive integers $1, 2, 3$, ... is called an infinite sequence. The function value $f(n)$ is called the nth term of the sequence.
