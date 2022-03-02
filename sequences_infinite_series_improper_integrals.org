@@ -17,3 +17,49 @@ The important thing here is that each member of the set has been labeled with an
 ** Technical Definition : Sequence
 
 A function $f$ whose domain is the set of all positive integers $1, 2, 3$, ... is called an infinite sequence. The function value $f(n)$ is called the nth term of the sequence.
+
+The range of the function is usually displayed by writing the terms in order, thus: $f(1), f(2), f(3), ..., f(n)$, ...
+
+For brevity, the notation $\{f(n)\}$ is used to denote the sequence whose nth term is $f(n)$.
+
+The main question we are concerned with here is to decide whether or not the terms $f(n)$ tend to a finite limit as $n \to \infty$. To treat this problem, we must extend the limit concept to sequences:
+
+** Definition : Limit extended to sequences
+
+A sequence $\{f(n)\}$ is said to have a limit $L$ if, for every positive number $\epsilon$, there is another positive number $N$ (which may depend on $\epsilon$) such that
+
+$|f(n) - L| < \epsilon$ for all $n \geq N$
+
+In this case, we say the sequence $\{f(n)\}$ converges to $L$ and we write
+
+$\lim_{n \to \infty} f(n) = L$, or $f(n) \to L$ as $n \to \infty$
+
+A sequence which does not *converge* is called *divergent*
+
+A complex valued sequence $f$ converges iff both the real part $u$ and the imaginary part $v$ converge separately, in which case we have
+
+$\lim_{n \to \infty} f(n) = \lim_{n \to \infty} u(n) + i \lim_{n \to \infty} v(n)$
+
+** Some important real-valued sequences
+
+$\lim_{n \to \infty} \frac{1}{n^\alpha} = 0$ if $\alpha > 0$
+
+$\lim_{n \to \infty} x^n = 0$ if $|x| < 1$
+
+$\lim_{n \to \infty} \frac{(\log n)^a}{n^b} = 0$ for all $a, b > 0$
+
+$\lim_{n \to \infty} n^{1/n} = 1$
+
+$\lim_{n \to \infty} (1 + \frac{a}{n})^n = e^a$ $\forall a \in \mathbb{R}$
+
+* 10.3 : Monotonic Sequences of Real Numbers
+
+** Theorem 10.1 : Monotonic Convergence
+
+A monotonic sequence converges iff it is bounded
+
+A sequence $\{f(n)\}$ is called bounded if there exists a positive number $M$ such that $|f(n)| \leq M$ for all $n$. A sequence that is not bounded is called unbounded.
+
+* 10.4 Exercises
+
+1 pomodoro in, on exercise 7
