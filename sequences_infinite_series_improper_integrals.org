@@ -60,6 +60,146 @@ A monotonic sequence converges iff it is bounded
 
 A sequence $\{f(n)\}$ is called bounded if there exists a positive number $M$ such that $|f(n)| \leq M$ for all $n$. A sequence that is not bounded is called unbounded.
 
-* 10.4 Exercises
+* 10.5 : Infinite Series
 
-1 pomodoro in, on exercise 7
+** Definition: Infinite Series
+
+The sequence $\{s_n\}$ of partial sums is called an infinite series, or simply a series, and is also denoted by the following symbols:
+
+$a_1 + a_2 + a_3 +$...
+$a_1 + a_2 + ... + a_n +$...
+$\Sigma_{k=1}^\infty a_k$
+
+If there is a real or complex number $S$ such that $\lim_{n \to \infty} s_n = S$, we say that the series is convergent and has the sum $S$.
+If $\{s_n\}$ diverges, we say the series diverges and has no sum
+
+A finite number of terms may be omitted or added at the beginning of a series without affecting its convergence or divergence
+
+* 10.6 : The Linearity Property of Convergent Series
+
+** Theorem 10.2 : Linearity of Convergent Series
+
+Let $\Sigma a_n$ and $\Sigma b_n$ be convergent infinite series of complex terms and let $\alpha, \beta$ be complex constants. Then the series $\Sigma (\alpha a_n + \beta b_n)$ also converges,
+and its sum is given by the equation:
+
+$\Sigma_{n = 1}^\infty (\alpha a_n + \beta b_n) = \alpha \Sigma_{n = 1}^\infty a_n + \beta \Sigma_{n = 1}^\infty b_n$
+
+** Theorem 10.3 : Mixed *vergence
+
+If $\Sigma a_n$ converges and $\Sigma b_n$ diverges, then $\Sigma(a_n + b_n)$ diverges
+
+* 10.7 : Telescoping Series
+
+** Definition : Telescoping Property
+
+$\Sigma_{k=1}^n (b_k - b_{k + 1}) = b_1 - b_{n + 1}$
+
+** Theorem 10.4 : Convergence of Telescoping Series
+
+Let $\{a_n\}$ and $\{b_n\}$ be two sequences of complex numbers such that
+
+$a_n = b_n - b_{n + 1}$ for $n = 1, 2, 3$, ...
+
+Then the series $\Sigma a_n$ converges iff the sequence $\{b_n\}$ converges, in which case we have
+
+$\Sigma_{n = 1}^\infty a_n = b_1 - L$ where $L = \lim_{n \to \infty} b_n$
+
+* 10.8 : The Geometric Series
+
+** Theorem 10.5 : Convergence Criteria for the Geometric Series
+
+If $x \in \mathbb{C}$ with $|x| < 1$, the geometric series $\Sigma_{n = 0}^\infty x^n$ converges and has the sum $\frac{1}{1 - x}$
+
+If $|x| \geq 1$, the series diverges
+
+** Definition : Power Series
+
+The special form $\Sigma_{n = 0}^\infty a_n x^n$ is known as power series
+
+* 10.10 : Exercises on Decimal Expansions
+
+** Definition : Decimal Expansion
+
+Each positive real $x$ has a decimal representation of the form
+
+$x = a_0 \cdot a_1 \cdot ... \cdot a_n$
+
+where $0 \leq a_k \leq 9$ for each $k \geq 1$.
+
+We can express this as the convergent series
+
+$x = \Sigma_{k = 0}^\infty \frac{a_k}{10^k}$
+
+The decimal representation above may be generalized by replacing the integer 10 with any other integer $b > 1$.
+If $x > 0$, let $a_0$ denote the greatest integer in $x$; assuming that $a_0, a_1, ..., a_{n - 1}$ have been defined, let $a_n$ denote the largeset integer such that
+
+$\Sigma_{k = 0}^n \frac{a_k}{b^k} \leq x$
+
+* 10.11 : Tests for Convergence
+
+Convergence tests may broadly be classified into 3 categories:
+
+1. *sufficient conditions*
+If $C$ is satisfied, then $\Sigma a_n$ converges
+where $C$ stands for the condition in question
+
+2. *necessary conditions*
+If $\Sigma a_n$ converges, then $C$ is satisfied
+
+3. *necessary and sufficient conditions*
+$\Sigma a_n$ converges if and only if $C$ is satisfied
+
+** Theorem 10.6 : Necessary Condition for Convergence
+
+If the series $\Sigma a_n$ converges, then its nth term tends to 0; that is
+
+$\lim_{n \to \infty} a_n = 0$
+
+This is an example of a type 2 test which is not of type 1.
+The real usefulness of this test is that it gives us a sufficient condition for divergence. That is, if the terms $a_n$ of a series $\Sigma a_n$ do /not/ tend to 0, then the series must diverge. This statement is logically equivalent to theorem 10.6
+
+* 10.12 : Comparison Tests for Series of Non-negative Terms
+
+In this section we focus on series having non-negative terms. Since the partial sums of such series are monotonically increasing, we may use theorem 10.1 to obtain the following necessary and sufficient condition for convergence.
+
+** Theorem 10.7 : Necessary and Sufficient condition for convergence of a non-negative series
+
+Assume that $a_n \geq 0$ for each $n \geq 1$. Then the series $\Sigma a_n$ converges if and only if the sequence of its partial sums is bounded above
+
+** Theorem 10.8 : Comparison Test
+
+Assume that $a_n \geq 0$ and $b_n \geq 0$ for all $n \geq 1$.
+If there exists a positive constant $c$ such that $a_n \leq cb_n$ for all $n$,
+then the convergence of $\Sigma b_n$ implies convergence of $\Sigma a_n$
+
+We can also formulate this conclusion as follows:
+Divergence of $\Sigma a_n$ implies divergence of $\Sigma b_n$
+When the inequality $a_n \leq cb_n$ we say that the series $\Sigma b_n$ dominates the series $\Sigma a_n$
+
+** Theorem 10.9 : Limit Comparison Test
+
+Assume that $a_n > 0$ and $b_n > 0$ for all $n \geq 1$, and suppose that
+
+$\lim_{n \to \infty} \frac{a_n}{b_n} = 1$
+
+Then $\Sigma a_n$ converges iff $\Sigma b_n$ converges.
+
+** Definition : Asymptotically Equal
+
+Two sequences $\{a_n\}$ and $\{b_n\}$ of complex numbers are said to be asymptotically equal if $\lim_{n \to \infty} \frac{a_n}{b_n} = 1$
+
+This relation is often indicated symbolically by writing $a_n \sim b_n$ as $n \to \infty$
+
+** Theorem 10.10 : Limit Comparison Test (Reeeeemmmmmiiiiiixxxxx)
+
+Two series $\Sigma a_n$ and $\Sigma b_n$ with terms that are positive and asymptotically equal converge together or they diverge together
+
+* 10.13 : The Integral Test
+
+** Theorem 10.11 : Integral Test
+
+Let $f$ be a positive decreasing function, defined for all real $x \geq 1$. For each $n \geq 1$, let
+
+$s_n = \Sigma_{k = 1}^n f(k)$ and $t_n = \int_1^n f(x) dx$
+
+Then both sequences $\{s_n\}$ and $\{t_n\}$ converge or both diverge
